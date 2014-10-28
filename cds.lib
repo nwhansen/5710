@@ -1,8 +1,12 @@
-INCLUDE                   $CDK_DIR/cdssetup/cds.lib
+# File Created by Nathan Hansen at Tue Oct 28 12:14:40 2014
+# assisted by CdsLibEditor
+INCLUDE $CDK_DIR/cdssetup/cds.lib
 DEFINE UofU_TechLib_ami06 $CDK_DIR/lib/UofU_TechLib_ami06
-DEFINE UofU_Analog_Parts  /uusoc/facility/cad_common/local/Cadence/lib/OA/UofU_Analog_Parts
-DEFINE UofU_Sheets        /uusoc/facility/cad_common/local/Cadence/lib/OA/UofU_Sheets
-DEFINE UofU_Pads          /uusoc/facility/cad_common/local/Cadence/lib/OA/UofU_Pads
+DEFINE UofU_Analog_Parts /uusoc/facility/cad_common/local/Cadence/lib/OA/UofU_Analog_Parts
+DEFINE UofU_Sheets /uusoc/facility/cad_common/local/Cadence/lib/OA/UofU_Sheets
+DEFINE UofU_Pads /uusoc/facility/cad_common/local/Cadence/lib/OA/UofU_Pads
 
 
 DEFINE Lib6710_08 /home/nathan/5710/Lib6710_08
+DEFINE avTech /uusoc/facility/cad_tools/Cadence/ASSURA-F13/tools/assura/etc/avtech/avTech
+DEFINE gridTemplate gridTemplate

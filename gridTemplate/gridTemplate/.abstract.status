@@ -1,0 +1,6 @@
+cUiSetViewStatus {gridTemplate} {layout} {1}
+cUiSetViewStatus {gridTemplate} {logical} {0}
+cUiSetViewStatus {gridTemplate} {abstract.pin} {0}
+cUiSetViewStatus {gridTemplate} {abstract.ext} {0}
+cUiSetViewStatus {gridTemplate} {abstract} {0}
+cUiSetViewStatus {gridTemplate} {abstract.ver} {0}
