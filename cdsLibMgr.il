@@ -1,0 +1,1 @@
+/uusoc/facility/cad_common/NCSU/CDK6-F13/cdssetup/cdsLibMgr.il
