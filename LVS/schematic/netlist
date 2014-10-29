@@ -1,0 +1,13 @@
+t 3 Y output
+n 1 gnd!
+n 0 vdd!
+n 3 /Y
+n 4 /net3
+; pmos Instance /M0 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 4 4 0 0 " m 1 l 600e-9 w 1.5e-6 "
+; nmos Instance /M1 = auLvs device Q1
+d nmos D G S B (p D S)
+i 1 nmos 3 4 1 1 " m 1 l 600e-9 w 1.5e-6 "
+t 0 vdd! global
+t 1 gnd! global

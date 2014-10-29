@@ -1,0 +1,92 @@
+@(#)$CDS: LVS version 6.1.6-64b 07/05/2013 16:09 (sjfnl165) $
+
+Command line: /uusoc/facility/cad_tools/Cadence/IC616.010_lnx86/tools.lnx86/dfII/bin/64bit/LVS -dir /home/nathan/5710/LVS/NAND2X1 -l -s -t /home/nathan/5710/LVS/NAND2X1/layout /home/nathan/5710/LVS/NAND2X1/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /home/nathan/5710/LVS/NAND2X1/layout/netlist
+       count
+        6               nets
+        5               terminals
+        2               pmos
+        2               nmos
+
+    Net-list summary for /home/nathan/5710/LVS/NAND2X1/schematic/netlist
+       count
+        6               nets
+        5               terminals
+        2               pmos
+        2               nmos
+
+
+    Terminal correspondence points
+    N4        N4        A
+    N3        N6        B
+    N2        N2        Y
+    N1        N1        gnd!
+    N5        N0        vdd!
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  4       4      
+        total                   4       4      
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  6       6      
+        total                   6       6      
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   5       5      
+
+
+Probe files from /home/nathan/5710/LVS/NAND2X1/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/nathan/5710/LVS/NAND2X1/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
