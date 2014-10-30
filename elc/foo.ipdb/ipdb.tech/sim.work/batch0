@@ -1,0 +1,3 @@
+#!/bin/csh -f
+ ipsd -stat "/home/nathan/5710/elc/foo.ipdb/NAND2X1.design/simulate/waveform/typical/S_D0000" -last  -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrundelay /home/nathan/5710/elc/foo.ipdb NAND2X1 typical D0000 /home/nathan/5710/elc/encounterlc.log/foo.log/NAND2X1.log"
+

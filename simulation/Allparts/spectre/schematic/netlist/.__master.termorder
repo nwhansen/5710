@@ -1,0 +1,4 @@
+"Lib6710_08.NAND2X1.analog_extracted.termorder" nil
+"Lib6710_08.TIEHI.analog_extracted.termorder" nil
+"Lib6710_08.TIELO.analog_extracted.termorder" (("Y") ("Y"))
+"Lib6710_08.NOR2X1.analog_extracted.termorder" (("A" "B" "Y") ("A" "B" "Y"))

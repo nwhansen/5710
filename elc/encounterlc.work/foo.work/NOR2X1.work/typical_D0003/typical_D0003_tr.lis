@@ -1,0 +1,66 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 12.1.1.096.isr12 64bit -- 5 Aug 2013
+Copyright (C) 1989-2013 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
+        Cadence Design Systems, Inc. All others are the property of their
+        respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: nathan   Host: lab1-17   HostID: 629B426F   PID: 27719
+Memory  available: 18.8535 GB  physical: 33.5971 GB
+CPU Type: Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz
+          Processor PhysicalID CoreID Frequency
+              0         0        0     2794.0
+              1         0        0     2794.0
+              2         0        1     2794.0
+              3         0        1     2794.0
+              4         0        2     2794.0
+              5         0        2     2794.0
+              6         0        3     2794.0
+              7         0        3     2794.0
+
+
+Simulating `typical_D0003_tr.sp' on lab1-17 at 8:34:37 PM, Wed Oct 29, 2014
+        (process id: 27719).
+Current working directory:
+        /home/nathan/5710/elc/encounterlc.work/foo.work/NOR2X1.work/typical_D0003
+Command line:
+     \
+        /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools/spectre/bin/64bit/spectre
+        \
+        typical_D0003_tr.sp
+Reading file: 
+        /home/nathan/5710/elc/encounterlc.work/foo.work/NOR2X1.work/typical_D0003/typical_D0003_tr.sp
+Reading link:  /uusoc/facility/cad_tools/Cadence/MMSIM-F13
+Reading file: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/nathan/5710/elc/foo.ipdb/NOR2X1.design/simulate/subckt
+Reading file:  /home/nathan/5710/elc/foo.ipdb/AMI06N.device/simulate/model
+Reading file:  /home/nathan/5710/elc/foo.ipdb/AMI06P.device/simulate/model
+
+Time for NDB Parsing: CPU = 131.979 ms, elapsed = 305.577 ms.
+Time accumulated: CPU = 131.979 ms, elapsed = 305.577 ms.
+Peak resident memory used = 47.2 Mbytes.
+
+Reading link: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/ahdl/constants.vams
+
+Error found by spectre during hierarchy flattening.
+    ERROR (SFE-46): "typical_D0003_tr.sp" 17: `X_NOR2X1_D0003': An instance of
+        `NOR2X1' can have at most 4 terminals (but has 5).
+
+
+Time for Elaboration: CPU = 43.994 ms, elapsed = 52.691 ms.
+Time accumulated: CPU = 176.973 ms, elapsed = 358.531 ms.
+Peak resident memory used = 53.5 Mbytes.
+
+spectre terminated prematurely due to fatal error.

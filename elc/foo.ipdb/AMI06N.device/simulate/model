@@ -1,0 +1,21 @@
+*** file name : foo.ipdb/AMI06N.device/simulate/model
+simulator lang=spectre insensitive=yes
+model ami06n bsim3v3 type=n level=49 version=3.1 tnom=27 tox=1.39e-8
++ xj=1.5e-7 nch=1.7e17 vth0=0.6696061 k1=0.8351612 k2=-0.0839158
++ k3=23.1023856 k3b=-7.6841108 w0=1e-8 nlx=1e-9 dvt0w=0 dvt1w=0 dvt2w=0
++ dvt0=2.9047241 dvt1=0.4302695 dvt2=-0.134857 u0=458.439679 ua=1e-13
++ ub=1.485499e-18 uc=1.629939e-11 vsat=1.643993e5 a0=0.6103537
++ ags=0.1194608 b0=2.674756e-6 b1=5e-6 keta=-2.640681e-3 a1=8.219585e-5
++ a2=0.3564792 rdsw=1.387108e3 prwg=0.0299916 prwb=0.0363981 wr=1
++ wint=2.472348e-7 lint=3.597605e-8 xl=0 xw=0 dwg=-1.287163e-8
++ dwb=5.306586e-8 voff=0 nfactor=0.8365585 cit=0 cdsc=2.4e-4 cdscd=0
++ cdscb=0 eta0=0.0246738 etab=-1.406123e-3 dsub=0.2543458 pclm=2.5945188
++ pdiblc1=-0.4282336 pdiblc2=2.311743e-3 pdiblcb=-0.0272914
++ drout=0.7283566 pscbe1=5.598623e8 pscbe2=5.461645e-5 pvag=0 delta=0.01
++ rsh=81.8 mobmod=1 prt=8.621 ute=-1 kt1=-0.2501 kt1l=-2.58e-9 kt2=0
++ ua1=5.4e-10 ub1=-4.8e-19 uc1=-7.5e-11 at=1e5 wl=0 wln=1 ww=0 wwn=1
++ wwl=0 ll=0 lln=1 lw=0 lwn=1 lwl=0 capmod=2 xpart=0.5 cgdo=2e-10
++ cgso=2e-10 cgbo=1e-9 cj=4.197772e-4 pb=0.99 mj=0.4515044
++ cjsw=3.242724e-10 pbsw=0.1 mjsw=0.1153991 cjswg=1.64e-10 pbswg=0.1
++ mjswg=0.1153991 cf=0 pvth0=0.0585501 prdsw=133.285505 pk2=-0.0299638
++ wketa=-0.0248758 lketa=1.173187e-3 af=1 kf=0

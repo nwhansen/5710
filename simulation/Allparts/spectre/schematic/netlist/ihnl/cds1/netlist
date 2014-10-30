@@ -1,0 +1,17 @@
+    \+3 (Y B 6 vdd!) ami06P w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 \
+        ps=9e-07 pd=6e-06 m=1 region=sat
+    \+2 (6 A vdd! vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=1.35e-12 \
+        ps=6e-06 pd=9e-07 m=1 region=sat
+    \+10 (B 0) capacitor c=7.2819e-16 m=1
+    \+9 (A 0) capacitor c=5.6079e-16 m=1
+    \+8 (vdd! B) capacitor c=5.9427e-16 m=1
+    \+7 (vdd! A) capacitor c=7.1145e-16 m=1
+    \+6 (Y 0) capacitor c=1.95594e-15 m=1
+    \+5 (B Y) capacitor c=4.149e-16 m=1
+    \+4 (vdd! Y) capacitor c=2.03172e-15 m=1
+    \+1 (0 B Y 0) ami06N w=1.5e-06 l=6e-07 as=1.35e-12 ad=2.25e-12 \
+        ps=1.8e-06 pd=4.5e-06 m=1 region=sat
+    \+0 (Y A 0 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=1.35e-12 \
+        ps=4.5e-06 pd=1.8e-06 m=1 region=sat
+ends NOR2X1
+// End of subcircuit definition.
