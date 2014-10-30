@@ -1,0 +1,8 @@
+
+// Library name: Lib6710_08
+// Cell name: Allparts
+// View name: schematic
+I7 (net1) TIEHI
+I6 (net3 net4 net2) NOR2X1
+I8 (net5) TIELO
+I5 (net7 net8 net6) NAND2X1

@@ -1,0 +1,30 @@
+t 2 Y output
+t 1 gnd! inputOutput
+t 3 vdd! inputOutput
+
+n 0 /4
+n 1 /gnd!
+n 2 /Y
+n 3 /vdd!
+
+; pmos4 Instance /+1 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 0 0 3 3 " m 1 l 600e-9 w 3e-6 "
+
+; pcapacitor Instance /+5 = auLvs device C1
+d pcapacitor PLUS MINUS (p PLUS MINUS)
+i 1 pcapacitor 1 0 " c 560.79e-18 "
+
+; pcapacitor Instance /+4 = auLvs device C2
+i 2 pcapacitor 3 0 " c 677.97e-18 "
+
+; pcapacitor Instance /+3 = auLvs device C3
+i 3 pcapacitor 2 1 " c 476.94e-18 "
+
+; pcapacitor Instance /+2 = auLvs device C4
+i 4 pcapacitor 3 0 " c 246.78e-18 "
+
+; nmos4 Instance /+0 = auLvs device Q5
+d nmos D G S B (p D S)
+i 5 nmos 2 0 1 1 " m 1 l 600e-9 w 1.5e-6 "
+

@@ -1,7 +1,7 @@
-CADENCE IHNL01075
+CADENCE IHNL01076
 
 Lib6710_08 NAND2X1 analog_extracted cds0
 Lib6710_08 NOR2X1 analog_extracted cds1
 Lib6710_08 TIELO analog_extracted cds2
 Lib6710_08 TIEHI analog_extracted cds3
-Lib6710_08 Allparts schematic cds4
+Lib6710_08 Allparts schematic cds5

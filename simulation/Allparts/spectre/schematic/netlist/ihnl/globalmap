@@ -3,6 +3,7 @@ $model
 Lib6710_08/NOR2X1/analog_extracted NOR2X1
 Lib6710_08/Allparts/schematic Allparts
 Lib6710_08/TIELO/analog_extracted TIELO
+Lib6710_08/INV1/analog_extracted INV1
 Lib6710_08/NAND2X1/analog_extracted NAND2X1
 Lib6710_08/TIEHI/analog_extracted TIEHI
 $endmodel

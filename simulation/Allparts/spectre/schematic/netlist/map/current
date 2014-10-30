@@ -26,9 +26,9 @@
  )
 ( param
  )
-( "TIEHI" "ihnl/cds3/map" )
 ( "NOR2X1" "ihnl/cds1/map" )
+( "TIEHI" "ihnl/cds3/map" )
 ( "TIELO" "ihnl/cds2/map" )
 ( "NAND2X1" "ihnl/cds0/map" )
-( "Allparts" "ihnl/cds4/map" )
+( "Allparts" "ihnl/cds5/map" )
  )
