@@ -1,5 +1,5 @@
 simulator lang=spectre insensitive=yes
-subckt NAND2X1 A B Y VDD
+subckt NAND2X1 A B Y VDD GND
 \+3 (vdd B Y vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
 ps=1.8e-06 pd=6e-06 m=1 region=sat
 \+2 (Y A vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \

@@ -1,5 +1,5 @@
 simulator lang=spectre insensitive=yes
-subckt TIEHI Y VDD
+subckt TIEHI Y VDD GND
 \+1 (Y 4 vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
 ps=6e-06 pd=6e-06 m=1 region=sat
 \+5 (gnd 4) capacitor c=6.5286e-16 m=1

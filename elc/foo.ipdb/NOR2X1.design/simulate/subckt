@@ -1,5 +1,5 @@
 simulator lang=spectre insensitive=yes
-subckt NOR2X1 A B Y VDD
+subckt NOR2X1 A B Y VDD GND
 \+3 (Y B 6 vdd) ami06P w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 \
 ps=9e-07 pd=6e-06 m=1 region=sat
 \+2 (6 A vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=1.35e-12 \

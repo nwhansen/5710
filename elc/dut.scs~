@@ -4,7 +4,7 @@
 // Design cell name: Allparts
 // Design view name: schematic
 simulator lang=spectre
-// global gnd vdd!
+global gnd vdd!
 // include "/uusoc/facility/cad_common/local/class/6710/F13/cadence/Spectre/T89Y.scs"
 
 // Library name: Lib6710_08
