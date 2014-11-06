@@ -1,0 +1,19 @@
+// Library - Lib6710_08, Cell - INV1, View - schematic
+// LAST TIME SAVED: Oct 30 13:28:12 2014
+// NETLIST TIME: Oct 30 13:56:54 2014
+`timescale 1ns / 100ps 
+
+module INV1 ( Y, A );
+
+output  Y;
+
+input  A;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "INV1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

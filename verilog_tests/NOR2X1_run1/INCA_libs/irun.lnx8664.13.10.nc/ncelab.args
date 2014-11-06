@@ -1,0 +1,27 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
++nostdout
++nocopyright
++compile
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+-noshowtop
+-DELAY_MODE
+PATH
+-TYPDELAYS
+-NOSTDOUT
+-NOCOPYRIGHT
+-MESSAGES
+-XLMODE
+./INCA_libs/irun.lnx8664.13.10.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.13.10.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.13.10.nc/hdl.var
+-WORK
+worklib
+-HASXLMODE

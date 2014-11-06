@@ -1,0 +1,12 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  HI;
+
+
+
+TIE_FIGHTER top(HI); 
+ 

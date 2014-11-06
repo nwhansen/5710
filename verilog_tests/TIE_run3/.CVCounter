@@ -1,0 +1,4 @@
+cellViewCounterTable = makeTable('cellViewCounterTableType nil)
+cellViewCounterTable['("basic" "opin" "symbol" )] =  19
+cellViewCounterTable['("Lib6710_08" "TIEHI" "symbol" )] =  87
+cellViewCounterTable['("Lib6710_08" "TIE_FIGHTER" "schematic" )] =  719

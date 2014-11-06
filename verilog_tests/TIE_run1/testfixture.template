@@ -1,0 +1,21 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  LO;
+
+
+
+TIE_FIGHTER top(LO); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/nathan/5710/verilog_tests/TIE_run1/testfixture.verilog file
+`include "/home/nathan/5710/verilog_tests/TIE_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

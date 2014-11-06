@@ -1,0 +1,4 @@
+#!/bin/csh -f
+ ipsd -stat "/home/nathan/5710/elc/foo.ipdb/INV1.design/simulate/waveform/typical/S_D0000" -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrundelay /home/nathan/5710/elc/foo.ipdb INV1 typical D0000 /home/nathan/5710/elc/encounterlc.log/foo.log/INV1.log"
+ ipsd -stat "/home/nathan/5710/elc/foo.ipdb/INV1.design/simulate/waveform/typical/S_D0001" -last  -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrundelay /home/nathan/5710/elc/foo.ipdb INV1 typical D0001 /home/nathan/5710/elc/encounterlc.log/foo.log/INV1.log"
+

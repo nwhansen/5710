@@ -1,0 +1,15 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial
+begin 
+
+   A = 1'b0;
+   #15 $finish;
+end 
+
+always #5 A = ~A;

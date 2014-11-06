@@ -1,3 +1,9 @@
+module INV1(A,Y);
+	input	A;
+	output	Y;
+	not(Y,A);
+endmodule
+
 module NAND2X1(A,B,Y);
 	input	A,B;
 	output	Y;
@@ -14,6 +20,7 @@ module TIEHI(Y);
 	output	Y;
 endmodule
 
-module TIELO;
+module TIELO(Y);
+	output	Y;
 endmodule
 

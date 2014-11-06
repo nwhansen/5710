@@ -1,0 +1,33 @@
+// Library - Lib6710_08, Cell - NOR2X1, View - schematic
+// LAST TIME SAVED: Oct 28 22:42:50 2014
+// NETLIST TIME: Oct 30 13:51:52 2014
+`timescale 1ns / 100ps 
+
+module NOR2X1 ( Y, A, B );
+
+output  Y;
+
+input  A, B;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "NOR2X1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+`switch default
+nmos #(0.1)   (* const real width = 1.500, length = 0.600; *) M1( Y,
+     cds_globals.gnd_, A);
+`switch default
+nmos #(0.1)   (* const real width = 1.500, length = 0.600; *) M0( Y,
+     cds_globals.gnd_, B);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M3( net5,
+     cds_globals.vdd_, A);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M2( Y,
+     net5, B);
+
+endmodule

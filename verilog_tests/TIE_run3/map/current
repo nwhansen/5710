@@ -1,0 +1,33 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TIE_FIGHTER"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/nathan/5710/verilog_tests/TIE_run3"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Lib6710_08/TIE_FIGHTER/schematic" "TIE_FIGHTER" )
+ )
+( term
+ )
+( param
+ )
+( "TIE_FIGHTER" "ihnl/cds0/map" )
+ )

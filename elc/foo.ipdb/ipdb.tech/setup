@@ -1,7 +1,7 @@
 // ELC process setup file 
 // (c) 00 - 02 Cadence Design Systems, Inc.
 // Create By: db_setup (v1.2) 
-// Time     : 2014-10-29 20:45:52 (2014-10-30 02:45:52 GMT)
+// Time     : 2014-10-30 14:55:45 (2014-10-30 20:55:45 GMT)
 
  //  -- Table Define Section 
 process best { 

@@ -1,0 +1,90 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : addsub
+Version: G-2012.06-SP3
+Date   : Thu Oct 30 15:09:09 2014
+****************************************
+
+Operating Conditions: typical   Library: Lib6710_08
+Wire Load Model Mode: top
+
+  Startpoint: b[1] (input port)
+  Endpoint: result[8] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  b[1] (in)                                0.00       0.00 r
+  U198/Y (NOR2X1)                          0.31       0.31 f
+  U194/Y (NOR2X1)                          0.41       0.72 r
+  U193/Y (NAND2X1)                         0.24       0.96 f
+  U192/Y (NAND2X1)                         0.33       1.29 r
+  U185/Y (INV1)                            0.40       1.69 f
+  U169/Y (NAND2X1)                         0.32       2.01 r
+  U168/Y (NAND2X1)                         0.21       2.22 f
+  U167/Y (NAND2X1)                         0.32       2.54 r
+  U160/Y (INV1)                            0.40       2.94 f
+  U144/Y (NAND2X1)                         0.32       3.26 r
+  U143/Y (NAND2X1)                         0.21       3.47 f
+  U142/Y (NAND2X1)                         0.32       3.79 r
+  U135/Y (INV1)                            0.40       4.19 f
+  U119/Y (NAND2X1)                         0.32       4.51 r
+  U118/Y (NAND2X1)                         0.21       4.72 f
+  U117/Y (NAND2X1)                         0.32       5.04 r
+  U110/Y (INV1)                            0.40       5.44 f
+  U94/Y (NAND2X1)                          0.32       5.76 r
+  U93/Y (NAND2X1)                          0.21       5.97 f
+  U92/Y (NAND2X1)                          0.32       6.29 r
+  U85/Y (INV1)                             0.40       6.69 f
+  U56/Y (NAND2X1)                          0.32       7.01 r
+  U55/Y (NAND2X1)                          0.21       7.22 f
+  U54/Y (NAND2X1)                          0.36       7.58 r
+  U38/Y (NOR2X1)                           0.36       7.94 f
+  U37/Y (NOR2X1)                           0.32       8.26 r
+  U36/Y (NOR2X1)                           0.38       8.64 f
+  U35/Y (NAND2X1)                          0.30       8.94 r
+  U34/Y (NAND2X1)                          0.21       9.15 f
+  U33/Y (NAND2X1)                          0.17       9.32 r
+  result[8] (out)                          0.00       9.32 r
+  data arrival time                                   9.32
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : addsub
+Version: G-2012.06-SP3
+Date   : Thu Oct 30 15:09:09 2014
+****************************************
+
+Library(s) Used:
+
+    Lib6710_08 (File: /home/nathan/5710/synth/Lib6710_08.db)
+
+Number of ports:                           26
+Number of nets:                           203
+Number of cells:                          186
+Number of combinational cells:            186
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         37
+Number of references:                       3
+
+Combinational area:          0.000000
+Buf/Inv area:                0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:             0.000000
+Total area:                 undefined
+1

@@ -1,0 +1,14 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Y;
+
+reg  A;
+
+
+
+INV1 top(Y, A); 
+ 

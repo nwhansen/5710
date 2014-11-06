@@ -1,0 +1,18 @@
+// Verilog HDL and netlist files of
+// "Lib6710_08 TIE_FIGHTER schematic"
+
+// HDL models
+
+// HDL file - Lib6710_08, TIEHI, behavioral.
+/home/nathan/5710/Lib6710_08/TIEHI/behavioral/verilog.v
+
+
+// End HDL models
+
+// Netlisted models
+
+// netlist file - Lib6710_08, TIE_FIGHTER, schematic.
+ihnl/cds0/netlist
+
+
+// End HDL models

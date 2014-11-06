@@ -1,0 +1,2 @@
+database -open shmWave -shm -default -into shm.db
+probe -create -shm test  -all   -depth 1

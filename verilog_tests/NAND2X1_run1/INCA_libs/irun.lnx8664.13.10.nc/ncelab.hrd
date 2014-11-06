@@ -1,0 +1,36 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
+-DELAY_MODE
+-DELAY_MODE
+PATH
+-TYPDELAYS
+
+-neg_tchk
+
+-nonotifier
+
+-sdf_NOCheck_celltype
+
+-access
+
++r
+
+-pulse_e
+
+100
+
+-pulse_r
+
+100
+
+-neverwarn
+
+-timescale
+
+1ns/100ps
+
+-nostdout
+
+-nocopyright

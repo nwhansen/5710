@@ -1,0 +1,19 @@
+// Library - Lib6710_08, Cell - NAND2X1, View - schematic
+// LAST TIME SAVED: Oct 28 17:59:51 2014
+// NETLIST TIME: Oct 30 13:35:34 2014
+`timescale 1ns / 100ps 
+
+module NAND2X1 ( Y, A, B );
+
+output  Y;
+
+input  A, B;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "NAND2X1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

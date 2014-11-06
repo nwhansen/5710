@@ -1,0 +1,41 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
++nostdout
++nocopyright
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/nathan/5710/verilog_tests/TIE_run2/.simTmpNCCmd "
++mpssession+virtuoso12779
++mpshost+lab1-9
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nocopyright
+-gui
+-input
+/home/nathan/5710/verilog_tests/TIE_run2/.simTmpNCCmd
+-MPSSESSION
+virtuoso12779
+-MPSHOST
+lab1-9
+-MESSAGES
++EMGRLOG
+simout.tmp
+-XLSTIME
+1414703264
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.13.10.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.13.10.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.13.10.nc/hdl.var
+-XLNAME
+ncxlmode
+-XLVERSION
+"TOOL:	ncxlmode	13.10-s003"

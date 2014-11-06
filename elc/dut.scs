@@ -1,30 +1,23 @@
 // Generated for: spectre
-// Generated on: Oct 29 20:27:49 2014
+// Generated on: Oct 30 14:53:42 2014
 // Design library name: Lib6710_08
 // Design cell name: Allparts
 // Design view name: schematic
 simulator lang=spectre
 
 // Library name: Lib6710_08
-// Cell name: NAND2X1
+// Cell name: TIELO
 // View name: analog_extracted
-subckt NAND2X1 A B Y vdd gnd
-    \+3 (vdd B Y vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
-        ps=1.8e-06 pd=6e-06 m=1 region=sat
-    \+2 (Y A vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
-        ps=6e-06 pd=1.8e-06 m=1 region=sat
-    \+10 (B gnd) capacitor c=6.9471e-16 m=1
-    \+9 (A gnd) capacitor c=4.7709e-16 m=1
-    \+8 (vdd B) capacitor c=5.4405e-16 m=1
-    \+7 (vdd A) capacitor c=7.1145e-16 m=1
-    \+6 (Y gnd) capacitor c=1.79508e-15 m=1
-    \+5 (B Y) capacitor c=4.149e-16 m=1
-    \+4 (vdd Y) capacitor c=1.89678e-15 m=1
-    \+1 (Y B 6 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 ps=9e-07 \
-        pd=6e-06 m=1 region=sat
-    \+0 (6 A gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=1.35e-12 ps=6e-06 \
-        pd=9e-07 m=1 region=sat
-ends NAND2X1
+subckt TIELO Y vdd gnd
+    \+1 (4 4 vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+5 (gnd 4) capacitor c=5.6079e-16 m=1
+    \+4 (vdd 4) capacitor c=6.7797e-16 m=1
+    \+3 (Y gnd) capacitor c=4.7694e-16 m=1
+    \+2 (vdd 4) capacitor c=2.4678e-16 m=1
+    \+0 (Y 4 gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends TIELO
 // End of subcircuit definition.
 
 // Library name: Lib6710_08
@@ -50,21 +43,6 @@ ends NOR2X1
 // End of subcircuit definition.
 
 // Library name: Lib6710_08
-// Cell name: TIELO
-// View name: analog_extracted
-subckt TIELO Y vdd gnd
-    \+1 (4 4 2 2) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 ps=6e-06 \
-        pd=6e-06 m=1 region=sat
-    \+5 (3 4) capacitor c=5.6079e-16 m=1
-    \+4 (2 4) capacitor c=6.7797e-16 m=1
-    \+3 (2 4) capacitor c=2.4678e-16 m=1
-    \+2 (Y 3) capacitor c=4.7694e-16 m=1
-    \+0 (Y 4 3 3) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
-        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
-ends TIELO
-// End of subcircuit definition.
-
-// Library name: Lib6710_08
 // Cell name: TIEHI
 // View name: analog_extracted
 subckt TIEHI Y vdd gnd
@@ -78,3 +56,42 @@ subckt TIEHI Y vdd gnd
         ps=4.5e-06 pd=4.5e-06 m=1 region=sat
 ends TIEHI
 // End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: NAND2X1
+// View name: analog_extracted
+subckt NAND2X1 A B Y vdd gnd
+    \+3 (vdd B Y vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+2 (Y A vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
+        ps=6e-06 pd=1.8e-06 m=1 region=sat
+    \+10 (B gnd) capacitor c=6.9471e-16 m=1
+    \+9 (A gnd) capacitor c=4.7709e-16 m=1
+    \+8 (vdd B) capacitor c=5.4405e-16 m=1
+    \+7 (vdd A) capacitor c=7.1145e-16 m=1
+    \+6 (Y gnd) capacitor c=1.79508e-15 m=1
+    \+5 (B Y) capacitor c=4.149e-16 m=1
+    \+4 (vdd Y) capacitor c=1.89678e-15 m=1
+    \+1 (Y B 6 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 ps=9e-07 \
+        pd=6e-06 m=1 region=sat
+    \+0 (6 A gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=1.35e-12 ps=6e-06 \
+        pd=9e-07 m=1 region=sat
+ends NAND2X1
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: INV1
+// View name: analog_extracted
+subckt INV1 A Y vdd gnd
+    \+1 (Y A vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+5 (A gnd) capacitor c=6.5286e-16 m=1
+    \+4 (vdd A) capacitor c=4.4361e-16 m=1
+    \+3 (Y gnd) capacitor c=1.80804e-15 m=1
+    \+2 (vdd Y) capacitor c=1.54182e-15 m=1
+    \+0 (Y A gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends INV1
+// End of subcircuit definition.
+
+

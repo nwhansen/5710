@@ -1,0 +1,14 @@
+// Verilog HDL and netlist files of
+// "Lib6710_08 NOR2X1 schematic"
+
+// Netlisted models
+
+// netlist file - Lib6710_08, NOR2X1, schematic.
+ihnl/cds0/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

@@ -1,0 +1,20 @@
+// Library - Lib6710_08, Cell - TIE_FIGHTER, View - schematic
+// LAST TIME SAVED: Oct 30 15:13:23 2014
+// NETLIST TIME: Oct 30 15:13:28 2014
+`timescale 1ns / 100ps 
+
+module TIE_FIGHTER ( HI );
+
+output  HI;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "TIE_FIGHTER";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+TIEHI I9 ( HI);
+
+endmodule
