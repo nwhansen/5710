@@ -1,0 +1,9 @@
+
+// Library name: ExperimentalCells
+// Cell name: XOR_TEST
+// View name: schematic
+C0 (Y 0) capacitor c=100.0f m=1
+V1 (B 0) vsource type=pulse val0=0 val1=5 period=80n width=40n
+V0 (A 0) vsource type=pulse val0=0 val1=5 period=40n width=20n
+V2 (vdd! 0) vsource type=dc dc=5
+I6 (A B Y 0) XOR2X1

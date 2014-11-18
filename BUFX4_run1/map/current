@@ -1,0 +1,38 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "BUFX4"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/nathan/5710/BUFX4_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( inst
+ )
+( model
+( "Lib6710_08/BUFX4/schematic" "BUFX4" )
+( "Lib6710_08/INVX4/schematic" "INVX4" )
+ )
+( term
+ )
+( param
+ )
+( "BUFX4" "ihnl/cds1/map" )
+( "INVX4" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,12 @@
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+counter         cell    storedlimit_reg[3]      storedlimit_reg_3_
+counter         cell    storedlimit_reg[2]      storedlimit_reg_2_
+counter         cell    storedlimit_reg[1]      storedlimit_reg_1_
+counter         cell    storedlimit_reg[0]      storedlimit_reg_0_
+counter         cell    value_reg[0]            value_reg_0_
+counter         cell    value_reg[1]            value_reg_1_
+counter         cell    value_reg[2]            value_reg_2_
+counter         cell    value_reg[3]            value_reg_3_
+1

@@ -1,0 +1,4 @@
+    I0 (A net5 _net0 inh_inh_bn) INV1
+    I1 (net5 Y inh_inh_bn _net0) INVX4
+ends BUFX4
+// End of subcircuit definition.

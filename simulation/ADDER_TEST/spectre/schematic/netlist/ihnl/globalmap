@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+Lib6710_08/ADDER_TEST/schematic ADDER_TEST
+Lib6710_08/ADDER/schematic ADDER
+ExperimentalCells/ADDER_TEST/schematic ADDER_TEST_schematic
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

@@ -1,0 +1,10 @@
+nmos4 N1 ( cds_globals.gnd_, Y, S, B);
+nmos4 N0 ( cds_globals.gnd_, Y, net11, A);
+pmos4 P1 ( cds_globals.vdd_, B, net11, Y);
+pmos4 P0 ( cds_globals.vdd_, A, S, Y);
+`switch default
+nfet M0 ( net11, cds_globals.gnd_, S);
+`switch default
+pfet M1 ( net11, cds_globals.vdd_, S);
+
+endmodule

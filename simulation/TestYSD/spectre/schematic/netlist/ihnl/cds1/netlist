@@ -1,0 +1,12 @@
+
+// Library name: ExperimentalCells
+// Cell name: TestYSD
+// View name: schematic
+I0 (net1 net2 net4 net3 0 vdd!) YSDFlipFlop
+V0 (vdd! 0) vsource type=dc dc=5
+V2 (net2 0) vsource type=pulse val0=0 val1=5 period=30n delay=10n rise=1n \
+        fall=1n width=20n
+V1 (net1 0) vsource type=pulse val0=0 val1=5 period=40n rise=1n fall=1n \
+        width=20n
+C1 (net4 0) capacitor c=100f m=1
+C0 (net3 0) capacitor c=100f m=1

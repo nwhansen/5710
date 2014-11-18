@@ -1,0 +1,5 @@
+
+// Library name: ExperimentalCells
+// Cell name: XOR
+// View name: schematic
+subckt XOR A B Y inh_inh_bn

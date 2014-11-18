@@ -1,0 +1,32 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "testbuff"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/nathan/5710/simulation/testbuff/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "Lib6710_08/BUFX4/schematic" "BUFX4" )
+( "Lib6710_08/testbuff/schematic" "testbuff" )
+( "Lib6710_08/INV1/schematic" "INV1" )
+( "Lib6710_08/INVX4/schematic" "INVX4" )
+ )
+( term
+ )
+( param
+ )
+( "BUFX4" "ihnl/cds2/map" )
+( "INVX4" "ihnl/cds1/map" )
+( "INV1" "ihnl/cds0/map" )
+( "testbuff" "ihnl/cds3/map" )
+ )

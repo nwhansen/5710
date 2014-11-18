@@ -1,0 +1,14 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Y;
+
+reg  A, B, S;
+
+
+
+MUX2X1 top(Y, A, B, S); 
+ 

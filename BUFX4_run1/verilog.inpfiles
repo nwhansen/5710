@@ -1,0 +1,24 @@
+// Verilog HDL and netlist files of
+// "Lib6710_08 BUFX4 schematic"
+
+// HDL models
+
+// HDL file - Lib6710_08, INV1, functional.
+/home/nathan/5710/Lib6710_08/INV1/functional/verilog.v
+
+
+// End HDL models
+
+// Netlisted models
+
+// netlist file - Lib6710_08, INVX4, schematic.
+ihnl/cds0/netlist
+// netlist file - Lib6710_08, BUFX4, schematic.
+ihnl/cds1/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

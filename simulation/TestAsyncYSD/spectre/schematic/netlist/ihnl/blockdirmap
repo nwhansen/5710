@@ -1,0 +1,4 @@
+CADENCE IHNL01072
+
+ExperimentalCells YSDFlipFlopAsyncReset schematic cds0
+ExperimentalCells TestAsyncYSD schematic cds1

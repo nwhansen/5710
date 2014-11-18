@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 11 18:43:06 2014
+// Design library name: ExperimentalCells
+// Design cell name: ADDER_TEST
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

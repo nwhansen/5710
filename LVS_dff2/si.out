@@ -1,0 +1,94 @@
+@(#)$CDS: LVS version 6.1.6-64b 07/05/2013 16:09 (sjfnl165) $
+
+Command line: /uusoc/facility/cad_tools/Cadence/IC616.010_lnx86/tools.lnx86/dfII/bin/64bit/LVS -dir /home/nathan/5710/LVS_dff2 -l -s -t /home/nathan/5710/LVS_dff2/layout /home/nathan/5710/LVS_dff2/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /home/nathan/5710/LVS_dff2/layout/netlist
+       count
+        21              nets
+        7               terminals
+        14              pmos
+        14              nmos
+
+    Net-list summary for /home/nathan/5710/LVS_dff2/schematic/netlist
+       count
+        21              nets
+        7               terminals
+        14              pmos
+        14              nmos
+
+
+    Terminal correspondence points
+    N18       N5        CLK
+    N17       N11       CLR
+    N20       N8        DATA
+    N16       N6        NQ
+    N15       N16       Q
+    N14       N1        gnd!
+    N19       N0        vdd!
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  28      28     
+        total                   28      28     
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  21      21     
+        total                   21      21     
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   7       7      
+
+
+Probe files from /home/nathan/5710/LVS_dff2/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/nathan/5710/LVS_dff2/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

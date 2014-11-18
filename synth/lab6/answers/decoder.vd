@@ -1,0 +1,27 @@
+
+module decoder3_8 ( s, o );
+  input [2:0] s;
+  output [7:0] o;
+  wire   n12, n13, n14, n15, n16, n17, n18, n19, n20, n21, n22;
+
+  NOR2X1 U20 ( .A(n12), .B(n13), .Y(o[7]) );
+  INV1 U21 ( .A(n14), .Y(n13) );
+  NOR2X1 U22 ( .A(n15), .B(n16), .Y(n14) );
+  NOR2X1 U23 ( .A(n12), .B(n17), .Y(o[6]) );
+  NOR2X1 U24 ( .A(n12), .B(n18), .Y(o[5]) );
+  NOR2X1 U25 ( .A(n12), .B(n19), .Y(o[4]) );
+  NAND2X1 U26 ( .A(n15), .B(n20), .Y(n19) );
+  NOR2X1 U27 ( .A(n20), .B(n21), .Y(o[3]) );
+  NAND2X1 U28 ( .A(s[0]), .B(n12), .Y(n21) );
+  NOR2X1 U29 ( .A(s[2]), .B(n17), .Y(o[2]) );
+  NOR2X1 U30 ( .A(s[2]), .B(n18), .Y(o[1]) );
+  NOR2X1 U31 ( .A(n16), .B(n22), .Y(o[0]) );
+  NAND2X1 U32 ( .A(n15), .B(n12), .Y(n22) );
+  INV1 U33 ( .A(s[2]), .Y(n12) );
+  NAND2X1 U34 ( .A(n17), .B(n18), .Y(n16) );
+  NAND2X1 U35 ( .A(s[0]), .B(n20), .Y(n18) );
+  INV1 U36 ( .A(s[1]), .Y(n20) );
+  NAND2X1 U37 ( .A(s[1]), .B(n15), .Y(n17) );
+  INV1 U38 ( .A(s[0]), .Y(n15) );
+endmodule
+

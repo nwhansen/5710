@@ -1,0 +1,14 @@
+simVerilogNetlistFileList = '(
+    (("Lib6710_08" "BUFX4") 
+	("cds1/netlist" "cds1/map" "schematic")
+    ) 
+    (("Lib6710_08" "INVX4") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("Lib6710_08")
+simVerilogNetlistFileCellList = '(("Lib6710_08" 
+	("INVX4" "BUFX4")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

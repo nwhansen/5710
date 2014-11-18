@@ -1,0 +1,353 @@
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+  LAYER contactResistance REAL ;
+  MACRO drcSignature INTEGER ;
+END PROPERTYDEFINITIONS
+
+UNITS
+  DATABASE MICRONS 1000 ;
+END UNITS
+MANUFACTURINGGRID 0.15 ;
+LAYER nactive
+  TYPE MASTERSLICE ;
+END nactive
+
+LAYER pactive
+  TYPE MASTERSLICE ;
+END pactive
+
+LAYER active
+  TYPE MASTERSLICE ;
+END active
+
+LAYER nselect
+  TYPE IMPLANT ;
+  WIDTH 0.6 ;
+  SPACING 0.6 ;
+END nselect
+
+LAYER pselect
+  TYPE IMPLANT ;
+  WIDTH 0.6 ;
+  SPACING 0.6 ;
+END pselect
+
+LAYER ca
+  TYPE CUT ;
+  SPACING 0.9 ;
+  PROPERTY contactResistance 92.3 ;
+END ca
+
+LAYER poly
+  TYPE MASTERSLICE ;
+END poly
+
+LAYER cp
+  TYPE CUT ;
+  SPACING 0.9 ;
+  PROPERTY contactResistance 17.7 ;
+END cp
+
+LAYER elec
+  TYPE MASTERSLICE ;
+END elec
+
+LAYER ce
+  TYPE CUT ;
+  SPACING 0.9 ;
+  PROPERTY contactResistance 17 ;
+END ce
+
+LAYER cc
+  TYPE CUT ;
+  SPACING 0.9 ;
+  SPACING 0.9 ;
+END cc
+
+LAYER metal1
+  TYPE ROUTING ;
+  DIRECTION HORIZONTAL ;
+  PITCH 3 3 ;
+  WIDTH 0.9 ;
+  OFFSET 1.5 1.5 ;
+  SPACING 0.9 ;
+  RESISTANCE RPERSQ 0.09 ;
+  CAPACITANCE CPERSQDIST 3.2e-05 ;
+  EDGECAPACITANCE 7.5e-05 ;
+END metal1
+
+LAYER via
+  TYPE CUT ;
+  SPACING 0.9 ;
+  SPACING 0.9 ;
+  PROPERTY contactResistance 0.71 ;
+END via
+
+LAYER metal2
+  TYPE ROUTING ;
+  DIRECTION VERTICAL ;
+  PITCH 2.4 2.4 ;
+  WIDTH 0.9 ;
+  OFFSET 1.2 1.2 ;
+  SPACING 0.9 ;
+  RESISTANCE RPERSQ 0.09 ;
+  CAPACITANCE CPERSQDIST 1.6e-05 ;
+  EDGECAPACITANCE 6e-05 ;
+END metal2
+
+LAYER via2
+  TYPE CUT ;
+  SPACING 0.9 ;
+  SPACING 0.9 ;
+  PROPERTY contactResistance 0.81 ;
+END via2
+
+LAYER metal3
+  TYPE ROUTING ;
+  DIRECTION HORIZONTAL ;
+  PITCH 3 3 ;
+  WIDTH 1.5 ;
+  OFFSET 1.5 1.5 ;
+  SPACING 0.9 ;
+  RESISTANCE RPERSQ 0.05 ;
+  CAPACITANCE CPERSQDIST 1e-05 ;
+  EDGECAPACITANCE 4e-05 ;
+END metal3
+
+LAYER OVERLAP
+  TYPE OVERLAP ;
+END OVERLAP
+
+VIARULE viagen21 GENERATE
+  LAYER metal1 ;
+    WIDTH 1.2 TO 120 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal2 ;
+    WIDTH 1.2 TO 120 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER via ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END viagen21
+
+VIARULE viagen32 GENERATE
+  LAYER metal3 ;
+    WIDTH 1.2 TO 120 ;
+    ENCLOSURE 0.6 0.6 ;
+  LAYER metal2 ;
+    WIDTH 1.8 TO 180 ;
+    ENCLOSURE 0.6 0.6 ;
+  LAYER via2 ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 2.1 BY 2.1 ;
+END viagen32
+
+VIARULE M3_M2 GENERATE DEFAULT
+  LAYER metal2 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal3 ;
+    ENCLOSURE 0.6 0.6 ;
+  LAYER via2 ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END M3_M2
+
+VIARULE M2_M1 GENERATE DEFAULT
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal2 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER via ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END M2_M1
+
+VIARULE M1_POLY GENERATE DEFAULT
+  LAYER poly ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END M1_POLY
+
+VIARULE N_CC GENERATE
+  LAYER nactive ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END N_CC
+
+VIARULE P_CC GENERATE
+  LAYER pactive ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END P_CC
+
+VIARULE M1_ce GENERATE DEFAULT
+  LAYER elec ;
+    ENCLOSURE 0.6 0.6 ;
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END M1_ce
+
+VIARULE M1_ELEC GENERATE
+  LAYER elec ;
+    ENCLOSURE 0.6 0.6 ;
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END M1_ELEC
+
+VIARULE SUBTAP GENERATE
+  LAYER pactive ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 2.4 BY 2.4 ;
+END SUBTAP
+
+VIARULE M1_N GENERATE
+  LAYER nactive ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END M1_N
+
+VIARULE M1_P GENERATE
+  LAYER pactive ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+END M1_P
+
+VIA ruleVia2
+  LAYER metal2 ;
+    RECT -1.5 -0.9 1.5 0.9 ;
+  LAYER via2 ;
+    RECT -0.9 -0.3 -0.3 0.3 ;
+    RECT 0.3 -0.3 0.9 0.3 ;
+  LAYER metal3 ;
+    RECT -1.5 -0.9 1.5 0.9 ;
+END ruleVia2
+
+VIA ruleVia
+  LAYER metal1 ;
+    RECT -1.5 -0.9 1.5 0.9 ;
+  LAYER via ;
+    RECT -0.9 -0.3 -0.3 0.3 ;
+    RECT 0.3 -0.3 0.9 0.3 ;
+  LAYER metal2 ;
+    RECT -1.5 -0.9 1.5 0.9 ;
+END ruleVia
+
+VIA M2_M1_via
+  LAYER via ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+  LAYER metal2 ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+  LAYER metal1 ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+END M2_M1_via
+
+VIA M3_M2_via
+  LAYER via2 ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+  LAYER metal3 ;
+    RECT -0.9 -0.9 0.9 0.9 ;
+  LAYER metal2 ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+END M3_M2_via
+
+VIA M1_ce_via
+  LAYER ce ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+  LAYER elec ;
+    RECT -0.9 -0.9 0.9 0.9 ;
+  LAYER metal1 ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+END M1_ce_via
+
+VIA M1_POLY_via
+  LAYER cc ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+  LAYER poly ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+  LAYER metal1 ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+END M1_POLY_via
+
+SPACING
+  SAMENET active active 0.9 ;
+  SAMENET poly poly 0.9 ;
+  SAMENET elec elec 0.9 ;
+  SAMENET metal1 metal1 0.9 ;
+  SAMENET metal2 metal2 0.9 ;
+  SAMENET metal3 metal3 0.9 ;
+  SAMENET via via 0.9 ;
+  SAMENET via2 via2 0.9 ;
+  SAMENET cc via 0 STACK ;
+  SAMENET via via2 0 STACK ;
+END SPACING
+
+SITE CoreSite
+  CLASS CORE ;
+  SYMMETRY Y ;
+  SIZE 2.4 BY 27 ;
+END CoreSite
+
+SITE IOSite
+  CLASS PAD ;
+  SYMMETRY Y ;
+  SIZE 90 BY 253.8 ;
+END IOSite
+
+SITE core
+  CLASS CORE ;
+  SYMMETRY Y ;
+  SIZE 2.4 BY 24.6 ;
+END core
+
+SITE corner
+  CLASS PAD ;
+  SYMMETRY Y R90 ;
+  SIZE 184.2 BY 184.5 ;
+END corner
+
+SITE IO
+  CLASS PAD ;
+  SYMMETRY Y ;
+  SIZE 90 BY 300 ;
+END IO
+
+SITE dbl_core
+  CLASS CORE ;
+  SYMMETRY Y ;
+  SIZE 2.4 BY 54 ;
+END dbl_core
+
+END LIBRARY

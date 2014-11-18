@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 12 06:07:53 2014
+// Design library name: ExperimentalCells
+// Design cell name: MUX_TEST
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

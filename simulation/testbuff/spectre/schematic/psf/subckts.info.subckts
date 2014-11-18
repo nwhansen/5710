@@ -1,0 +1,32 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "12.1.1.096.isr12"
+"date" "6:10:45 PM, Thur Nov 13, 2014"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"INVX4" "subckt" (
+""
+"A Y inh_inh_bn _net0 0 vdd!"
+)
+"BUFX4" "subckt" (
+""
+"A Y inh_inh_bn _net0 vdd! 0"
+)
+"INV1" "subckt" (
+""
+"A Y inh_inh_bn _net0 vdd! 0"
+)
+END

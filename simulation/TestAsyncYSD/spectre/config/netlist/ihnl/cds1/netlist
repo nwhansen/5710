@@ -1,0 +1,13 @@
+
+// Library name: ExperimentalCells
+// Cell name: TestAsyncYSD
+// View name: schematic
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+V0 (vdd! 0) vsource type=dc dc=5
+V3 (D 0) vsource type=pulse val0=0 val1=5 period=90n delay=5n width=45n
+V2 (CLR 0) vsource type=pulse val0=5 val1=0 period=200n delay=5n \
+        width=100n
+V1 (CLK 0) vsource type=pulse val0=0 val1=5 period=40n width=20n
+C1 (Q 0) capacitor c=100f m=1
+C0 (net5 0) capacitor c=100f m=1
+I0 (CLK CLR D Q net5) YSDFlipFlopAsyncReset

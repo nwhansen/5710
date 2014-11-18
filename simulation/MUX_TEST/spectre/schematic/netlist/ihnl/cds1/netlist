@@ -1,0 +1,10 @@
+
+// Library name: ExperimentalCells
+// Cell name: MUX_TEST
+// View name: schematic
+I0 (A B Sel Y 0) MUX2X1
+V2 (A 0) vsource type=pulse val0=0 val1=5 period=40n width=20n
+V1 (B 0) vsource type=pulse val0=0 val1=5 period=80n width=40n
+V0 (Sel 0) vsource type=pulse val0=0 val1=5 period=160n width=80n
+V3 (vdd! 0) vsource type=dc dc=5
+C0 (Y 0) capacitor c=100.0f m=1

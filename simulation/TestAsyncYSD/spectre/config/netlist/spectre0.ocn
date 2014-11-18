@@ -1,0 +1,14 @@
+simulator( 'spectre )
+design(	 "/home/nathan/5710/simulation/TestAsyncYSD/spectre/config/netlist/netlist")
+resultsDir( "/home/nathan/5710/simulation/TestAsyncYSD/spectre/config" )
+modelFile( 
+    '("/uusoc/facility/cad_common/local/class/6710/F13/cadence/Spectre/T89Y.scs" "")
+)
+analysis('tran ?stop "1.2u"  )
+envOption(
+	'analysisOrder  list("tran") 
+)
+temp( 27 ) 
+run()
+selectResult( 'tran )
+plot(getData("/Q") getData("/D") getData("/CLR") getData("/CLK") )

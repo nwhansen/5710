@@ -11,5 +11,6 @@ simout.tmp
 /home/nathan/5710/verilog_tests/NAND2X1_run1/verilog.inpfiles
 +nostdout
 +nocopyright
-+compile
++elaborate
 "+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"

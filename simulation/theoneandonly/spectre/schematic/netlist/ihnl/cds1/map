@@ -1,0 +1,19 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "analog_extracted cmos_sch cmos.sch schematic spectre veriloga"
+  stopList "spectre"
+  hierDelim "."
+ )
+( net
+ )
+( inst
+ )
+( model
+( "YSDFlipFlopAsyncReset" "YSDFlipFlopAsyncReset" )
+ )
+( term
+ )
+( param
+ )
+ )

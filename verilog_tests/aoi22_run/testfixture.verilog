@@ -1,0 +1,24 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+wire answer;
+integer i;
+initial
+begin 
+
+   A = 1'b0;
+   B = 1'b0;
+   C = 1'b0;
+   D = 1'b0;
+   for(i = 0; i <= 4'b1111; i = i + 1) begin
+    {A,B,C,D} = i;
+    #1 if(Y != answer) begin
+       $display("Put in A=%b,B=%b,C=%b,D=%b Expected %b Got %b",A,B,C,D,answer,Y);
+    end
+   end
+end 
+
+assign answer = !(A&B|C&D);

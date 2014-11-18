@@ -1,0 +1,70 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : adder
+Version: G-2012.06-SP3
+Date   : Mon Nov 10 23:01:43 2014
+****************************************
+
+Operating Conditions: typical   Library: Lib6710_08
+Wire Load Model Mode: top
+
+  Startpoint: b[0] (input port)
+  Endpoint: c (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  b[0] (in)                                0.00       0.00 f
+  U23/Y (NAND2X1)                          0.43       0.43 r
+  U22/Y (NOR2X1)                           0.43       0.86 f
+  U21/Y (INV1)                             0.27       1.13 r
+  U19/Y (AOI22X1)                          0.61       1.73 f
+  U18/Y (NAND2X1)                          0.50       2.23 r
+  U14/Y (AOI22X1)                          0.66       2.89 f
+  U13/Y (NOR2X1)                           0.55       3.44 r
+  U12/Y (INV1)                             0.41       3.85 f
+  U11/Y (AOI22X1)                          0.40       4.25 r
+  U10/Y (INV1)                             0.25       4.50 f
+  c (out)                                  0.00       4.50 f
+  data arrival time                                   4.50
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : adder
+Version: G-2012.06-SP3
+Date   : Mon Nov 10 23:01:43 2014
+****************************************
+
+Library(s) Used:
+
+    Lib6710_08 (File: /home/nathan/5710/synth/lab6/Lib6710_08.db)
+
+Number of ports:                           13
+Number of nets:                            30
+Number of cells:                           22
+Number of combinational cells:             22
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          8
+Number of references:                       5
+
+Combinational area:          0.000000
+Buf/Inv area:                0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:             0.000000
+Total area:                 undefined
+1

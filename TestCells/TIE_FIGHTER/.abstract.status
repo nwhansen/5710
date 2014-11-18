@@ -1,0 +1,6 @@
+cUiSetViewStatus {TIE_FIGHTER} {layout} {0}
+cUiSetViewStatus {TIE_FIGHTER} {logical} {0}
+cUiSetViewStatus {TIE_FIGHTER} {abstract.pin} {0}
+cUiSetViewStatus {TIE_FIGHTER} {abstract.ext} {0}
+cUiSetViewStatus {TIE_FIGHTER} {abstract} {0}
+cUiSetViewStatus {TIE_FIGHTER} {abstract.ver} {0}

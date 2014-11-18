@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "XOR_TEST"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/nathan/5710/simulation/XOR_TEST/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "ExperimentalCells/XOR_TEST/schematic" "XOR_TEST" )
+( "Lib6710_08/XOR2X1/schematic" "XOR2X1" )
+ )
+( term
+ )
+( param
+ )
+( "XOR_TEST" "ihnl/cds1/map" )
+( "XOR2X1" "ihnl/cds2/map" )
+ )

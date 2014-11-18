@@ -1,0 +1,14 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Q, QBar;
+
+reg  CLK, CLR, D;
+
+
+
+YSDFlipFlopAsyncReset top(Q, QBar, CLK, CLR, D); 
+ 

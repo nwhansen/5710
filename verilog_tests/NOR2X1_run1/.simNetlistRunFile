@@ -1,4 +1,5 @@
-simVerilogNetlistFileList = '((("Lib6710_08" "NOR2X1") 
+simVerilogNetlistFileList = '(
+    (("Lib6710_08" "NOR2X1") 
 	("cds0/netlist" "cds0/map" "schematic")
     )
 )

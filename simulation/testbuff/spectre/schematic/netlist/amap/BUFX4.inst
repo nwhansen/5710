@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "INV1"
+"I1n" "INVX4"
+"Av" ":1v"
+"Yv" ":2v"
+"[@inh_bn:%:vdd!]v" ":3v"
+"[@inh_bn:%:gnd!]v" ":4v"

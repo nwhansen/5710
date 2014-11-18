@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TestAsyncYSD"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/nathan/5710/simulation/TestAsyncYSD/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "ExperimentalCells/YSDFlipFlopAsyncReset/schematic" "YSDFlipFlopAsyncReset" )
+( "ExperimentalCells/TestAsyncYSD/schematic" "TestAsyncYSD" )
+ )
+( term
+ )
+( param
+ )
+( "TestAsyncYSD" "ihnl/cds1/map" )
+( "YSDFlipFlopAsyncReset" "ihnl/cds0/map" )
+ )

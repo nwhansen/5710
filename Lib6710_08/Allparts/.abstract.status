@@ -1,0 +1,6 @@
+cUiSetViewStatus {Allparts} {layout} {0}
+cUiSetViewStatus {Allparts} {logical} {0}
+cUiSetViewStatus {Allparts} {abstract.pin} {0}
+cUiSetViewStatus {Allparts} {abstract.ext} {0}
+cUiSetViewStatus {Allparts} {abstract} {0}
+cUiSetViewStatus {Allparts} {abstract.ver} {0}

@@ -1,0 +1,11 @@
+simVerilogNetlistFileList = '(
+    (("ExperimentalCells" "XOR") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("ExperimentalCells")
+simVerilogNetlistFileCellList = '(("ExperimentalCells" 
+	("XOR")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

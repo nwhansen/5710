@@ -7,10 +7,10 @@
 +nostdout
 +nocopyright
 "+ncvlogargs+ -neverwarn -nostdout -nocopyright "
-"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright"
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
 "+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/nathan/5710/verilog_tests/INV1_run1/.simTmpNCCmd "
-+mpssession+virtuoso12779
-+mpshost+lab1-9
++mpssession+virtuoso17175
++mpshost+lab2-13
 -NOSTDOUT
 -NOCOPYRIGHT
 -neverwarn
@@ -19,14 +19,14 @@
 -input
 /home/nathan/5710/verilog_tests/INV1_run1/.simTmpNCCmd
 -MPSSESSION
-virtuoso12779
+virtuoso17175
 -MPSHOST
-lab1-9
+lab2-13
 -MESSAGES
 +EMGRLOG
 simout.tmp
 -XLSTIME
-1414703727
+1415844291
 -XLKEEP
 -XLMODE
 ./INCA_libs/irun.lnx8664.13.10.nc
@@ -40,4 +40,4 @@ ncxlmode
 -XLVERSION
 "TOOL:	ncxlmode	13.10-s003"
 -XLNAME
-./INCA_libs/irun.lnx8664.13.10.nc/lab1-9_19130
+./INCA_libs/irun.lnx8664.13.10.nc/lab2-13_18279

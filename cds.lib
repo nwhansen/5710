@@ -1,4 +1,4 @@
-# File Created by Nathan Hansen at Tue Oct 28 12:14:40 2014
+# File Created by Nathan Hansen at Mon Nov 10 21:15:50 2014
 # assisted by CdsLibEditor
 INCLUDE $CDK_DIR/cdssetup/cds.lib
 DEFINE UofU_TechLib_ami06 $CDK_DIR/lib/UofU_TechLib_ami06
@@ -10,3 +10,6 @@ DEFINE UofU_Pads /uusoc/facility/cad_common/local/Cadence/lib/OA/UofU_Pads
 DEFINE Lib6710_08 /home/nathan/5710/Lib6710_08
 DEFINE avTech /uusoc/facility/cad_tools/Cadence/ASSURA-F13/tools/assura/etc/avtech/avTech
 DEFINE gridTemplate gridTemplate
+DEFINE ExperimentalCells /home/nathan/5710/ExperimentalCells
+DEFINE TestCharacterize /home/nathan/5710/TestCharacterize
+DEFINE TestCells /home/nathan/5710/TestCells

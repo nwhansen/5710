@@ -1,0 +1,6 @@
+CADENCE IHNL01074
+
+Lib6710_08 INV1 schematic cds0
+Lib6710_08 INVX4 schematic cds1
+Lib6710_08 BUFX4 schematic cds2
+Lib6710_08 testbuff schematic cds3

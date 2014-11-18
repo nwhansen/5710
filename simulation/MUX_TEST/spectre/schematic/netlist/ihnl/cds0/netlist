@@ -1,0 +1,14 @@
+    P1 (A net11 Y vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    P0 (B S Y vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    N1 (Y net11 B 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    N0 (Y S A 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    M0 (net11 S 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M1 (net11 S vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+ends MUX2X1
+// End of subcircuit definition.

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  9 01:33:42 2014
+// Design library name: ExperimentalCells
+// Design cell name: TestAsyncYSD
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

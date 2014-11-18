@@ -1,0 +1,5 @@
+
+// Library name: ExperimentalCells
+// Cell name: YSDFlipFlopAsyncReset
+// View name: schematic
+subckt YSDFlipFlopAsyncReset CLK CLR D Q QBar inh_inh_bn _net0

@@ -1,0 +1,21 @@
+//Revision 8
+//NOTE
+// Default template for spectre
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config Dff3_test;
+design lab3.Dff3_test:schematic;
+liblist myLib;
+
+viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl;
+stoplist spectre;
+
+
+cell lab3.Dff3 binding :analog_extracted;
+cell lab3.Dff2 binding :analog_extracted;
+
+
+endconfig

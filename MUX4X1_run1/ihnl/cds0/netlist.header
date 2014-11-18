@@ -1,0 +1,19 @@
+// Library - Lib6710_08, Cell - MUX4X1, View - schematic
+// LAST TIME SAVED: Nov 10 14:58:47 2014
+// NETLIST TIME: Nov 10 14:59:11 2014
+`timescale 1ns / 100ps 
+
+module MUX4X1 ( Y, A, B, S );
+
+output  Y;
+
+input  A, B, S;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "MUX4X1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -1,0 +1,5 @@
+
+// Library name: TestCharacterize
+// Cell name: YSDFlipFlopAsyncReset
+// View name: schematic
+subckt YSDFlipFlopAsyncReset_schematic CLK CLR D Q QBar inh_inh_bn _net0

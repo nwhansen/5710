@@ -1,0 +1,19 @@
+// Library - Lib6710_08, Cell - BUFX4, View - schematic
+// LAST TIME SAVED: Nov 11 17:51:18 2014
+// NETLIST TIME: Nov 13 17:59:50 2014
+`timescale 1ns / 100ps 
+
+module BUFX4 ( Y, A );
+
+output  Y;
+
+input  A;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "BUFX4";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

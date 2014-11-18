@@ -1,0 +1,1 @@
+"ExperimentalCells.YSDFlipFlop.schematic.termorder" (("CLK" "D" "Q" "QBar" "[@inh_bn:%:gnd!]" "[@inh_bn:%:vdd!]") ("CLK" "D" "Q" "QBar" "[@inh_bn:%:gnd!]" "[@inh_bn:%:vdd!]"))

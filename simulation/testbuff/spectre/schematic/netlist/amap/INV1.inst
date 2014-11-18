@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"M0n" "UofU_Analog_Parts_pmos_spectre"
+"M1n" "UofU_Analog_Parts_nmos_spectre"
+"Av" ":1v"
+"Yv" ":2v"
+"[@inh_bn:%:gnd!]v" ":3v"
+"[@inh_bn:%:vdd!]v" ":4v"

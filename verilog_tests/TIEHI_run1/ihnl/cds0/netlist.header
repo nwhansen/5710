@@ -1,0 +1,18 @@
+// Library - Lib6710_08, Cell - TIEHI2, View - schematic
+// LAST TIME SAVED: Oct 30 17:25:37 2014
+// NETLIST TIME: Oct 30 17:27:25 2014
+`timescale 1ns / 100ps 
+
+module TIEHI2 ( Y );
+
+output  Y;
+tri0    net3;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "TIEHI2";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

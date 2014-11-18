@@ -1,0 +1,9 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.12s.
+*WARNING* (icLic-3) Could not get license Virtuoso_Layout_Suite_XL
+*WARNING* (icLic-21) License Virtuoso_Layout_Suite_XL ("Layout XL") is not available to run Layout XL.
+Trying to check out the license Virtuoso_Layout_Suite_GXL ("Layout GXL") instead.
+*INFO* (icLic-25) License Virtuoso_Layout_Suite_GXL ("Layout GXL") was used to run Layout XL.
+ License checked out successfully...
+INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
+INFO (ABS-19020): Starting @(#)$CDS: ui version 6.1.6-64b 07/05/2013 16:09 (sjfnl179) $, sub-version  IC6.1.6-64b.500.1 , on  2.6.18-194.el5
+INFO (ABS-19023): This is the OpenAccess variant of Abstract Generator.

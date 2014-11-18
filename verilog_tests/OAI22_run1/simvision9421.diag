@@ -1,0 +1,92 @@
+*** Message Type: info ***
+When: Wed Nov 12 20:47:32 MST 2014
+SimVision started.
+Version: TOOL:  simvision(64)   13.10-s003
+User: mhuff
+Host: lab2-29.eng.utah.edu
+Platform: Linux/x86_64/2.6.32-431.el6.x86_64
+Started: Wed Nov 12 20:47:32 MST 2014
+Command: /uusoc/facility/cad_tools/Cadence/INCISIV-F13/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:lab2-29.eng.utah.edu:59411 -64BIT -mpssession virtuoso8271 -nocopyright -mpshost lab2-29
+Work Directory: /home/nathan/5710/verilog_tests/OAI22_run1
+ 
+*** Message Type: info ***
+When: Wed Nov 12 20:47:38 MST 2014
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Nov 12 20:48:17 MST 2014
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed Nov 12 20:48:36 MST 2014
+Connect to Simulator
+      Design: worklib.test:template
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:      ncsim(64)       13.10-s003
+        User: mhuff
+        Host: lab2-29.eng.utah.edu
+Time Started: Wed Nov 12 20:47:20 MST 2014
+  Process ID: 9416
+   Directory: /home/nathan/5710/verilog_tests/OAI22_run1
+     Command: ncxlmode +delay_mode_path +typdelays -l simout.tmp /home/nathan/5710/verilog_tests/OAI22_run1/testfixture.template -f /home/nathan/5710/verilog_tests/OAI22_run1/verilog.inpfiles +nostdout +nocopyright {+ncvlogargs+ -neverwarn -nostdout -nocopyright } {+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright} {+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/nathan/5710/verilog_tests/OAI22_run1/.simTmpNCCmd } +mpssession+virtuoso8271 +mpshost+lab2-29
+
+ 
+*** Message Type: info ***
+When: Wed Nov 12 20:48:37 MST 2014
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed Nov 12 20:48:54 MST 2014
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Nov 12 20:55:45 MST 2014
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Nov 12 20:55:58 MST 2014
+Exit NC-Sim: user
+      Design: worklib.test:template
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:      ncsim(64)       13.10-s003
+        User: mhuff
+        Host: lab2-29.eng.utah.edu
+Time Started: Wed Nov 12 20:47:20 MST 2014
+  Process ID: 9416
+   Directory: /home/nathan/5710/verilog_tests/OAI22_run1
+     Command: ncxlmode +delay_mode_path +typdelays -l simout.tmp /home/nathan/5710/verilog_tests/OAI22_run1/testfixture.template -f /home/nathan/5710/verilog_tests/OAI22_run1/verilog.inpfiles +nostdout +nocopyright {+ncvlogargs+ -neverwarn -nostdout -nocopyright } {+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright} {+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/nathan/5710/verilog_tests/OAI22_run1/.simTmpNCCmd } +mpssession+virtuoso8271 +mpshost+lab2-29
+
+ 
+*** Message Type: error ***
+When: Wed Nov 12 20:56:03 MST 2014
+NC-Sim Crashed:
+      Design: worklib.test:template
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:      ncsim(64)       13.10-s003
+        User: mhuff
+        Host: lab2-29.eng.utah.edu
+Time Started: Wed Nov 12 20:47:20 MST 2014
+  Process ID: 9416
+   Directory: /home/nathan/5710/verilog_tests/OAI22_run1
+     Command: ncxlmode +delay_mode_path +typdelays -l simout.tmp /home/nathan/5710/verilog_tests/OAI22_run1/testfixture.template -f /home/nathan/5710/verilog_tests/OAI22_run1/verilog.inpfiles +nostdout +nocopyright {+ncvlogargs+ -neverwarn -nostdout -nocopyright } {+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright} {+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/nathan/5710/verilog_tests/OAI22_run1/.simTmpNCCmd } +mpssession+virtuoso8271 +mpshost+lab2-29
+      Design: worklib.test:template
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       13.10-s003
+        User: mhuff
+        Host: lab2-29.eng.utah.edu
+Time Started: Wed Nov 12 20:47:20 MST 2014
+  Process ID: 9416
+   Directory: /home/nathan/5710/verilog_tests/OAI22_run1
+     Command: ncxlmode +delay_mode_path +typdelays -l simout.tmp /home/nathan/5710/verilog_tests/OAI22_run1/testfixture.template -f /home/nathan/5710/verilog_tests/OAI22_run1/verilog.inpfiles +nostdout +nocopyright {+ncvlogargs+ -neverwarn -nostdout -nocopyright } {+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright} {+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/nathan/5710/verilog_tests/OAI22_run1/.simTmpNCCmd } +mpssession+virtuoso8271 +mpshost+lab2-29
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Wed Nov 12 20:56:10 MST 2014
+SimVision Exit.
+ 

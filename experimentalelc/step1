@@ -1,0 +1,21 @@
+# 
+# This script opens a new database (named foo - you can change that if
+# you like) and reads in the file that has all the subckt
+# descriptions. This file defaults to dut.scs and the name is set in
+# the elccfg file. It then analyzes all the subckts in that file to
+# discover what gates they are so ELC can generate test vectors for
+# step2. 
+
+db_open foo
+
+set_var EC_SPICE_SIMPLIFY true
+#set_var EC_HALF_WIDTH_HOLD_FLAG true
+set_var EC_SIM_NAME "spectre"
+set_var EC_SIM_TYPE "spectre"
+set_var EC_SPICE_SUPPLY1_NAMES "vdd"
+set_var EC_SPICE_SUPPLY0_NAMES "gnd"
+
+db_prepare -force
+db_gate 
+db_close
+exit

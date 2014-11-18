@@ -1,0 +1,21 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Y;
+
+
+
+TIEHI2 top(Y); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/nathan/5710/verilog_tests/TIEHI_run1/testfixture.verilog file
+`include "/home/nathan/5710/verilog_tests/TIEHI_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

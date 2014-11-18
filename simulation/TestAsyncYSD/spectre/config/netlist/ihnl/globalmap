@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+ExperimentalCells/TestAsyncYSD/schematic ExperimentalCells/TestAsyncYSD/schematic/spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl/ExperimentalCells_TestAsyncYSD_config/1 TestAsyncYSD
+ExperimentalCells/YSDFlipFlopAsyncReset/analog_extracted ExperimentalCells/YSDFlipFlopAsyncReset/analog_extracted/spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl/ExperimentalCells_TestAsyncYSD_config/0 YSDFlipFlopAsyncReset
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

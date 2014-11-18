@@ -1,0 +1,55 @@
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+  MACRO drcSignature INTEGER ;
+END PROPERTYDEFINITIONS
+
+MACRO TIELO
+  CLASS CORE ;
+  ORIGIN 1.5 1.2 ;
+  FOREIGN TIELO -1.5 -1.2 ;
+  SIZE 7.8 BY 30 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 3 2.1 4.2 5.25 ;
+    END
+  END Y
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 -1.2 1.8 3 ;
+        RECT -1.2 -1.2 6 1.2 ;
+    END
+  END gnd!
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 21.9 1.8 28.5 ;
+        RECT -1.2 25.5 6 28.5 ;
+    END
+  END vdd!
+  OBS
+    LAYER metal1 ;
+      RECT 2.7 20.1 4.2 21.3 ;
+      RECT 3 20.1 4.2 24.6 ;
+      RECT 3 2.1 4.2 5.25 ;
+      RECT 0.6 21.9 1.8 28.5 ;
+      RECT -1.2 25.5 6 28.5 ;
+      RECT -1.2 -1.2 6 1.2 ;
+      RECT 0.6 -1.2 1.8 3 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END TIELO
+
+END LIBRARY

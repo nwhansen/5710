@@ -1,0 +1,2 @@
+"TestCharacterize.YSDFlipFlopAsyncReset.analog_extracted.termorder" (("CLK" "CLR" "D" "Q" "QBar") ("CLK" "CLR" "D" "Q" "QBar"))
+"TestCharacterize.YSDFlipFlopAsyncReset.schematic.termorder" (("CLK" "CLR" "D" "Q" "QBar" "[@inh_bn:%:gnd!]" "[@inh_bn:%:vdd!]") ("CLK" "CLR" "D" "Q" "QBar" "[@inh_bn:%:gnd!]" "[@inh_bn:%:vdd!]"))

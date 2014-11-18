@@ -1,0 +1,23 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Y;
+
+reg  A, B, S;
+
+
+
+MUX2X1 top(Y, A, B, S); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/nathan/5710/MUX2X1_run1/testfixture.verilog file
+`include "/home/nathan/5710/MUX2X1_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

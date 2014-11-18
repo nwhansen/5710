@@ -1,0 +1,158 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 12.1.1.096.isr12 64bit -- 5 Aug 2013
+Copyright (C) 1989-2013 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: mhuff   Host: lab2-29   HostID: 629B846F   PID: 1637
+Memory  available: 26.2123 GB  physical: 33.5971 GB
+CPU Type: Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz
+          Processor PhysicalID CoreID Frequency
+              0         0        0     1197.0
+              1         0        0     1197.0
+              2         0        1     1197.0
+              3         0        1     1197.0
+              4         0        2     1197.0
+              5         0        2     1197.0
+              6         0        3     1862.0
+              7         0        3     1197.0
+
+
+Simulating `input.scs' on lab2-29 at 5:13:07 PM, Fri Nov 7, 2014 (process id: 1637).
+Current working directory: /home/nathan/5710/simulation/TestAsyncYSD/spectre/config/netlist
+Environment variable:
+    SPECTRE_DEFAULTS=-E
+Command line:
+     \
+        /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools/spectre/bin/64bit/spectre  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre0_921_1 -format psfxl -raw ../psf +lqtimeout  \
+        900 -maxw 5 -maxn 5
+spectre pid = 1637
+
+Loading /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/nathan/5710/simulation/TestAsyncYSD/spectre/config/netlist/input.scs
+Reading link:  /uusoc/facility/cad_tools/Cadence/MMSIM-F13
+Reading file:  /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /uusoc/facility/cad_common/local/class/6710/F13/cadence/Spectre/T89Y.scs
+
+Time for NDB Parsing: CPU = 103.984 ms, elapsed = 249.184 ms.
+Time accumulated: CPU = 103.984 ms, elapsed = 249.184 ms.
+Peak resident memory used = 38.1 Mbytes.
+
+Reading link:  /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/ahdl/constants.vams
+
+Time for Elaboration: CPU = 22.996 ms, elapsed = 25.1651 ms.
+Time accumulated: CPU = 126.98 ms, elapsed = 274.653 ms.
+Peak resident memory used = 43 Mbytes.
+
+
+Time for EDB Visiting: CPU = 999 us, elapsed = 1.30296 ms.
+Time accumulated: CPU = 127.979 ms, elapsed = 276.264 ms.
+Peak resident memory used = 43.4 Mbytes.
+
+
+Circuit inventory:
+              nodes 13
+            bsim3v3 16    
+          capacitor 41    
+            vsource 4     
+
+
+Time for parsing: CPU = 2 ms, elapsed = 3.29304 ms.
+Time accumulated: CPU = 130.979 ms, elapsed = 279.8 ms.
+Peak resident memory used = 44.2 Mbytes.
+
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_921_1, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 1.2 us)
+*************************************************
+
+Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(Q) = -103.57 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 3 ms, elapsed = 3.9742 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 1.2 us
+    step = 1.2 ns
+    maxstep = 24 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+    tran: time = 31.95 ns    (2.66 %), step = 3.803 ns     (317 m%)
+    tran: time = 92.36 ns     (7.7 %), step = 2.64 ns      (220 m%)
+    tran: time = 152.5 ns    (12.7 %), step = 3.917 ns     (326 m%)
+    tran: time = 210.3 ns    (17.5 %), step = 433 ps      (36.1 m%)
+    tran: time = 271.3 ns    (22.6 %), step = 3.716 ns     (310 m%)
+    tran: time = 333.5 ns    (27.8 %), step = 4.086 ns     (341 m%)
+    tran: time = 391 ns      (32.6 %), step = 3.677 ns     (306 m%)
+    tran: time = 452.1 ns    (37.7 %), step = 2.851 ns     (238 m%)
+    tran: time = 510.1 ns    (42.5 %), step = 1.191 ns    (99.2 m%)
+    tran: time = 572.4 ns    (47.7 %), step = 3.515 ns     (293 m%)
+    tran: time = 630.9 ns    (52.6 %), step = 4.608 ns     (384 m%)
+    tran: time = 692.1 ns    (57.7 %), step = 3.955 ns     (330 m%)
+    tran: time = 751 ns      (62.6 %), step = 3.677 ns     (306 m%)
+    tran: time = 810.6 ns    (67.5 %), step = 2.185 ns     (182 m%)
+    tran: time = 874.5 ns    (72.9 %), step = 5.524 ns     (460 m%)
+    tran: time = 933.5 ns    (77.8 %), step = 4.09 ns      (341 m%)
+    tran: time = 991.3 ns    (82.6 %), step = 3.703 ns     (309 m%)
+    tran: time = 1.052 us    (87.7 %), step = 3.954 ns     (330 m%)
+    tran: time = 1.111 us    (92.6 %), step = 1.801 ns     (150 m%)
+    tran: time = 1.171 us    (97.6 %), step = 2.882 ns     (240 m%)
+Number of accepted tran steps =             3467
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 3 ms, elapsed = 4.04596 ms.
+Intrinsic tran analysis time:    CPU = 415.936 ms, elapsed = 420.908 ms.
+Total time required for tran analysis `tran': CPU = 421.935 ms, elapsed = 432.514 ms.
+Time accumulated: CPU = 558.914 ms, elapsed = 1.98677 s.
+Peak resident memory used = 46.4 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (5:23:14 PM, Fri Nov 7, 2014):
+Time used: CPU = 623 ms, elapsed = 608 s (10m  7.7s), util. = 103e-03%.
+Time spent in licensing: elapsed = 179 ms.
+Peak memory used = 46.6 Mbytes.
+Simulation started at: 5:13:07 PM, Fri Nov 7, 2014, ended at: 5:23:14 PM, Fri Nov 7, 2014, with elapsed time (wall clock): 608 s (10m  7.7s).
+spectre completes with 0 errors, 1 warning, and 2 notices.

@@ -1,0 +1,10 @@
+tmLCVDPLList = '((nil viewType "schematicSymbol" viewName "functional"
+    cellName "pmos" libName "UofU_Analog_Parts"
+    ) 
+    (nil viewType "schematicSymbol" viewName "functional"
+    cellName "nmos" libName "UofU_Analog_Parts"
+    )
+)
+xxxInternalGlobAliasList = '(nil globalExists t)
+hnlVerilogCdsGlobalsFileName = "cds_globals"
+hnlVerilogCdsGlobalsModuleName = "cds_globals"

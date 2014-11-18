@@ -1,0 +1,4 @@
+CADENCE IHNL01072
+
+ExperimentalCells YSDFlipFlopAsyncReset analog_extracted nil spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl ExperimentalCells TestAsyncYSD config 0 cds0
+ExperimentalCells TestAsyncYSD schematic nil spectre_cmos_sch_cmos.sch_schematic_veriloga_ahdl ExperimentalCells TestAsyncYSD config 1 cds1

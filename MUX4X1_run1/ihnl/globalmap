@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+Lib6710_08/MUX4X1/schematic MUX4X1
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

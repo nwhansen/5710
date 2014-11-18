@@ -1,0 +1,61 @@
+// Generated for: spectre
+// Generated on: Nov 13 18:10:44 2014
+// Design library name: Lib6710_08
+// Design cell name: testbuff
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/uusoc/facility/cad_common/local/class/6710/F13/cadence/Spectre/T89Y.scs"
+
+// Library name: Lib6710_08
+// Cell name: INV1
+// View name: schematic
+subckt INV1 A Y inh_inh_bn _net0
+    M0 (Y A vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M1 (Y A 0 inh_inh_bn) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends INV1
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: INVX4
+// View name: schematic
+subckt INVX4 A Y inh_inh_bn _net0
+    M0 (Y A 0 _net0) ami06N w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+    M1 (Y A vdd! inh_inh_bn) ami06P w=12.0u l=600n as=1.8e-11 \
+        ad=1.8e-11 ps=27.0u pd=27.0u m=1 region=sat
+ends INVX4
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: BUFX4
+// View name: schematic
+subckt BUFX4 A Y inh_inh_bn _net0
+    I0 (A net5 _net0 inh_inh_bn) INV1
+    I1 (net5 Y inh_inh_bn _net0) INVX4
+ends BUFX4
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: testbuff
+// View name: schematic
+I0 (net2 net3 vdd! 0) BUFX4
+V0 (vdd! 0) vsource type=dc dc=5
+V1 (net2 0) vsource type=pulse val0=0 val1=5 period=20n width=10n
+C0 (net3 0) capacitor c=1p m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=100n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

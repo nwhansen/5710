@@ -1,0 +1,7 @@
+cUiSelectCellP {tri_nand2}
+cUiSetViewStatus {tri_nand2} {layout} {1}
+cUiSetViewStatus {tri_nand2} {logical} {0}
+cUiSetViewStatus {tri_nand2} {abstract.pin} {1}
+cUiSetViewStatus {tri_nand2} {abstract.ext} {1}
+cUiSetViewStatus {tri_nand2} {abstract} {1}
+cUiSetViewStatus {tri_nand2} {abstract.ver} {0}

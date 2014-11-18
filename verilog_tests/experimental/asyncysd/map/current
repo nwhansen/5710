@@ -1,0 +1,36 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "YSDFlipFlopAsyncReset"
+  repList "schematic cmos_sch behavioral functional"
+  stopList "behavioral functional"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/nathan/5710/verilog_tests/experimental/asyncysd"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( inst
+ )
+( model
+( "ExperimentalCells/YSDFlipFlopAsyncReset/schematic" "YSDFlipFlopAsyncReset" )
+ )
+( term
+ )
+( param
+ )
+( "YSDFlipFlopAsyncReset" "ihnl/cds0/map" )
+ )

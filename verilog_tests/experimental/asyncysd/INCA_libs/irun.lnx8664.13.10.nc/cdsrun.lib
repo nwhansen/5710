@@ -1,0 +1,2 @@
+include ../../../../../../../../uusoc/facility/cad_common/NCSU/CDK1.6beta.utah.2011/cdssetup/cds.lib
+define worklib ../worklib

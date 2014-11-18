@@ -1,0 +1,40 @@
+
+// Library name: Lib6710_08
+// Cell name: XOR2X1
+// View name: schematic
+subckt XOR2X1 A B Y inh_inh_bn
+    M11 (net8 A 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    M10 (net7 B 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    M3 (net20 B 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    M2 (net19 net7 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M1 (Y A net20 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    M0 (Y net8 net19 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M9 (net7 B vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M8 (net8 A vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M7 (net21 A vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M6 (net21 B vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M5 (Y net7 net21 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M4 (Y net8 net21 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+ends XOR2X1
+// End of subcircuit definition.
+
+// Library name: ExperimentalCells
+// Cell name: XOR_TEST
+// View name: schematic
+C0 (Y 0) capacitor c=100.0f m=1
+V1 (B 0) vsource type=pulse val0=0 val1=5 period=80n width=40n
+V0 (A 0) vsource type=pulse val0=0 val1=5 period=40n width=20n
+V2 (vdd! 0) vsource type=dc dc=5
+I6 (A B Y 0) XOR2X1

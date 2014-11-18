@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov 13 18:10:44 2014
+// Design library name: Lib6710_08
+// Design cell name: testbuff
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

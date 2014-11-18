@@ -1,0 +1,58 @@
+simulator lang=spectre insensitive=yes
+subckt DFF2 CLK CLRB D Q QB VDD GND N0111 N0112 N0113
+RN0111 N0111 12 resistor r=0
+RN0112 N0112 11 resistor r=0
+RN0113 N0113 10 resistor r=0
+\+25 (Q Qb vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+ps=1.8e-06 pd=9e-06 m=1 region=sat
+\+24 (vdd 12 Qb vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+23 (Qb CLRb vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+22 (vdd Qb 18 vdd) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=5.4e-12 \
+ps=9e-07 pd=1.8e-06 m=1 region=sat
+\+21 (18 CLK 12 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+20 (12 8 11 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+19 (11 9 vdd vdd) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
+ps=9e-06 pd=1.8e-06 m=1 region=sat
+\+18 (10 11 vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+ps=1.8e-06 pd=9e-06 m=1 region=sat
+\+17 (vdd CLRb 10 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+16 (10 8 9 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+15 (9 CLK 17 vdd) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=5.4e-12 \
+ps=9e-07 pd=1.8e-06 m=1 region=sat
+\+14 (17 D vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+13 (vdd CLK 8 vdd) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
+ps=9e-06 pd=1.8e-06 m=1 region=sat
+\+12 (Q Qb gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 ps=6e-06 \
+pd=6e-06 m=1 region=sat
+\+11 (Qb 12 16 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 \
+ps=9e-07 pd=6e-06 m=1 region=sat
+\+10 (16 CLRb gnd gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+9 (gnd Qb 15 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
+pd=1.8e-06 m=1 region=sat
+\+8 (15 8 12 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+7 (12 CLK 11 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+6 (11 9 gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+pd=1.8e-06 m=1 region=sat
+\+5 (gnd 11 14 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 ps=9e-07 \
+pd=6e-06 m=1 region=sat
+\+4 (14 CLRb 10 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+3 (10 CLK 9 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+2 (9 8 13 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
+pd=1.8e-06 m=1 region=sat
+\+1 (13 D gnd gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+0 (gnd CLK 8 gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+pd=1.8e-06 m=1 region=sat
+ends DFF2

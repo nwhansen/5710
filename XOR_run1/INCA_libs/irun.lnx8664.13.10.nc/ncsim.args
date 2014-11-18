@@ -1,0 +1,41 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
++nostdout
++nocopyright
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/nathan/5710/XOR_run1/.simTmpNCCmd "
++mpssession+virtuoso17175
++mpshost+lab2-13
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nocopyright
+-gui
+-input
+/home/nathan/5710/XOR_run1/.simTmpNCCmd
+-MPSSESSION
+virtuoso17175
+-MPSHOST
+lab2-13
+-MESSAGES
++EMGRLOG
+simout.tmp
+-XLSTIME
+1415844080
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.13.10.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.13.10.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.13.10.nc/hdl.var
+-XLNAME
+ncxlmode
+-XLVERSION
+"TOOL:	ncxlmode	13.10-s003"

@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+Lib6710_08/AOI22X1/schematic AOI22X1
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

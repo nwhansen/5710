@@ -1,0 +1,58 @@
+`switch default
+pfet M27 ( Cout, cds_globals.vdd_, net014);
+`switch default
+pfet M26 ( S, cds_globals.vdd_, net023);
+`switch default
+pfet M15 ( net023, net35, net014);
+`switch default
+pfet M14 ( net35, cds_globals.vdd_, B);
+`switch default
+pfet M13 ( net35, cds_globals.vdd_, Cin);
+`switch default
+pfet M10 ( net35, cds_globals.vdd_, A);
+`switch default
+pfet M7 ( net023, net53, A);
+`switch default
+pfet M6 ( net53, net54, B);
+`switch default
+pfet M5 ( net54, cds_globals.vdd_, Cin);
+`switch default
+pfet M4 ( net55, cds_globals.vdd_, B);
+`switch default
+pfet M3 ( net46, cds_globals.vdd_, B);
+`switch default
+pfet M2 ( net014, net55, A);
+`switch default
+pfet M1 ( net014, net46, Cin);
+`switch default
+pfet M0 ( net46, cds_globals.vdd_, A);
+`switch default
+nfet M29 ( Cout, cds_globals.gnd_, net014);
+`switch default
+nfet M28 ( S, cds_globals.gnd_, net023);
+`switch default
+nfet M25 ( net51, cds_globals.gnd_, Cin);
+`switch default
+nfet M24 ( net50, net51, B);
+`switch default
+nfet M23 ( net023, net50, A);
+`switch default
+nfet M22 ( net34, cds_globals.gnd_, Cin);
+`switch default
+nfet M21 ( net34, cds_globals.gnd_, B);
+`switch default
+nfet M20 ( net014, net52, A);
+`switch default
+nfet M19 ( net34, cds_globals.gnd_, A);
+`switch default
+nfet M18 ( net52, cds_globals.gnd_, B);
+`switch default
+nfet M17 ( net023, net34, net014);
+`switch default
+nfet M16 ( net45, cds_globals.gnd_, B);
+`switch default
+nfet M8 ( net014, net45, Cin);
+`switch default
+nfet M11 ( net45, cds_globals.gnd_, A);
+
+endmodule

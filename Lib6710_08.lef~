@@ -1,0 +1,730 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+  MACRO drcSignature INTEGER ;
+END PROPERTYDEFINITIONS
+
+MACRO AOI22X1
+  CLASS CORE ;
+  ORIGIN 0.3 0 ;
+  FOREIGN AOI22X1 -0.3 0 ;
+  SIZE 12.6 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT 7.8 -1.2 9 4.5 ;
+        RECT -1.2 -1.2 13.2 1.2 ;
+    END
+  END gnd!
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT 5.4 19.2 6.6 28.2 ;
+        RECT -1.2 25.8 13.2 28.2 ;
+    END
+  END vdd!
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 15.3 1.8 24.6 ;
+        RECT 3 11.25 4.2 16.5 ;
+        RECT 0.6 15.3 11.4 16.5 ;
+        RECT 10.2 15.3 11.4 24.6 ;
+    END
+  END Y
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 12.9 1.8 14.1 ;
+    END
+  END C
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 5.4 12.9 6.6 14.1 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 7.8 9.9 9 11.1 ;
+    END
+  END B
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 10.2 12.9 11.4 14.1 ;
+    END
+  END D
+  OBS
+    LAYER metal1 ;
+      RECT 0.6 12.9 1.8 14.1 ;
+      RECT 3 2.1 4.2 8.25 ;
+      RECT 5.4 12.9 6.6 14.1 ;
+      RECT 5.4 2.1 6.6 4.8 ;
+      RECT 3 17.4 9 18.3 ;
+      RECT 3 17.4 4.2 24.6 ;
+      RECT 7.8 17.4 9 24.6 ;
+      RECT 7.8 9.9 9 11.1 ;
+      RECT 3 11.25 4.2 16.5 ;
+      RECT 0.6 15.3 11.4 16.5 ;
+      RECT 0.6 15.3 1.8 24.6 ;
+      RECT 10.2 15.3 11.4 24.6 ;
+      RECT 10.2 12.9 11.4 14.1 ;
+      RECT 10.2 2.1 11.4 9 ;
+      RECT 5.7 7.95 11.4 9 ;
+      RECT 0.6 2.1 1.8 10.05 ;
+      RECT 5.7 7.95 6.6 10.05 ;
+      RECT 0.6 9.15 6.6 10.05 ;
+      RECT 5.4 19.2 6.6 28.2 ;
+      RECT -1.2 25.8 13.2 28.2 ;
+      RECT -1.2 -1.2 13.2 1.2 ;
+      RECT 7.8 -1.2 9 4.5 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END AOI22X1
+
+MACRO FILLER
+  CLASS CORE ;
+  ORIGIN 0.3 0 ;
+  FOREIGN FILLER -0.3 0 ;
+  SIZE 3 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT -1.2 25.8 3.6 28.2 ;
+    END
+  END vdd!
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT -1.2 -1.2 3.6 1.2 ;
+    END
+  END gnd!
+  OBS
+    LAYER metal1 ;
+      RECT -1.2 25.8 3.6 28.2 ;
+      RECT -1.2 -1.2 3.6 1.2 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END FILLER
+
+MACRO INV1
+  CLASS CORE ;
+  ORIGIN 2.55 0 ;
+  FOREIGN INV1 -2.55 0 ;
+  SIZE 5.4 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN gnd!
+    DIRECTION OUTPUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT -1.65 -1.2 -0.45 3.75 ;
+        RECT -3.45 -1.2 3.75 1.2 ;
+    END
+  END gnd!
+  PIN vdd!
+    DIRECTION OUTPUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT -1.65 20.4 -0.45 28.5 ;
+        RECT -3.45 25.5 3.75 28.5 ;
+    END
+  END vdd!
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.75 2.85 1.95 22.8 ;
+    END
+  END Y
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT -1.35 8.1 -0.15 9.3 ;
+    END
+  END A
+  OBS
+    LAYER metal1 ;
+      RECT -1.35 8.1 -0.15 9.3 ;
+      RECT 0.75 2.85 1.95 22.8 ;
+      RECT -1.65 20.4 -0.45 28.5 ;
+      RECT -3.45 25.5 3.75 28.5 ;
+      RECT -3.45 -1.2 3.75 1.2 ;
+      RECT -1.65 -1.2 -0.45 3.75 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END INV1
+
+MACRO MUX2X1
+  CLASS CORE ;
+  ORIGIN 6.3 0 ;
+  FOREIGN MUX2X1 -6.3 0 ;
+  SIZE 12.6 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER via ;
+        RECT 4.5 22.2 5.1 22.8 ;
+        RECT 4.5 9.3 5.1 9.9 ;
+      LAYER metal1 ;
+        RECT -0.6 9 5.4 10.2 ;
+        RECT -0.6 2.55 0.6 10.2 ;
+        RECT -5.7 6.9 0.6 8.1 ;
+        RECT 4.2 21.9 5.4 24.6 ;
+      LAYER metal2 ;
+        RECT 4.2 9 5.4 23.1 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER via ;
+        RECT 2.1 22.5 2.7 23.1 ;
+        RECT 2.1 19.2 2.7 19.8 ;
+        RECT 2.1 7.2 2.7 7.8 ;
+      LAYER metal1 ;
+        RECT 1.8 2.4 3 8.1 ;
+        RECT 1.8 18.9 3 20.1 ;
+        RECT 1.8 22.2 3 24.9 ;
+      LAYER metal2 ;
+        RECT 1.8 6.9 3 23.4 ;
+    END
+  END Y
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER via ;
+        RECT -0.3 19.2 0.3 19.8 ;
+        RECT 4.5 5.1 5.1 5.7 ;
+      LAYER metal1 ;
+        RECT 4.2 2.7 5.4 6 ;
+        RECT -0.6 18.9 0.6 24.6 ;
+        RECT -5.55 18.9 0.6 20.1 ;
+      LAYER metal2 ;
+        RECT -0.6 4.8 5.4 6 ;
+        RECT -0.6 4.8 0.6 20.1 ;
+    END
+  END B
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT -5.4 -1.2 -4.2 3.6 ;
+        RECT -7.2 -1.2 7.2 1.2 ;
+    END
+  END gnd!
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT -5.4 22.2 -4.2 27.6 ;
+        RECT -6.6 26.4 6.6 27.6 ;
+    END
+  END vdd!
+  PIN S
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT -5.1 15.9 1.8 17.1 ;
+    END
+  END S
+  OBS
+    LAYER metal1 ;
+      RECT -3 21.9 -1.8 24.6 ;
+      RECT -3 2.7 -1.8 3.9 ;
+      RECT -5.55 18.9 0.6 20.1 ;
+      RECT -0.6 18.9 0.6 24.6 ;
+      RECT -5.1 15.9 1.8 17.1 ;
+      RECT 1.8 22.2 3 24.9 ;
+      RECT 1.8 18.9 3 20.1 ;
+      RECT 1.8 2.4 3 8.1 ;
+      RECT -3 13.8 4.2 15 ;
+      RECT 4.2 21.9 5.4 24.6 ;
+      RECT -5.7 6.9 0.6 8.1 ;
+      RECT -0.6 2.55 0.6 10.2 ;
+      RECT -0.6 9 5.4 10.2 ;
+      RECT 4.2 2.7 5.4 6 ;
+      RECT -5.4 22.2 -4.2 27.6 ;
+      RECT -6.6 26.4 6.6 27.6 ;
+      RECT -7.2 -1.2 7.2 1.2 ;
+      RECT -5.4 -1.2 -4.2 3.6 ;
+    LAYER metal2 ;
+      RECT -3 2.7 -1.8 23.1 ;
+      RECT 1.8 6.9 3 23.4 ;
+      RECT 4.2 9 5.4 23.1 ;
+      RECT -0.6 4.8 5.4 6 ;
+      RECT -0.6 4.8 0.6 20.1 ;
+    LAYER via ;
+      RECT -2.7 22.2 -2.1 22.8 ;
+      RECT -2.7 14.1 -2.1 14.7 ;
+      RECT -2.7 3 -2.1 3.6 ;
+      RECT -0.3 19.2 0.3 19.8 ;
+      RECT 2.1 22.5 2.7 23.1 ;
+      RECT 2.1 19.2 2.7 19.8 ;
+      RECT 2.1 7.2 2.7 7.8 ;
+      RECT 4.5 22.2 5.1 22.8 ;
+      RECT 4.5 9.3 5.1 9.9 ;
+      RECT 4.5 5.1 5.1 5.7 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END MUX2X1
+
+MACRO NAND2X1
+  CLASS CORE ;
+  ORIGIN 0.3 0 ;
+  FOREIGN NAND2X1 -0.3 0 ;
+  SIZE 7.8 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 22.2 1.8 28.2 ;
+        RECT 5.4 22.2 6.6 28.2 ;
+        RECT -1.2 25.8 8.4 28.2 ;
+    END
+  END vdd!
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 -1.2 1.8 4.5 ;
+        RECT -1.2 -1.2 8.4 1.2 ;
+    END
+  END gnd!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 15.9 1.8 17.1 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 5.4 9.9 6.6 11.1 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 3 5.4 4.2 24.6 ;
+        RECT 4.5 2.1 5.7 6.6 ;
+        RECT 3 5.4 5.7 6.6 ;
+    END
+  END Y
+  OBS
+    LAYER metal1 ;
+      RECT 0.6 15.9 1.8 17.1 ;
+      RECT 4.5 2.1 5.7 6.6 ;
+      RECT 3 5.4 5.7 6.6 ;
+      RECT 3 5.4 4.2 24.6 ;
+      RECT 5.4 9.9 6.6 11.1 ;
+      RECT 0.6 22.2 1.8 28.2 ;
+      RECT 5.4 22.2 6.6 28.2 ;
+      RECT -1.2 25.8 8.4 28.2 ;
+      RECT -1.2 -1.2 8.4 1.2 ;
+      RECT 0.6 -1.2 1.8 4.5 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END NAND2X1
+
+MACRO NOR2X1
+  CLASS CORE ;
+  ORIGIN 0.3 0 ;
+  FOREIGN NOR2X1 -0.3 0 ;
+  SIZE 7.8 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 15.9 1.8 17.1 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 5.4 9.9 6.6 11.1 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 3 2.1 4.2 18.3 ;
+        RECT 3 17.1 5.7 18.3 ;
+        RECT 4.5 17.1 5.7 24.6 ;
+    END
+  END Y
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 19.05 1.8 28.2 ;
+        RECT -1.2 25.8 8.4 28.2 ;
+    END
+  END vdd!
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 -1.2 1.8 3 ;
+        RECT 5.4 -1.2 6.6 3 ;
+        RECT -1.2 -1.2 8.4 1.2 ;
+    END
+  END gnd!
+  OBS
+    LAYER metal1 ;
+      RECT 0.6 15.9 1.8 17.1 ;
+      RECT 3 2.1 4.2 18.3 ;
+      RECT 3 17.1 5.7 18.3 ;
+      RECT 4.5 17.1 5.7 24.6 ;
+      RECT 5.4 9.9 6.6 11.1 ;
+      RECT 0.6 19.05 1.8 28.2 ;
+      RECT -1.2 25.8 8.4 28.2 ;
+      RECT -1.2 -1.2 8.4 1.2 ;
+      RECT 0.6 -1.2 1.8 3 ;
+      RECT 5.4 -1.2 6.6 3 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END NOR2X1
+
+MACRO TIEHI
+  CLASS CORE ;
+  ORIGIN 2.7 0 ;
+  FOREIGN TIEHI -2.7 0 ;
+  SIZE 5.4 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN vdd!
+    DIRECTION OUTPUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT -1.8 20.4 -0.6 28.5 ;
+        RECT -3.6 25.5 3.6 28.5 ;
+    END
+  END vdd!
+  PIN gnd!
+    DIRECTION OUTPUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT -1.8 -1.2 -0.6 3.75 ;
+        RECT -3.6 -1.2 3.6 1.2 ;
+    END
+  END gnd!
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 15.9 1.8 22.8 ;
+    END
+  END Y
+  OBS
+    LAYER metal1 ;
+      RECT 0.6 15.9 1.8 22.8 ;
+      RECT 0.6 2.85 1.8 6 ;
+      RECT 0.3 4.8 1.8 6 ;
+      RECT -1.8 20.4 -0.6 28.5 ;
+      RECT -3.6 25.5 3.6 28.5 ;
+      RECT -3.6 -1.2 3.6 1.2 ;
+      RECT -1.8 -1.2 -0.6 3.75 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END TIEHI
+
+MACRO TIELO
+  CLASS CORE ;
+  ORIGIN 0.3 0 ;
+  FOREIGN TIELO -0.3 0 ;
+  SIZE 5.4 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 3 2.1 4.2 5.25 ;
+    END
+  END Y
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 -1.2 1.8 3 ;
+        RECT -1.2 -1.2 6 1.2 ;
+    END
+  END gnd!
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 21.9 1.8 28.5 ;
+        RECT -1.2 25.5 6 28.5 ;
+    END
+  END vdd!
+  OBS
+    LAYER metal1 ;
+      RECT 2.7 20.1 4.2 21.3 ;
+      RECT 3 20.1 4.2 24.6 ;
+      RECT 3 2.1 4.2 5.25 ;
+      RECT 0.6 21.9 1.8 28.5 ;
+      RECT -1.2 25.5 6 28.5 ;
+      RECT -1.2 -1.2 6 1.2 ;
+      RECT 0.6 -1.2 1.8 3 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END TIELO
+
+MACRO XOR2X1
+  CLASS CORE ;
+  ORIGIN 9.9 0 ;
+  FOREIGN XOR2X1 -9.9 0 ;
+  SIZE 19.8 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT -6.75 21.3 -5.55 27.6 ;
+        RECT -1.8 18.3 -0.6 27.6 ;
+        RECT 7.8 18.3 9 27.6 ;
+        RECT -10.2 26.4 10.2 27.6 ;
+    END
+  END vdd!
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT -6.75 -1.2 -5.55 3.6 ;
+        RECT -1.8 -1.2 -0.6 5.1 ;
+        RECT 7.8 -1.2 9 5.1 ;
+        RECT -10.8 -1.2 10.8 1.2 ;
+    END
+  END gnd!
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT -7.95 9.9 5.4 11.1 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT -5.55 12.9 9.75 14.1 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER via ;
+        RECT 3.3 18.3 3.9 18.9 ;
+        RECT 3.3 4.5 3.9 5.1 ;
+        RECT 4.5 16.2 5.1 16.8 ;
+      LAYER metal1 ;
+        RECT 4.2 15.9 5.4 17.1 ;
+        RECT 3 2.7 4.2 5.4 ;
+        RECT 3 18 4.2 23.7 ;
+      LAYER metal2 ;
+        RECT 3 15.9 5.4 17.1 ;
+        RECT 3 4.2 4.2 19.2 ;
+    END
+  END Y
+  OBS
+    LAYER metal1 ;
+      RECT -9.15 21 -7.95 23.7 ;
+      RECT -9.15 2.7 -7.95 3.9 ;
+      RECT -4.35 21 -3.15 23.7 ;
+      RECT -4.35 2.7 -3.15 3.9 ;
+      RECT 0.6 18 1.8 23.7 ;
+      RECT -9.15 15.9 3 17.1 ;
+      RECT 3 18 4.2 23.7 ;
+      RECT 3 2.7 4.2 5.4 ;
+      RECT 4.2 15.9 5.4 17.1 ;
+      RECT -7.95 9.9 5.4 11.1 ;
+      RECT 5.4 18 6.6 23.7 ;
+      RECT -4.35 7.5 7.65 8.7 ;
+      RECT -5.55 12.9 9.75 14.1 ;
+      RECT -6.75 21.3 -5.55 27.6 ;
+      RECT -1.8 18.3 -0.6 27.6 ;
+      RECT 7.8 18.3 9 27.6 ;
+      RECT -10.2 26.4 10.2 27.6 ;
+      RECT -10.8 -1.2 10.8 1.2 ;
+      RECT -6.75 -1.2 -5.55 3.6 ;
+      RECT -1.8 -1.2 -0.6 5.1 ;
+      RECT 7.8 -1.2 9 5.1 ;
+    LAYER metal2 ;
+      RECT -9.15 2.7 -7.95 22.2 ;
+      RECT -4.35 2.7 -3.15 22.2 ;
+      RECT 3 15.9 5.4 17.1 ;
+      RECT 3 4.2 4.2 19.2 ;
+      RECT 0.6 21 6.6 22.2 ;
+    LAYER via ;
+      RECT -8.85 21.3 -8.25 21.9 ;
+      RECT -8.85 16.2 -8.25 16.8 ;
+      RECT -8.85 3 -8.25 3.6 ;
+      RECT -4.05 21.3 -3.45 21.9 ;
+      RECT -4.05 7.8 -3.45 8.4 ;
+      RECT -4.05 3 -3.45 3.6 ;
+      RECT 0.9 21.3 1.5 21.9 ;
+      RECT 3.3 18.3 3.9 18.9 ;
+      RECT 3.3 4.5 3.9 5.1 ;
+      RECT 4.5 16.2 5.1 16.8 ;
+      RECT 5.7 21.3 6.3 21.9 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END XOR2X1
+
+MACRO tri_nand2
+  CLASS CORE ;
+  ORIGIN 5.1 0 ;
+  FOREIGN tri_nand2 -5.1 0 ;
+  SIZE 10.35 BY 27.6 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN NE
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 5.1 17.55 6.3 18.75 ;
+    END
+  END NE
+  PIN E
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 5.25 13.8 6.45 15 ;
+    END
+  END E
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT -3.9 14.7 -2.7 15.9 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.3 14.7 1.5 15.9 ;
+    END
+  END B
+  PIN F
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 3 3 4.2 22.8 ;
+    END
+  END F
+  PIN vdd!
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER metal1 ;
+        RECT -1.8 20.4 -0.6 28.5 ;
+        RECT -6 25.5 6 28.5 ;
+    END
+  END vdd!
+  PIN gnd!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER metal1 ;
+        RECT -4.2 -1.2 -3 5.4 ;
+        RECT -6 -1.2 6 1.2 ;
+    END
+  END gnd!
+  OBS
+    LAYER metal1 ;
+      RECT -3.9 14.7 -2.7 15.9 ;
+      RECT 0.3 14.7 1.5 15.9 ;
+      RECT -4.2 18 1.8 19.2 ;
+      RECT -4.2 18 -3 22.8 ;
+      RECT 0.6 18 1.8 22.8 ;
+      RECT 3 3 4.2 22.8 ;
+      RECT -1.8 20.4 -0.6 28.5 ;
+      RECT -6 25.5 6 28.5 ;
+      RECT -6 -1.2 6 1.2 ;
+      RECT -4.2 -1.2 -3 5.4 ;
+      RECT 5.1 17.55 6.3 18.75 ;
+      RECT 5.25 13.8 6.45 15 ;
+  END
+  PROPERTY drcSignature 14016396 ;
+END tri_nand2
+
+END LIBRARY

@@ -1,0 +1,19 @@
+// Library - Lib6710_08, Cell - ADDER, View - schematic
+// LAST TIME SAVED: Nov  8 14:34:43 2014
+// NETLIST TIME: Nov  9 17:31:36 2014
+`timescale 1ns / 100ps 
+
+module ADDER ( Cout, S, A, B, Cin );
+
+output  Cout, S;
+
+input  A, B, Cin;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "ADDER";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

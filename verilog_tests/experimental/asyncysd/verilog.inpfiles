@@ -1,0 +1,14 @@
+// Verilog HDL and netlist files of
+// "ExperimentalCells YSDFlipFlopAsyncReset schematic"
+
+// Netlisted models
+
+// netlist file - ExperimentalCells, YSDFlipFlopAsyncReset, schematic.
+ihnl/cds0/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

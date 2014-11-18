@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"ExperimentalCells\" \"XOR_TEST\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Nov 12 06:18:21 2014"
+"title" ""
+"analysisList" "()"
+END

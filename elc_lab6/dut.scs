@@ -1,0 +1,358 @@
+// Generated for: spectre
+// Generated on: Nov 10 21:49:24 2014
+// Design library name: Lib6710_08
+// Design cell name: Allparts
+// Design view name: schematic
+simulator lang=spectre
+
+// Library name: Lib6710_08
+// Cell name: TIELO
+// View name: analog_extracted
+subckt TIELO Y vdd gnd
+    \+1 (4 4 vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+5 (gnd 4) capacitor c=5.6079e-16 m=1
+    \+4 (vdd 4) capacitor c=6.7797e-16 m=1
+    \+3 (Y gnd) capacitor c=4.7694e-16 m=1
+    \+2 (vdd 4) capacitor c=2.4678e-16 m=1
+    \+0 (Y 4 gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends TIELO
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: NOR2X1
+// View name: analog_extracted
+subckt NOR2X1 A B Y vdd gnd
+    \+3 (Y B 6 vdd) ami06P w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 \
+        ps=9e-07 pd=6e-06 m=1 region=sat
+    \+2 (6 A vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=1.35e-12 \
+        ps=6e-06 pd=9e-07 m=1 region=sat
+    \+10 (B gnd) capacitor c=7.2819e-16 m=1
+    \+9 (A gnd) capacitor c=5.6079e-16 m=1
+    \+8 (vdd B) capacitor c=5.9427e-16 m=1
+    \+7 (vdd A) capacitor c=7.1145e-16 m=1
+    \+6 (Y gnd) capacitor c=1.95594e-15 m=1
+    \+5 (B Y) capacitor c=4.149e-16 m=1
+    \+4 (vdd Y) capacitor c=2.03172e-15 m=1
+    \+1 (gnd B Y gnd) ami06N w=1.5e-06 l=6e-07 as=1.35e-12 ad=2.25e-12 \
+        ps=1.8e-06 pd=4.5e-06 m=1 region=sat
+    \+0 (Y A gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=1.35e-12 \
+        ps=4.5e-06 pd=1.8e-06 m=1 region=sat
+ends NOR2X1
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: TIEHI
+// View name: analog_extracted
+subckt TIEHI Y vdd gnd
+    \+1 (Y 4 vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+5 (gnd 4) capacitor c=6.5286e-16 m=1
+    \+4 (vdd 4) capacitor c=4.4361e-16 m=1
+    \+3 (gnd 4) capacitor c=2.7636e-16 m=1
+    \+2 (vdd Y) capacitor c=9.2064e-16 m=1
+    \+0 (4 4 gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends TIEHI
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: NAND2X1
+// View name: analog_extracted
+subckt NAND2X1 A B Y vdd gnd
+    \+3 (vdd B Y vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+2 (Y A vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
+        ps=6e-06 pd=1.8e-06 m=1 region=sat
+    \+10 (B gnd) capacitor c=6.9471e-16 m=1
+    \+9 (A gnd) capacitor c=4.7709e-16 m=1
+    \+8 (vdd B) capacitor c=5.4405e-16 m=1
+    \+7 (vdd A) capacitor c=7.1145e-16 m=1
+    \+6 (Y gnd) capacitor c=1.79508e-15 m=1
+    \+5 (B Y) capacitor c=4.149e-16 m=1
+    \+4 (vdd Y) capacitor c=1.89678e-15 m=1
+    \+1 (Y B 6 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 ps=9e-07 \
+        pd=6e-06 m=1 region=sat
+    \+0 (6 A gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=1.35e-12 ps=6e-06 \
+        pd=9e-07 m=1 region=sat
+ends NAND2X1
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: INV1
+// View name: analog_extracted
+subckt INV1 A Y vdd gnd
+    \+1 (Y A vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+5 (A gnd) capacitor c=6.5286e-16 m=1
+    \+4 (vdd A) capacitor c=4.4361e-16 m=1
+    \+3 (Y gnd) capacitor c=1.80804e-15 m=1
+    \+2 (vdd Y) capacitor c=1.54182e-15 m=1
+    \+0 (Y A gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends INV1
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: AOI22X1
+// View name: analog_extracted
+subckt AOI22X1 A B C D Y vdd gnd
+    \+7 (Y D 10 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+        ps=1.8e-06 pd=9e-06 m=1 region=sat
+    \+6 (10 B vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+5 (vdd A 10 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+4 (10 C Y vdd) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 ps=9e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+32 (Y gnd) capacitor c=2.9295e-16 m=1
+    \+31 (D gnd) capacitor c=4.79182e-16 m=1
+    \+30 (C gnd) capacitor c=4.3524e-16 m=1
+    \+29 (B gnd) capacitor c=5.5242e-16 m=1
+    \+28 (A gnd) capacitor c=4.3524e-16 m=1
+    \+27 (vdd Y) capacitor c=1.4229e-16 m=1
+    \+26 (vdd D) capacitor c=6.1101e-16 m=1
+    \+25 (vdd C) capacitor c=5.859e-16 m=1
+    \+24 (vdd B) capacitor c=5.31495e-16 m=1
+    \+23 (vdd A) capacitor c=5.859e-16 m=1
+    \+22 (gnd 8) capacitor c=2.62659e-15 m=1
+    \+21 (Y 8) capacitor c=2.217e-16 m=1
+    \+20 (Y gnd) capacitor c=4.437e-16 m=1
+    \+19 (D 8) capacitor c=4.74337e-16 m=1
+    \+18 (D Y) capacitor c=4.8735e-16 m=1
+    \+17 (C 8) capacitor c=8.496e-16 m=1
+    \+16 (C Y) capacitor c=5.598e-16 m=1
+    \+15 (B 10) capacitor c=2.217e-16 m=1
+    \+14 (B 8) capacitor c=2.4585e-16 m=1
+    \+13 (B Y) capacitor c=4.22325e-16 m=1
+    \+12 (A 10) capacitor c=3.666e-16 m=1
+    \+11 (A 8) capacitor c=3.951e-16 m=1
+    \+10 (A Y) capacitor c=2.7e-16 m=1
+    \+9 (vdd 10) capacitor c=9.9642e-16 m=1
+    \+8 (vdd Y) capacitor c=2.71467e-15 m=1
+    \+3 (8 D gnd gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 ps=1.8e-06 \
+        pd=6e-06 m=1 region=sat
+    \+2 (gnd B 9 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+1 (9 A Y gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+0 (Y C 8 gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+        pd=1.8e-06 m=1 region=sat
+ends AOI22X1
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: MUX2X1
+// View name: analog_extracted
+subckt MUX2X1 A B S Y vdd gnd
+    \+5 (A 7 Y vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+4 (Y S B vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+3 (7 S vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+2 (B 7 Y gnd) ami06N w=1.5e-06 l=6e-07 as=1.35e-12 ad=2.25e-12 \
+        ps=1.8e-06 pd=4.5e-06 m=1 region=sat
+    \+1 (Y S A gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=1.35e-12 \
+        ps=4.5e-06 pd=1.8e-06 m=1 region=sat
+    \+0 (7 S gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends MUX2X1
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: XOR2X1
+// View name: analog_extracted
+subckt XOR2X1 A B Y vdd gnd
+    \+11 (vdd B 8 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+        ps=1.8e-06 pd=9e-06 m=1 region=sat
+    \+10 (8 7 Y vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+9 (Y 6 8 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+8 (8 A vdd vdd) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
+        ps=9e-06 pd=1.8e-06 m=1 region=sat
+    \+46 (gnd 7) capacitor c=7.1982e-16 m=1
+    \+45 (gnd 6) capacitor c=5.1894e-16 m=1
+    \+44 (B gnd) capacitor c=1.36431e-15 m=1
+    \+43 (A gnd) capacitor c=1.38942e-15 m=1
+    \+42 (vdd 7) capacitor c=3.7665e-16 m=1
+    \+41 (vdd 6) capacitor c=3.1806e-16 m=1
+    \+40 (vdd B) capacitor c=7.7841e-16 m=1
+    \+39 (vdd A) capacitor c=6.696e-16 m=1
+    \+38 (6 7) capacitor c=2.7e-16 m=1
+    \+37 (gnd 7) capacitor c=1.74888e-15 m=1
+    \+36 (Y 7) capacitor c=3.1335e-16 m=1
+    \+35 (B 7) capacitor c=2.7e-16 m=1
+    \+34 (B 6) capacitor c=5.4e-16 m=1
+    \+33 (B gnd) capacitor c=2.18892e-15 m=1
+    \+32 (A 7) capacitor c=2.7e-16 m=1
+    \+31 (A 6) capacitor c=8.1e-16 m=1
+    \+30 (A gnd) capacitor c=1.68606e-15 m=1
+    \+29 (A B) capacitor c=5.4e-16 m=1
+    \+28 (vdd 6) capacitor c=1.89678e-15 m=1
+    \+27 (vdd Y) capacitor c=2.5368e-16 m=1
+    \+26 (7 8) capacitor c=1.8504e-16 m=1
+    \+25 (6 8) capacitor c=1.8504e-16 m=1
+    \+24 (6 7) capacitor c=3.1776e-16 m=1
+    \+23 (gnd 7) capacitor c=8.2632e-16 m=1
+    \+22 (gnd 6) capacitor c=1.33704e-15 m=1
+    \+21 (Y 8) capacitor c=3.372e-16 m=1
+    \+20 (Y 7) capacitor c=3.1776e-16 m=1
+    \+19 (Y gnd) capacitor c=6.3852e-16 m=1
+    \+18 (B 7) capacitor c=3.1776e-16 m=1
+    \+17 (B Y) capacitor c=3.1776e-16 m=1
+    \+16 (A 7) capacitor c=3.1776e-16 m=1
+    \+15 (A Y) capacitor c=3.1776e-16 m=1
+    \+14 (vdd 7) capacitor c=7.7364e-16 m=1
+    \+13 (vdd 6) capacitor c=7.7364e-16 m=1
+    \+12 (vdd Y) capacitor c=4.8828e-16 m=1
+    \+5 (gnd B 10 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 ps=1.8e-06 \
+        pd=6e-06 m=1 region=sat
+    \+4 (10 A Y gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+3 (Y 6 9 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+2 (9 7 gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+1 (7 B gnd gnd) ami06N w=1.5e-06 l=6e-07 as=1.35e-12 ad=2.25e-12 \
+        ps=1.8e-06 pd=4.5e-06 m=1 region=sat
+    \+0 (gnd A 6 gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=1.35e-12 \
+        ps=4.5e-06 pd=1.8e-06 m=1 region=sat
+    \+7 (7 B vdd vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+6 (vdd A 6 vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
+        ps=6e-06 pd=1.8e-06 m=1 region=sat
+ends XOR2X1
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: D_flip_flop
+// View name: analog_extracted
+subckt D_flip_flop CLK CLR DATA NQ Q vdd gnd
+    \+27 (Q NQ vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+26 (11 NQ vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+23 (NQ 9 13 vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+22 (13 10 vdd vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+21 (vdd CLR 13 vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
+        ps=6e-06 pd=1.8e-06 m=1 region=sat
+    \+20 (10 8 vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+19 (vdd 10 20 vdd) ami06P w=3e-06 l=6e-07 as=2.25e-12 ad=4.95e-12 \
+        ps=1.5e-06 pd=6.3e-06 m=1 region=sat
+    \+18 (20 9 8 vdd) ami06P w=3e-06 l=6e-07 as=4.95e-12 ad=2.25e-12 \
+        ps=6.3e-06 pd=1.5e-06 m=1 region=sat
+    \+17 (9 CLK vdd vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+16 (8 CLK 12 vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+15 (12 DATA vdd vdd) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+14 (vdd CLR 12 vdd) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
+        ps=6e-06 pd=1.8e-06 m=1 region=sat
+    \+74 (gnd 11) capacitor c=9.0396e-16 m=1
+    \+73 (gnd 10) capacitor c=1.3957e-15 m=1
+    \+72 (gnd 9) capacitor c=3.1806e-15 m=1
+    \+71 (gnd 8) capacitor c=9.0396e-16 m=1
+    \+70 (NQ gnd) capacitor c=1.80792e-15 m=1
+    \+69 (CLR gnd) capacitor c=1.77444e-15 m=1
+    \+68 (CLK gnd) capacitor c=4.23522e-15 m=1
+    \+67 (vdd 11) capacitor c=2.7621e-16 m=1
+    \+66 (vdd 10) capacitor c=4.62443e-16 m=1
+    \+65 (vdd 9) capacitor c=3.348e-16 m=1
+    \+64 (vdd 8) capacitor c=1.5066e-16 m=1
+    \+63 (vdd NQ) capacitor c=3.0132e-16 m=1
+    \+62 (vdd CLR) capacitor c=2.04228e-15 m=1
+    \+61 (vdd CLK) capacitor c=5.6079e-16 m=1
+    \+60 (DATA gnd) capacitor c=8.5374e-16 m=1
+    \+59 (DATA vdd) capacitor c=1.5066e-16 m=1
+    \+58 (10 13) capacitor c=2.4585e-16 m=1
+    \+57 (9 10) capacitor c=5.6415e-16 m=1
+    \+56 (8 10) capacitor c=8.3415e-16 m=1
+    \+55 (8 9) capacitor c=1.10415e-15 m=1
+    \+54 (gnd 11) capacitor c=2.27766e-15 m=1
+    \+53 (gnd 10) capacitor c=4.55448e-15 m=1
+    \+52 (gnd 9) capacitor c=2.89542e-15 m=1
+    \+51 (gnd 8) capacitor c=7.32729e-15 m=1
+    \+50 (Q gnd) capacitor c=2.69544e-15 m=1
+    \+49 (NQ 18) capacitor c=1.215e-16 m=1
+    \+48 (NQ 11) capacitor c=8.1e-16 m=1
+    \+47 (NQ 9) capacitor c=1.05585e-15 m=1
+    \+46 (NQ gnd) capacitor c=5.9229e-15 m=1
+    \+45 (CLR 13) capacitor c=4.0005e-16 m=1
+    \+44 (CLR 12) capacitor c=2.4585e-16 m=1
+    \+43 (CLR 10) capacitor c=2.7e-16 m=1
+    \+42 (CLR 9) capacitor c=2.9415e-16 m=1
+    \+41 (CLK 9) capacitor c=7.8585e-16 m=1
+    \+40 (CLK 8) capacitor c=8.3415e-16 m=1
+    \+39 (CLK gnd) capacitor c=1.28328e-15 m=1
+    \+38 (CLK NQ) capacitor c=5.6415e-16 m=1
+    \+37 (vdd 13) capacitor c=1.07502e-15 m=1
+    \+36 (vdd 12) capacitor c=1.13418e-15 m=1
+    \+35 (vdd 11) capacitor c=1.39836e-15 m=1
+    \+34 (vdd 10) capacitor c=1.36941e-15 m=1
+    \+33 (vdd 9) capacitor c=4.044e-16 m=1
+    \+32 (vdd 8) capacitor c=1.01304e-15 m=1
+    \+31 (vdd Q) capacitor c=5.0652e-16 m=1
+    \+30 (vdd NQ) capacitor c=1.04262e-15 m=1
+    \+29 (vdd CLR) capacitor c=1.08e-15 m=1
+    \+28 (DATA 12) capacitor c=2.4585e-16 m=1
+    \+13 (Q NQ gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+12 (11 NQ gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+6 (10 8 gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+3 (9 CLK gnd gnd) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+11 (gnd 11 19 gnd) ami06N w=3e-06 l=6e-07 as=2.475e-12 ad=4.95e-12 \
+        ps=1.65e-06 pd=6.3e-06 m=1 region=sat
+    \+10 (19 9 NQ gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.475e-12 \
+        ps=6e-06 pd=1.65e-06 m=1 region=sat
+    \+9 (NQ CLK 18 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+8 (18 10 17 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+7 (17 CLR gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+5 (gnd 10 16 gnd) ami06N w=3e-06 l=6e-07 as=2.475e-12 ad=4.95e-12 \
+        ps=1.65e-06 pd=6.3e-06 m=1 region=sat
+    \+4 (16 CLK 8 gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.475e-12 \
+        ps=6e-06 pd=1.65e-06 m=1 region=sat
+    \+2 (8 9 15 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 ps=1.8e-06 \
+        pd=6e-06 m=1 region=sat
+    \+1 (15 DATA 14 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+0 (14 CLR gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+25 (vdd 11 21 vdd) ami06P w=2.85e-06 l=6e-07 as=2.1375e-12 \
+        ad=4.7025e-12 ps=1.5e-06 pd=6.15e-06 m=1 region=sat
+    \+24 (21 CLK NQ vdd) ami06P w=2.85e-06 l=6e-07 as=4.7025e-12 \
+        ad=2.1375e-12 ps=6.15e-06 pd=1.5e-06 m=1 region=sat
+ends D_flip_flop
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
+// Cell name: tri_nand2
+// View name: schematic
+subckt tri_nand2 A B E F NE inh_inh_bn vdd gnd
+    M2 (F NE net15 vdd) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M1 (net15 B vdd vdd) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M0 (net15 A vdd vdd) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M3 (F E net18 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+    M4 (net18 A net17 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M5 (net17 B gnd gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends tri_nand2
+// End of subcircuit definition.
+

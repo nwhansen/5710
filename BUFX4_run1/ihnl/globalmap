@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+Lib6710_08/INVX4/schematic INVX4
+Lib6710_08/BUFX4/schematic BUFX4
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

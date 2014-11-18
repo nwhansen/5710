@@ -1,0 +1,5 @@
+
+// Library name: Lib6710_08
+// Cell name: INVX4
+// View name: schematic
+subckt INVX4 A Y inh_inh_bn _net0

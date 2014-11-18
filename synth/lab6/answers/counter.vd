@@ -1,0 +1,71 @@
+
+module counter ( clk, limit, set, value );
+  input [3:0] limit;
+  output [3:0] value;
+  input clk, set;
+  wire   running, n54, n56, n58, n48, n60, n61, n62, n63, n64, n65, n66, n67,
+         n68, n69, n70, n71, n72, n73, n74, n75, n76, n77, n78, n79, n80, n81,
+         n82, n83, n84, n85, n86, n87, n88, n89, n90, n91, n92, n93, n94, n95,
+         n96, n97, n98, n99;
+  wire   [3:0] storedlimit;
+
+  YSDFLIPFLOPASYNCRESET storedlimit_reg_3_ ( .D(n60), .CLK(clk), .CLR(n48), 
+        .Q(storedlimit[3]) );
+  YSDFLIPFLOPASYNCRESET storedlimit_reg_2_ ( .D(n58), .CLK(clk), .CLR(n48), 
+        .Q(n69), .QB(n99) );
+  YSDFLIPFLOPASYNCRESET storedlimit_reg_1_ ( .D(n56), .CLK(clk), .CLR(n48), 
+        .Q(storedlimit[1]) );
+  YSDFLIPFLOPASYNCRESET storedlimit_reg_0_ ( .D(n54), .CLK(clk), .CLR(n48), 
+        .Q(storedlimit[0]) );
+  YSDFLIPFLOPASYNCRESET running_reg ( .D(n65), .CLK(clk), .CLR(n48), .Q(
+        running) );
+  YSDFLIPFLOPASYNCRESET value_reg_0_ ( .D(n64), .CLK(clk), .CLR(n48), .Q(
+        value[0]) );
+  YSDFLIPFLOPASYNCRESET value_reg_1_ ( .D(n62), .CLK(clk), .CLR(n48), .Q(
+        value[1]), .QB(n66) );
+  YSDFLIPFLOPASYNCRESET value_reg_2_ ( .D(n63), .CLK(clk), .CLR(n48), .Q(
+        value[2]), .QB(n67) );
+  YSDFLIPFLOPASYNCRESET value_reg_3_ ( .D(n61), .CLK(clk), .CLR(n48), .Q(
+        value[3]), .QB(n68) );
+  TIEHI U65 ( .Y(n48) );
+  NAND2X1 U66 ( .A(n70), .B(n71), .Y(n65) );
+  NAND2X1 U67 ( .A(running), .B(n72), .Y(n71) );
+  MUX2X1 U68 ( .B(n73), .A(n74), .S(value[0]), .Y(n64) );
+  MUX2X1 U69 ( .B(n75), .A(n76), .S(n67), .Y(n63) );
+  NOR2X1 U70 ( .A(n66), .B(n77), .Y(n76) );
+  NAND2X1 U71 ( .A(n78), .B(n79), .Y(n75) );
+  NAND2X1 U72 ( .A(n80), .B(n66), .Y(n79) );
+  INV1 U73 ( .A(n81), .Y(n62) );
+  MUX2X1 U74 ( .B(n78), .A(n77), .S(n66), .Y(n81) );
+  INV1 U75 ( .A(n82), .Y(n61) );
+  AOI22X1 U76 ( .A(n83), .B(n84), .C(value[3]), .D(n85), .Y(n82) );
+  NAND2X1 U77 ( .A(n78), .B(n86), .Y(n85) );
+  NOR2X1 U78 ( .A(n74), .B(n87), .Y(n78) );
+  NOR2X1 U79 ( .A(n86), .B(value[0]), .Y(n87) );
+  INV1 U80 ( .A(n77), .Y(n84) );
+  NAND2X1 U81 ( .A(n73), .B(value[0]), .Y(n77) );
+  NOR2X1 U82 ( .A(n74), .B(n86), .Y(n73) );
+  NOR2X1 U83 ( .A(set), .B(n88), .Y(n74) );
+  INV1 U84 ( .A(n89), .Y(n88) );
+  NAND2X1 U85 ( .A(n80), .B(n72), .Y(n89) );
+  INV1 U86 ( .A(n90), .Y(n72) );
+  AOI22X1 U87 ( .A(n91), .B(n68), .C(storedlimit[3]), .D(n92), .Y(n90) );
+  INV1 U88 ( .A(n93), .Y(n91) );
+  NOR2X1 U89 ( .A(storedlimit[3]), .B(n92), .Y(n93) );
+  AOI22X1 U90 ( .A(value[2]), .B(n94), .C(n99), .D(n95), .Y(n92) );
+  INV1 U91 ( .A(n96), .Y(n94) );
+  NOR2X1 U92 ( .A(n99), .B(n95), .Y(n96) );
+  AOI22X1 U93 ( .A(n97), .B(storedlimit[0]), .C(storedlimit[1]), .D(n66), .Y(
+        n95) );
+  NOR2X1 U94 ( .A(value[0]), .B(n98), .Y(n97) );
+  NOR2X1 U95 ( .A(storedlimit[1]), .B(n66), .Y(n98) );
+  INV1 U96 ( .A(n86), .Y(n80) );
+  NAND2X1 U97 ( .A(running), .B(n70), .Y(n86) );
+  NOR2X1 U98 ( .A(n66), .B(n67), .Y(n83) );
+  MUX2X1 U99 ( .B(limit[3]), .A(storedlimit[3]), .S(n70), .Y(n60) );
+  MUX2X1 U100 ( .B(limit[2]), .A(n69), .S(n70), .Y(n58) );
+  MUX2X1 U101 ( .B(limit[1]), .A(storedlimit[1]), .S(n70), .Y(n56) );
+  MUX2X1 U102 ( .B(limit[0]), .A(storedlimit[0]), .S(n70), .Y(n54) );
+  INV1 U103 ( .A(set), .Y(n70) );
+endmodule
+

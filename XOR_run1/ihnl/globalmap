@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+ExperimentalCells/XOR/schematic XOR
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

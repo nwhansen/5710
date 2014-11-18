@@ -1,0 +1,15 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial
+begin 
+
+   {A,B,C,D} = 0;
+   #80 $finish;
+end 
+
+always #5 {A,B,C,D} = {A,B,C,D} + 1;

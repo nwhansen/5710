@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"C0n" "NCSU_Analog_Parts_cap_spectre"
+"V1n V0n" "NCSU_Analog_Parts_vpulse_spectre"
+"V2n" "NCSU_Analog_Parts_vdc_spectre"
+"I6n" "XOR2X1"

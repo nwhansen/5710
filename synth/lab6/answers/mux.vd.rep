@@ -1,0 +1,63 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mux8_1
+Version: G-2012.06-SP3
+Date   : Mon Nov 10 22:46:29 2014
+****************************************
+
+Operating Conditions: typical   Library: Lib6710_08
+Wire Load Model Mode: top
+
+  Startpoint: s1 (input port)
+  Endpoint: o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  s1 (in)                                  0.00       0.00 r
+  U20/Y (MUX2X1)                           0.17       0.17 r
+  U19/Y (MUX2X1)                           0.12       0.30 r
+  U18/Y (MUX2X1)                           0.10       0.40 r
+  o (out)                                  0.00       0.40 r
+  data arrival time                                   0.40
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : mux8_1
+Version: G-2012.06-SP3
+Date   : Mon Nov 10 22:46:29 2014
+****************************************
+
+Library(s) Used:
+
+    Lib6710_08 (File: /home/nathan/5710/synth/lab6/Lib6710_08.db)
+
+Number of ports:                           12
+Number of nets:                            18
+Number of cells:                            7
+Number of combinational cells:              7
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       1
+
+Combinational area:          0.000000
+Buf/Inv area:                0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:             0.000000
+Total area:                 undefined
+1

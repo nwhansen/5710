@@ -1,0 +1,20 @@
+simulator lang=spectre insensitive=yes
+subckt BUFX4 A Y VDD GND
+\+3 (Y 5 3 3) ami06P w=1.2e-05 l=6e-07 as=1.8e-11 ad=1.8e-11 \
+ps=1.5e-05 pd=1.5e-05 m=1 region=sat
+\+12 (4 5) capacitor c=3.2643e-16 m=1
+\+11 (3 5) capacitor c=1.9251e-16 m=1
+\+10 (A 4) capacitor c=6.5286e-16 m=1
+\+9 (A 3) capacitor c=4.4361e-16 m=1
+\+8 (4 5) capacitor c=1.89924e-15 m=1
+\+7 (3 5) capacitor c=2.07996e-15 m=1
+\+6 (Y 4) capacitor c=6.84e-16 m=1
+\+5 (Y 3) capacitor c=5.0652e-16 m=1
+\+4 (A 4) capacitor c=4.4736e-16 m=1
+\+1 (Y 5 4 4) ami06N w=6e-06 l=6e-07 as=9e-12 ad=9e-12 ps=9e-06 \
+pd=9e-06 m=1 region=sat
+\+0 (5 A 4 4) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+\+2 (5 A 3 3) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 ps=6e-06 \
+pd=6e-06 m=1 region=sat
+ends BUFX4

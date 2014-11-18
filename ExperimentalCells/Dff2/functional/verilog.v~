@@ -1,0 +1,11 @@
+//Verilog HDL for "lab3", "Dff2" "functional"
+
+
+module Dff2 ( Q, Qb, CLK, CLRb, D );
+
+  input CLRb;
+  input CLK;
+  output Q;
+  input D;
+  output Qb;
+endmodule

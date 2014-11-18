@@ -1,0 +1,11 @@
+simVerilogNetlistFileList = '(
+    (("Lib6710_08" "AOI22X1") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("Lib6710_08")
+simVerilogNetlistFileCellList = '(("Lib6710_08" 
+	("AOI22X1")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

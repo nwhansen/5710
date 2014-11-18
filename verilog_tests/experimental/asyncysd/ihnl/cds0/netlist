@@ -1,0 +1,73 @@
+// Library - ExperimentalCells, Cell - YSDFlipFlopAsyncReset, View -
+//schematic
+// LAST TIME SAVED: Nov  1 21:45:08 2014
+// NETLIST TIME: Nov  1 21:45:32 2014
+`timescale 1ns / 100ps 
+
+module YSDFlipFlopAsyncReset ( Q, QBar, CLK, CLR, D );
+
+output  Q, QBar;
+
+input  CLK, CLR, D;
+trireg    net16;
+trireg    net14;
+trireg    net10;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "ExperimentalCells";
+    specparam CDS_CELLNAME = "YSDFlipFlopAsyncReset";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M15(
+     net014, cds_globals.vdd_, CLR);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M5( QBar,
+     cds_globals.vdd_, Q);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M4( Q,
+     cds_globals.vdd_, net16);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M3(
+     net16, cds_globals.vdd_, net14);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M2(
+     net14, cds_globals.vdd_, CLK);
+`switch default
+pmos #(0.1)   (* const real width = 6.000, length = 0.600; *) M1(
+     net10, net31, CLK);
+`switch default
+pmos #(0.1)   (* const real width = 6.000, length = 0.600; *) M0(
+     net31, cds_globals.vdd_, D);
+`switch default
+nmos #(0.1)   (* const real width = 1.500, length = 0.600; *) M18(
+     net014, cds_globals.gnd_, CLR);
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M21(
+     net14, cds_globals.gnd_, net014);
+`switch default
+nmos #(0.1)   (* const real width = 1.500, length = 0.600; *) M12(
+     QBar, cds_globals.gnd_, Q);
+`switch default
+nmos #(0.1)   (* const real width = 1.500, length = 0.600; *) M11( Q,
+     cds_globals.gnd_, net16);
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M10(
+     net16, net25, CLK);
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M9(
+     net25, cds_globals.gnd_, net14);
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M8(
+     net14, net27, net10);
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M7(
+     net27, cds_globals.gnd_, CLK);
+`switch default
+nmos #(0.1)   (* const real width = 1.500, length = 0.600; *) M6(
+     net10, cds_globals.gnd_, D);
+
+endmodule

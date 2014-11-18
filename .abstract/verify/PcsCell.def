@@ -1,0 +1,92 @@
+VERSION 5.6 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+DESIGN TIELO ;
+
+UNITS DISTANCE MICRONS 1000 ;
+PROPERTYDEFINITIONS
+  DESIGN Abstract_Generator STRING "sub-version  IC6.1.6-64b.500.1 " ;
+  SPECIALNET sroute STRING ;
+END PROPERTYDEFINITIONS
+
+DIEAREA ( -122400 -78000 ) ( 129600 105000 ) ;
+ROW ROW_0 CoreSite -14400 -27000 FS DO 15 BY 1 STEP 2400 0 ;
+ROW ROW_1 CoreSite -14400 0 N DO 15 BY 1 STEP 2400 0 ;
+ROW ROW_2 CoreSite -14400 27000 FS DO 15 BY 1 STEP 2400 0 ;
+TRACKS Y -76500 DO 60 STEP 3000 LAYER metal3 ;
+TRACKS Y -76500 DO 60 STEP 3000 LAYER metal2 ;
+TRACKS Y -76500 DO 60 STEP 3000 LAYER metal1 ;
+TRACKS X -121200 DO 104 STEP 2400 LAYER metal3 ;
+TRACKS X -121200 DO 104 STEP 2400 LAYER metal2 ;
+TRACKS X -121200 DO 104 STEP 2400 LAYER metal1 ;
+
+COMPONENTS 5 ;
+- main TIELO + PLACED ( 0 0 ) N ;
+- Left TIELO + PLACED ( -7800 0 ) FN ;
+- Right TIELO + PLACED ( 7800 0 ) FN ;
+- Bottom TIELO + PLACED ( 0 -30000 ) FS ;
+- Top TIELO + PLACED ( 0 78000 ) FS ;
+END COMPONENTS
+
+PINS 5 ;
+- main_Y + NET main_Y
+  + DIRECTION OUTPUT
+  + LAYER metal2 ( 0 0 ) ( 900 900 )
+  + COVER ( -450 -70950 ) N ;
+- Left_Y + NET Left_Y
+  + DIRECTION OUTPUT
+  + LAYER metal2 ( 0 0 ) ( 900 900 )
+  + COVER ( 4350 -70950 ) N ;
+- Right_Y + NET Right_Y
+  + DIRECTION OUTPUT
+  + LAYER metal2 ( 0 0 ) ( 900 900 )
+  + COVER ( 9150 -70950 ) N ;
+- Bottom_Y + NET Bottom_Y
+  + DIRECTION OUTPUT
+  + LAYER metal2 ( 0 0 ) ( 900 900 )
+  + COVER ( 13950 -70950 ) N ;
+- Top_Y + NET Top_Y
+  + DIRECTION OUTPUT
+  + LAYER metal2 ( 0 0 ) ( 900 900 )
+  + PLACED ( 18750 -70950 ) N ;
+END PINS
+
+SPECIALNETS 2 ;
+- gnd!
+  ( Top gnd! )
+  ( Bottom gnd! )
+  ( Right gnd! )
+  ( Left gnd! )
+  ( main gnd! )
+  + USE GROUND
+  + PROPERTY sroute "all" ;
+- vdd!
+  ( Top vdd! )
+  ( Bottom vdd! )
+  ( Right vdd! )
+  ( Left vdd! )
+  ( main vdd! )
+  + USE POWER
+  + PROPERTY sroute "all" ;
+END SPECIALNETS
+
+NETS 5 ;
+- main_Y
+  ( PIN main_Y )
+  ( main Y ) ;
+- Left_Y
+  ( PIN Left_Y )
+  ( Left Y ) ;
+- Right_Y
+  ( PIN Right_Y )
+  ( Right Y ) ;
+- Bottom_Y
+  ( PIN Bottom_Y )
+  ( Bottom Y ) ;
+- Top_Y
+  ( PIN Top_Y )
+  ( Top Y ) ;
+END NETS
+
+END DESIGN

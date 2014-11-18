@@ -1,0 +1,38 @@
+simulator lang=spectre insensitive=yes
+subckt OAI22X1 A B C D Y vdd gnd
+\+7 (vdd D 10 vdd) ami06P w=6e-06 l=1.05e-06 as=2.7e-12 ad=9e-12 \
+ps=9e-07 pd=9e-06 m=1 region=sat
+\+6 (10 C Y vdd) ami06P w=6e-06 l=1.05e-06 as=5.4e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+5 (Y B 9 vdd) ami06P w=6e-06 l=1.05e-06 as=2.7e-12 ad=5.4e-12 \
+ps=9e-07 pd=1.8e-06 m=1 region=sat
+\+4 (9 A vdd vdd) ami06P w=6e-06 l=1.05e-06 as=9e-12 ad=2.7e-12 \
+ps=9e-06 pd=9e-07 m=1 region=sat
+\+26 (Y gnd) capacitor c=5.6916e-16 m=1
+\+25 (D gnd) capacitor c=6.48675e-16 m=1
+\+24 (C gnd) capacitor c=6.696e-16 m=1
+\+23 (B gnd) capacitor c=5.3568e-16 m=1
+\+22 (A gnd) capacitor c=5.5242e-16 m=1
+\+21 (vdd D) capacitor c=6.1101e-16 m=1
+\+20 (vdd C) capacitor c=4.33147e-16 m=1
+\+19 (vdd B) capacitor c=5.98455e-16 m=1
+\+18 (vdd A) capacitor c=6.34027e-16 m=1
+\+17 (gnd 8) capacitor c=2.44407e-15 m=1
+\+16 (Y 8) capacitor c=3.282e-16 m=1
+\+15 (Y gnd) capacitor c=1.00008e-15 m=1
+\+14 (D 8) capacitor c=3.852e-16 m=1
+\+13 (C 8) capacitor c=3.8145e-16 m=1
+\+12 (B 8) capacitor c=8.17425e-16 m=1
+\+11 (B Y) capacitor c=3.9075e-16 m=1
+\+10 (A 8) capacitor c=8.979e-16 m=1
+\+9 (vdd Y) capacitor c=1.50984e-15 m=1
+\+8 (vdd B) capacitor c=3.2256e-16 m=1
+\+3 (8 D gnd gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 ps=1.8e-06 \
+pd=6e-06 m=1 region=sat
+\+2 (gnd C 8 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
+pd=1.8e-06 m=1 region=sat
+\+1 (8 B Y gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
+pd=1.8e-06 m=1 region=sat
+\+0 (Y A 8 gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+pd=1.8e-06 m=1 region=sat
+ends OAI22X1

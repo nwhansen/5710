@@ -1,0 +1,4 @@
+INV1 I0 ( net5, A);
+INVX4 I1 ( Y, net5);
+
+endmodule

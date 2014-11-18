@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "ADDER_TEST2"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/nathan/5710/simulation/ADDER_TEST2/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "ExperimentalCells/ADDER_TEST2/schematic" "ADDER_TEST2" )
+( "Lib6710_08/ADDER/schematic" "ADDER" )
+ )
+( term
+ )
+( param
+ )
+( "ADDER_TEST2" "ihnl/cds1/map" )
+( "ADDER" "ihnl/cds0/map" )
+ )

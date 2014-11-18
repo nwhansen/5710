@@ -1,0 +1,12 @@
+CADENCE IHNL01070
+$model
+ExperimentalCells/XOR_TEST/schematic XOR_TEST
+Lib6710_08/XOR2X1/schematic XOR2X1
+ExperimentalCells/XOR/schematic XOR
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

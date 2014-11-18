@@ -1,0 +1,19 @@
+// Library - Lib6710_08, Cell - XOR2X1, View - schematic
+// LAST TIME SAVED: Nov 10 06:07:13 2014
+// NETLIST TIME: Nov 10 06:26:33 2014
+`timescale 1ns / 100ps 
+
+module XOR2X1 ( Y, A, B );
+
+output  Y;
+
+input  A, B;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "XOR2X1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

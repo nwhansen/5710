@@ -1,0 +1,3 @@
+//  SignalStorm DataBase Process PVT table
+//  ProcessName	Voltage	Temperature ; 
+	typical	5	25 ;

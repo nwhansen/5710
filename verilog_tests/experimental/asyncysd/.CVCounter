@@ -1,0 +1,8 @@
+cellViewCounterTable = makeTable('cellViewCounterTableType nil)
+cellViewCounterTable['("basic" "ipin" "symbol" )] =  19
+cellViewCounterTable['("UofU_Analog_Parts" "pmos" "symbol" )] =  43
+cellViewCounterTable['("UofU_Analog_Parts" "nmos" "symbol" )] =  42
+cellViewCounterTable['("basic" "opin" "symbol" )] =  19
+cellViewCounterTable['("UofU_Analog_Parts" "gnd" "symbol" )] =  19
+cellViewCounterTable['("UofU_Analog_Parts" "vdd" "symbol" )] =  20
+cellViewCounterTable['("ExperimentalCells" "YSDFlipFlopAsyncReset" "schematic" )] =  12068

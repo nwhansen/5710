@@ -1,0 +1,58 @@
+    M27 (Cout net014 vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M26 (S net023 vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M15 (net023 net014 net35 vdd!) ami06P w=3u l=600n as=4.5e-12 \
+        ad=4.5e-12 ps=9u pd=9u m=1 region=sat
+    M14 (net35 B vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M13 (net35 Cin vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M10 (net35 A vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M7 (net023 A net53 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M6 (net53 B net54 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M5 (net54 Cin vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M4 (net55 B vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M3 (net46 B vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M2 (net014 A net55 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M1 (net014 Cin net46 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M0 (net46 A vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M29 (Cout net014 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M28 (S net023 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M25 (net51 Cin 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M24 (net50 B net51 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M23 (net023 A net50 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M22 (net34 Cin 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M21 (net34 B 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M20 (net014 A net52 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M19 (net34 A 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M18 (net52 B 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M17 (net023 net014 net34 gnd!) ami06N w=1.5u l=600n as=2.25e-12 \
+        ad=2.25e-12 ps=6u pd=6u m=1 region=sat
+    M16 (net45 B 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M8 (net014 Cin net45 gnd!) ami06N w=1.5u l=600n as=2.25e-12 \
+        ad=2.25e-12 ps=6u pd=6u m=1 region=sat
+    M11 (net45 A 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends ADDER
+// End of subcircuit definition.

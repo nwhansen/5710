@@ -1,0 +1,26 @@
+// Library - Lib6710_08, Cell - TIELO, View - schematic
+// LAST TIME SAVED: Oct 30 17:12:01 2014
+// NETLIST TIME: Oct 30 17:19:37 2014
+`timescale 1ns / 100ps 
+
+module TIELO ( Y );
+
+output  Y;
+tri1    net3;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "TIELO";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+`switch default
+nmos #(0.1)   (* const real width = 1.500, length = 0.600; *) M1( Y,
+     cds_globals.gnd_, net3);
+`switch default
+pmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M0( net3,
+     cds_globals.vdd_, net3);
+
+endmodule

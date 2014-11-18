@@ -1,0 +1,14 @@
+simulator( 'spectre )
+design(	 "/home/nathan/5710/simulation/ADDER_TEST2/spectre/schematic/netlist/netlist")
+resultsDir( "/home/nathan/5710/simulation/ADDER_TEST2/spectre/schematic" )
+modelFile( 
+    '("/uusoc/facility/cad_common/local/class/6710/F13/cadence/Spectre/T89Y.scs" "")
+)
+analysis('tran ?stop "160n"  )
+envOption(
+	'analysisOrder  list("tran") 
+)
+temp( 27 ) 
+run()
+selectResult( 'tran )
+plot(getData("/Cout") getData("/Sum") getData("/Cin") getData("/B") getData("/A") )

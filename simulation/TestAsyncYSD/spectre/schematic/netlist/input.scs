@@ -1,0 +1,73 @@
+// Generated for: spectre
+// Generated on: Nov  9 01:33:42 2014
+// Design library name: ExperimentalCells
+// Design cell name: TestAsyncYSD
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/uusoc/facility/cad_common/local/class/6710/F13/cadence/Spectre/T89Y.scs"
+
+// Library name: ExperimentalCells
+// Cell name: YSDFlipFlopAsyncReset
+// View name: schematic
+subckt YSDFlipFlopAsyncReset CLK CLR D Q QBar inh_inh_bn _net0
+    M15 (net014 CLR vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M5 (QBar Q vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M4 (Q net16 vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M3 (net16 net14 vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M2 (net14 CLK vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M1 (net10 CLK net31 _net0) ami06P w=6u l=600n as=9e-12 ad=9e-12 \
+        ps=15.0u pd=15.0u m=1 region=sat
+    M0 (net31 D vdd! _net0) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+    M18 (net014 CLR 0 inh_inh_bn) ami06N w=1.5u l=600n as=2.25e-12 \
+        ad=2.25e-12 ps=6u pd=6u m=1 region=sat
+    M21 (net14 net014 0 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 \
+        ad=4.5e-12 ps=9u pd=9u m=1 region=sat
+    M12 (QBar Q 0 inh_inh_bn) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M11 (Q net16 0 inh_inh_bn) ami06N w=1.5u l=600n as=2.25e-12 \
+        ad=2.25e-12 ps=6u pd=6u m=1 region=sat
+    M10 (net16 CLK net25 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 \
+        ad=4.5e-12 ps=9u pd=9u m=1 region=sat
+    M9 (net25 net14 0 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M8 (net14 net10 net27 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 \
+        ad=4.5e-12 ps=9u pd=9u m=1 region=sat
+    M7 (net27 CLK 0 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M6 (net10 D 0 inh_inh_bn) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends YSDFlipFlopAsyncReset
+// End of subcircuit definition.
+
+// Library name: ExperimentalCells
+// Cell name: TestAsyncYSD
+// View name: schematic
+V0 (vdd! 0) vsource type=dc dc=5
+V3 (D 0) vsource type=pulse val0=0 val1=5 period=90n delay=5n width=45n
+V2 (CLR 0) vsource type=pulse val0=5 val1=0 period=200n delay=5n \
+        width=100n
+V1 (CLK 0) vsource type=pulse val0=0 val1=5 period=40n width=20n
+C1 (Q 0) capacitor c=100f m=1
+C0 (net5 0) capacitor c=100f m=1
+I0 (CLK CLR D Q net5 0 vdd!) YSDFlipFlopAsyncReset
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=1.2u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

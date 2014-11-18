@@ -1,0 +1,36 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "XOR"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/nathan/5710/XOR_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+ )
+( net
+( "vdd!" "cds_globals.vdd_" )
+( "gnd!" "cds_globals.gnd_" )
+ )
+( inst
+ )
+( model
+( "ExperimentalCells/XOR/schematic" "XOR" )
+ )
+( term
+ )
+( param
+ )
+( "XOR" "ihnl/cds0/map" )
+ )

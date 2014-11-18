@@ -1,0 +1,11 @@
+simVerilogNetlistFileList = '(
+    (("ExperimentalCells" "YSDFlipFlopAsyncReset") 
+	("cds0/netlist" "cds0/map" "schematic")
+    )
+)
+simVerilogNetlistFileLibList = '("ExperimentalCells")
+simVerilogNetlistFileCellList = '(("ExperimentalCells" 
+	("YSDFlipFlopAsyncReset")
+    )
+)
+hnlIncrementalDirectory = '"ihnl"

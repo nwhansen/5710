@@ -1,0 +1,52 @@
+TOOL:	ncxlmode	13.10-s003: Started on Nov 12, 2014 at 06:12:51 MST
+ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	/home/nathan/5710/XOR2X1_run1/testfixture.template
+	-f /home/nathan/5710/XOR2X1_run1/verilog.inpfiles
+		/uusoc/facility/cad_common/NCSU/CDK1.6beta.utah.2011/lib/NCSU_Analog_Parts/pmos/functional/verilog.v
+		/uusoc/facility/cad_common/NCSU/CDK1.6beta.utah.2011/lib/NCSU_Analog_Parts/nmos/functional/verilog.v
+		ihnl/cds0/netlist
+		hdlFilesDir/cds_globals.v
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/nathan/5710/XOR2X1_run1/.simTmpNCCmd "
+	+mpssession+virtuoso32431
+	+mpshost+lab1-3
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/uusoc/facility/cad_common/NCSU/CDK6-F13/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/uusoc/facility/cad_common/NCSU/CDK6-F13/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/uusoc/facility/cad_common/NCSU/CDK6-F13/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/uusoc/facility/cad_common/NCSU/CDK6-F13/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/uusoc/facility/cad_common/NCSU/CDK6-F13/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/uusoc/facility/cad_common/NCSU/CDK6-F13/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /uusoc/facility/cad_tools/Cadence/INCISIV-F13/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> probe -create cds_globals -shm
+Created probe 2
+ncsim> run
+ncsim> ^C
+ncsim> exit
+TOOL:	ncxlmode	13.10-s003: Exiting on Nov 12, 2014 at 06:14:13 MST  (total: 00:01:22)

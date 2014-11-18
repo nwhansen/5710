@@ -1,0 +1,96 @@
+// Generated for: spectre
+// Generated on: Nov 11 18:43:06 2014
+// Design library name: ExperimentalCells
+// Design cell name: ADDER_TEST
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/uusoc/facility/cad_common/local/class/6710/F13/cadence/Spectre/T89Y.scs"
+
+// Library name: Lib6710_08
+// Cell name: ADDER
+// View name: schematic
+subckt ADDER A B Cin Cout S inh_inh_bn
+    M27 (Cout net014 vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M26 (S net023 vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M15 (net023 net014 net35 vdd!) ami06P w=3u l=600n as=4.5e-12 \
+        ad=4.5e-12 ps=9u pd=9u m=1 region=sat
+    M14 (net35 B vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M13 (net35 Cin vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M10 (net35 A vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M7 (net023 A net53 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M6 (net53 B net54 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M5 (net54 Cin vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M4 (net55 B vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M3 (net46 B vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M2 (net014 A net55 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M1 (net014 Cin net46 vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M0 (net46 A vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M29 (Cout net014 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M28 (S net023 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M25 (net51 Cin 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M24 (net50 B net51 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M23 (net023 A net50 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M22 (net34 Cin 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M21 (net34 B 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M20 (net014 A net52 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M19 (net34 A 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M18 (net52 B 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M17 (net023 net014 net34 gnd!) ami06N w=1.5u l=600n as=2.25e-12 \
+        ad=2.25e-12 ps=6u pd=6u m=1 region=sat
+    M16 (net45 B 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M8 (net014 Cin net45 gnd!) ami06N w=1.5u l=600n as=2.25e-12 \
+        ad=2.25e-12 ps=6u pd=6u m=1 region=sat
+    M11 (net45 A 0 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends ADDER
+// End of subcircuit definition.
+
+// Library name: ExperimentalCells
+// Cell name: ADDER_TEST
+// View name: schematic
+I0 (net1 net2 net3 net5 net4 0) ADDER
+V2 (net3 0) vsource type=pulse val0=5 val1=0 period=160n width=80n
+V1 (net2 0) vsource type=pulse val0=5 val1=0 period=80n width=40n
+V0 (net1 0) vsource type=pulse val0=5 val1=0 period=40n width=20n
+V3 (vdd! 0) vsource type=dc dc=5
+C1 (net5 0) capacitor c=100.0f m=1
+C0 (net4 0) capacitor c=100.0f m=1
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=160n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

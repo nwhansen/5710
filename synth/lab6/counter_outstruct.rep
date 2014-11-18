@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : counter
+Version: G-2012.06-SP3
+Date   : Tue Nov 11 12:17:12 2014
+****************************************
+
+Operating Conditions: typical   Library: Lib6710_08
+Wire Load Model Mode: top
+
+  Startpoint: value_reg_3_
+              (rising edge-triggered flip-flop)
+  Endpoint: value[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  value_reg_3_/CLK (YSDFLIPFLOPASYNCRESET)                0.00       0.00 r
+  value_reg_3_/Q (YSDFLIPFLOPASYNCRESET)                  0.79       0.79 f
+  value[3] (out)                                          0.00       0.79 f
+  data arrival time                                                  0.79
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : counter
+Version: G-2012.06-SP3
+Date   : Tue Nov 11 12:17:12 2014
+****************************************
+
+Library(s) Used:
+
+    Lib6710_08 (File: /home/nathan/5710/synth/lab6/Lib6710_08.db)
+
+Number of ports:                           10
+Number of nets:                            50
+Number of cells:                           38
+Number of combinational cells:             29
+Number of sequential cells:                 9
+Number of macros:                           0
+Number of buf/inv:                          7
+Number of references:                       7
+
+Combinational area:          0.000000
+Buf/Inv area:                0.000000
+Noncombinational area:    9234.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          9234.000000
+Total area:                 undefined
+1

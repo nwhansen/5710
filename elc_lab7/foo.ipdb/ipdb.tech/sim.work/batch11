@@ -1,0 +1,5 @@
+#!/bin/csh -f
+ ipsd -stat "/home/nathan/5710/elc_lab7/foo.ipdb/AOI22X1.design/simulate/waveform/typical/S_D0009" -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrundelay /home/nathan/5710/elc_lab7/foo.ipdb AOI22X1 typical D0009 /home/nathan/5710/elc_lab7/encounterlc.log/foo.log/AOI22X1.log"
+ ipsd -stat "/home/nathan/5710/elc_lab7/foo.ipdb/AOI22X1.design/simulate/waveform/typical/S_D0010" -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrundelay /home/nathan/5710/elc_lab7/foo.ipdb AOI22X1 typical D0010 /home/nathan/5710/elc_lab7/encounterlc.log/foo.log/AOI22X1.log"
+ ipsd -stat "/home/nathan/5710/elc_lab7/foo.ipdb/AOI22X1.design/simulate/waveform/typical/S_D0011" -last  -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrundelay /home/nathan/5710/elc_lab7/foo.ipdb AOI22X1 typical D0011 /home/nathan/5710/elc_lab7/encounterlc.log/foo.log/AOI22X1.log"
+

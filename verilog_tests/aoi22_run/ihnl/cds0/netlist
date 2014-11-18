@@ -1,0 +1,45 @@
+// Library - Lib6710_08, Cell - AOI22X1, View - schematic
+// LAST TIME SAVED: Nov 10 18:41:30 2014
+// NETLIST TIME: Nov 10 18:57:05 2014
+`timescale 1ns / 100ps 
+
+module AOI22X1 ( Y, A, B, C, D );
+
+output  Y;
+
+input  A, B, C, D;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "AOI22X1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M3( Y,
+     net22, A);
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M2( Y,
+     net23, C);
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M1(
+     net23, cds_globals.gnd_, D);
+`switch default
+nmos #(0.1)   (* const real width = 3.000, length = 0.600; *) M0(
+     net22, cds_globals.gnd_, B);
+`switch default
+pmos #(0.1)   (* const real width = 6.000, length = 0.600; *) M7(
+     net12, cds_globals.vdd_, A);
+`switch default
+pmos #(0.1)   (* const real width = 6.000, length = 0.600; *) M6(
+     net12, cds_globals.vdd_, B);
+`switch default
+pmos #(0.1)   (* const real width = 6.000, length = 0.600; *) M5( Y,
+     net12, D);
+`switch default
+pmos #(0.1)   (* const real width = 6.000, length = 0.600; *) M4( Y,
+     net12, C);
+
+endmodule

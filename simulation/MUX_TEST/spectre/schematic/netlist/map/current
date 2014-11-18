@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "MUX_TEST"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/nathan/5710/simulation/MUX_TEST/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "Lib6710_08/MUX2X1/schematic" "MUX2X1" )
+( "ExperimentalCells/MUX_TEST/schematic" "MUX_TEST" )
+ )
+( term
+ )
+( param
+ )
+( "MUX2X1" "ihnl/cds0/map" )
+( "MUX_TEST" "ihnl/cds1/map" )
+ )

@@ -1,0 +1,26 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.13.10.nc
+-RUNMODE
+/home/nathan/5710/BUFX4_run1/testfixture.template
+/home/nathan/5710/Lib6710_08/INV1/functional/verilog.v
+ihnl/cds0/netlist
+ihnl/cds1/netlist
+hdlFilesDir/cds_globals.v
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nostdout
+-nocopyright
+-CDSLIB
+./INCA_libs/irun.lnx8664.13.10.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.13.10.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.13.10.nc/xllibs
+-ALLOWUNBOUND

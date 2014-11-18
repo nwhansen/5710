@@ -1,0 +1,24 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "12.1.1.096.isr12"
+"date" "10:38:02 PM, Thur Oct 30, 2014"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"YSDFlipFlop" "subckt" (
+""
+"CLK D Q QBar inh_inh_bn _net0 vdd! 0"
+)
+END

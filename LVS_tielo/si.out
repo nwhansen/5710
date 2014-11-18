@@ -23,8 +23,8 @@ Compiling Diva LVS rules...
 
     Terminal correspondence points
     N2        N5        Y
-    N1        N1        gnd!
-    N3        N0        vdd!
+    N1        N0        gnd!
+    N3        N1        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      agifford
+HostName                       lab1-3.eng.utah.edu
+ProcessIdentifier              32211
+ProcessCreationTime_UTC        1415749857
+ProcessCreationTime_Readable   Tue Nov 11 16:50:57 2014 MST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/nathan/5710/Lib6710_08/ADDER/schematic/sch.oa.cdslck
+TimeEditLocked                 Tue Nov 11 17:11:59 2014 MST

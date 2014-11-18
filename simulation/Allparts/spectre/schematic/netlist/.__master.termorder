@@ -1,6 +1,21 @@
+"Lib6710_08.AOI22X1.analog_extracted.termorder" (("A" "B" "C" "D" "Y") ("A" "B" "C" "D" "Y"))
+"Lib6710_08.INVX2.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
 "Lib6710_08.NAND2X1.analog_extracted.termorder" nil
+"Lib6710_08.NAND2X2.analog_extracted.termorder" nil
+"Lib6710_08.OAI22X1.analog_extracted.termorder" (("A" "B" "C" "D" "Y") ("A" "B" "C" "D" "Y"))
+"Lib6710_08.D_flip_flop.analog_extracted.termorder" (("CLK" "CLR" "DATA" "NQ" "Q") ("CLK" "CLR" "DATA" "NQ" "Q"))
+"Lib6710_08.INVX8.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
+"Lib6710_08.MUX2X1.analog_extracted.termorder" (("A" "B" "S" "Y") ("A" "B" "S" "Y"))
 "Lib6710_08.TIEHI.analog_extracted.termorder" nil
 "Lib6710_08.TIELO.analog_extracted.termorder" (("Y") ("Y"))
 "Lib6710_08.NOR2X1.analog_extracted.termorder" (("A" "B" "Y") ("A" "B" "Y"))
 "Lib6710_08.TIEHI.schematic.termorder" nil
-"Lib6710_08.INV1.analog_extracted.termorder" (("A" "O") ("A" "O"))
+"Lib6710_08.INV1.analog_extracted.termorder" nil
+"Lib6710_08.tri_nand2.schematic.termorder" (("A" "B" "E" "F" "NE" "[@inh_bn:%:gnd!]") ("A" "B" "E" "F" "NE" "[@inh_bn:%:gnd!]"))
+"Lib6710_08.BUFX4.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
+"Lib6710_08.INVX4.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
+"Lib6710_08.ADDER.analog_extracted.termorder" (("A" "B" "Cin" "Cout" "S") ("A" "B" "Cin" "Cout" "S"))
+"Lib6710_08.BUFX8.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
+"Lib6710_08.MUX2X1_alt.analog_extracted.termorder" (("A" "B" "S" "Y") ("A" "B" "S" "Y"))
+"Lib6710_08.XOR2X1.analog_extracted.termorder" (("A" "B" "Y") ("A" "B" "Y"))
+"Lib6710_08.Dff2.analog_extracted.termorder" (("CLK" "CLRb" "D" "Q" "Qb") ("CLK" "CLRb" "D" "Q" "Qb"))

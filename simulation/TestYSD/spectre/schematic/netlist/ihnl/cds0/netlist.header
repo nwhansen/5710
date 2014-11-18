@@ -1,0 +1,5 @@
+
+// Library name: ExperimentalCells
+// Cell name: YSDFlipFlop
+// View name: schematic
+subckt YSDFlipFlop CLK D Q QBar inh_inh_bn _net0

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  1 22:38:38 2014
+// Design library name: TestCharacterize
+// Design cell name: theoneandonly
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

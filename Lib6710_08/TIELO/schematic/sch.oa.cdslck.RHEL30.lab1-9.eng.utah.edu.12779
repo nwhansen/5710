@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      mhuff
+HostName                       lab1-9.eng.utah.edu
+ProcessIdentifier              12779
+ProcessCreationTime_UTC        1414696711
+ProcessCreationTime_Readable   Thu Oct 30 13:18:31 2014 MDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/nathan/5710/Lib6710_08/TIELO/schematic/sch.oa.cdslck
+TimeEditLocked                 Thu Oct 30 14:13:45 2014 MDT

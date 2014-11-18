@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"M15n M5n M4n M3n M2n M1n M0n" "UofU_Analog_Parts_pmos_spectre"
+"M18n M21n M12n M11n M10n M9n M8n M7n M6n" "UofU_Analog_Parts_nmos_spectre"
+"CLKv" ":1v"
+"CLRv" ":2v"
+"Dv" ":3v"
+"Qv" ":4v"
+"QBarv" ":5v"
+"[@inh_bn:%:gnd!]v" ":6v"
+"[@inh_bn:%:vdd!]v" ":7v"

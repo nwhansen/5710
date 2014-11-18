@@ -1,0 +1,1711 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 12.1.1.096.isr12 64bit -- 5 Aug 2013
+Copyright (C) 1989-2013 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
+        Cadence Design Systems, Inc. All others are the property of their
+        respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: agifford   Host: lab2-27   HostID: 629B826F   PID: 28849
+Memory  available: 27.2984 GB  physical: 33.5971 GB
+CPU Type: Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz
+          Processor PhysicalID CoreID Frequency
+              0         0        0     2794.0
+              1         0        0     2794.0
+              2         0        1     2794.0
+              3         0        1     2794.0
+              4         0        2     2794.0
+              5         0        2     2794.0
+              6         0        3     2794.0
+              7         0        3     2794.0
+
+
+Simulating `typical_D0001_tr.sp' on lab2-27 at 5:56:59 PM, Thur Nov 13, 2014
+        (process id: 28849).
+Current working directory:
+        /home/nathan/5710/elc/lib11-13/encounterlc.work/foo.work/BUFX4.work/typical_D0001
+Command line:
+     \
+        /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools/spectre/bin/64bit/spectre
+        \
+        typical_D0001_tr.sp
+Reading file: 
+        /home/nathan/5710/elc/lib11-13/encounterlc.work/foo.work/BUFX4.work/typical_D0001/typical_D0001_tr.sp
+Reading link:  /uusoc/facility/cad_tools/Cadence/MMSIM-F13
+Reading file: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /home/nathan/5710/elc/lib11-13/foo.ipdb/BUFX4.design/simulate/subckt
+Reading file: 
+        /home/nathan/5710/elc/lib11-13/foo.ipdb/AMI06N.device/simulate/model
+Reading file: 
+        /home/nathan/5710/elc/lib11-13/foo.ipdb/AMI06P.device/simulate/model
+
+Time for NDB Parsing: CPU = 107.982 ms, elapsed = 283.941 ms.
+Time accumulated: CPU = 107.982 ms, elapsed = 283.941 ms.
+Peak resident memory used = 38.2 Mbytes.
+
+Reading link: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM-F13/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /uusoc/facility/cad_tools/Cadence/MMSIM_12.11.096_lnx86/tools.lnx86/spectre/etc/ahdl/constants.vams
+
+Time for Elaboration: CPU = 38.994 ms, elapsed = 41.9459 ms.
+Time accumulated: CPU = 147.976 ms, elapsed = 326.119 ms.
+Peak resident memory used = 43.3 Mbytes.
+
+
+Time for EDB Visiting: CPU = 147.978 ms, elapsed = 151.306 ms.
+Time accumulated: CPU = 295.954 ms, elapsed = 477.617 ms.
+Peak resident memory used = 54.7 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+Notice from spectre during topology check.
+    Only one connection to the following 2 nodes:
+        VDD
+        GND
+    No DC path from node `Y_' to ground, Gmin installed to provide path.
+
+Circuit inventory:
+              nodes 8
+            bsim3v3 4     
+          capacitor 10    
+            vsource 4     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+Time for parsing: CPU = 2.999 ms, elapsed = 8.13389 ms.
+Time accumulated: CPU = 298.953 ms, elapsed = 485.977 ms.
+Peak resident memory used = 55.5 Mbytes.
+
+
+****************
+Alter Group `a0'
+****************
+
+Warning from spectre during altergroup `a0', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient1': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient1',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 470.161 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 8     
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             76
+
+Notice from spectre during transient analysis `transient1', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 533.104 us.
+Intrinsic tran analysis time:    CPU = 11.998 ms, elapsed = 11.481 ms.
+Total time required for tran analysis `transient1': CPU = 13.998 ms, elapsed =
+        13.3801 ms.
+Time accumulated: CPU = 314.951 ms, elapsed = 503.472 ms.
+Peak resident memory used = 56.8 Mbytes.
+
+
+****************
+Alter Group `a1'
+****************
+
+Warning from spectre during altergroup `a1', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient2': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient2',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 344.992 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 16    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             77
+
+Notice from spectre during transient analysis `transient2', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 396.967 us.
+Intrinsic tran analysis time:    CPU = 12.997 ms, elapsed = 12.4159 ms.
+Total time required for tran analysis `transient2': CPU = 13.997 ms, elapsed =
+        14.025 ms.
+Time accumulated: CPU = 331.948 ms, elapsed = 522.261 ms.
+Peak resident memory used = 56.8 Mbytes.
+
+
+****************
+Alter Group `a2'
+****************
+
+Warning from spectre during altergroup `a2', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient3': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient3',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 320.911 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 24    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             77
+
+Notice from spectre during transient analysis `transient3', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 380.993 us.
+Intrinsic tran analysis time:    CPU = 11.998 ms, elapsed = 11.9791 ms.
+Total time required for tran analysis `transient3': CPU = 12.998 ms, elapsed =
+        13.7281 ms.
+Time accumulated: CPU = 347.946 ms, elapsed = 539.643 ms.
+Peak resident memory used = 56.8 Mbytes.
+
+
+****************
+Alter Group `a3'
+****************
+
+Warning from spectre during altergroup `a3', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient4': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient4',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 931.978 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 32    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             77
+
+Notice from spectre during transient analysis `transient4', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 1.00088 ms.
+Intrinsic tran analysis time:    CPU = 11.998 ms, elapsed = 12.0161 ms.
+Total time required for tran analysis `transient4': CPU = 12.998 ms, elapsed =
+        14.3108 ms.
+Time accumulated: CPU = 363.944 ms, elapsed = 556.443 ms.
+Peak resident memory used = 56.9 Mbytes.
+
+
+****************
+Alter Group `a4'
+****************
+
+Warning from spectre during altergroup `a4', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient5': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient5',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 286.818 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 40    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             77
+
+Notice from spectre during transient analysis `transient5', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 344.992 us.
+Intrinsic tran analysis time:    CPU = 11.999 ms, elapsed = 12.0039 ms.
+Total time required for tran analysis `transient5': CPU = 12.998 ms, elapsed =
+        13.6261 ms.
+Time accumulated: CPU = 379.941 ms, elapsed = 572.568 ms.
+Peak resident memory used = 56.9 Mbytes.
+
+
+****************
+Alter Group `a5'
+****************
+
+Warning from spectre during altergroup `a5', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient6': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient6',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 303.984 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 48    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `transient6', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 357.866 us.
+Intrinsic tran analysis time:    CPU = 10.999 ms, elapsed = 10.529 ms.
+Total time required for tran analysis `transient6': CPU = 11.999 ms, elapsed =
+        12.017 ms.
+Time accumulated: CPU = 393.94 ms, elapsed = 586.954 ms.
+Peak resident memory used = 56.9 Mbytes.
+
+
+****************
+Alter Group `a6'
+****************
+
+Warning from spectre during altergroup `a6', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient7': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient7',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 343.084 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 56    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `transient7', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 396.013 us.
+Intrinsic tran analysis time:    CPU = 9.999 ms, elapsed = 10.5069 ms.
+Total time required for tran analysis `transient7': CPU = 11.999 ms, elapsed =
+        12.198 ms.
+Time accumulated: CPU = 408.937 ms, elapsed = 603.21 ms.
+Peak resident memory used = 56.9 Mbytes.
+
+
+****************
+Alter Group `a7'
+****************
+
+Warning from spectre during altergroup `a7', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient8': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient8',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 321.15 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 64    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             75
+
+Notice from spectre during transient analysis `transient8', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 371.933 us.
+Intrinsic tran analysis time:    CPU = 11.998 ms, elapsed = 12.6219 ms.
+Total time required for tran analysis `transient8': CPU = 12.998 ms, elapsed =
+        14.0891 ms.
+Time accumulated: CPU = 422.935 ms, elapsed = 620.238 ms.
+Peak resident memory used = 57 Mbytes.
+
+
+****************
+Alter Group `a8'
+****************
+
+Warning from spectre during altergroup `a8', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+******************************************************
+Transient Analysis `transient9': time = (0 s -> 80 ns)
+******************************************************
+
+Notice from spectre during IC analysis, during transient analysis `transient9',
+        during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 287.056 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 72    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             75
+
+Notice from spectre during transient analysis `transient9', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 329.018 us.
+Intrinsic tran analysis time:    CPU = 9.999 ms, elapsed = 10.7372 ms.
+Total time required for tran analysis `transient9': CPU = 11.998 ms, elapsed =
+        12.1799 ms.
+Time accumulated: CPU = 437.933 ms, elapsed = 634.902 ms.
+Peak resident memory used = 57 Mbytes.
+
+
+****************
+Alter Group `a9'
+****************
+
+Warning from spectre during altergroup `a9', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient10': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient10', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 319.958 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 80    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             75
+
+Notice from spectre during transient analysis `transient10', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 374.079 us.
+Intrinsic tran analysis time:    CPU = 10.999 ms, elapsed = 11.024 ms.
+Total time required for tran analysis `transient10': CPU = 11.998 ms, elapsed =
+        12.403 ms.
+Time accumulated: CPU = 451.931 ms, elapsed = 651.265 ms.
+Peak resident memory used = 57 Mbytes.
+
+
+*****************
+Alter Group `a10'
+*****************
+
+Warning from spectre during altergroup `a10', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient11': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient11', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 355.005 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 88    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             72
+
+Notice from spectre during transient analysis `transient11', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 415.802 us.
+Intrinsic tran analysis time:    CPU = 10.999 ms, elapsed = 11.0381 ms.
+Total time required for tran analysis `transient11': CPU = 12.999 ms, elapsed =
+        12.748 ms.
+Time accumulated: CPU = 466.928 ms, elapsed = 666.905 ms.
+Peak resident memory used = 57 Mbytes.
+
+
+*****************
+Alter Group `a11'
+*****************
+
+Warning from spectre during altergroup `a11', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient12': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient12', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 309.944 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 96    
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             72
+
+Notice from spectre during transient analysis `transient12', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 365.019 us.
+Intrinsic tran analysis time:    CPU = 8.999 ms, elapsed = 9.90009 ms.
+Total time required for tran analysis `transient12': CPU = 11.998 ms, elapsed =
+        11.5368 ms.
+Time accumulated: CPU = 479.926 ms, elapsed = 680.525 ms.
+Peak resident memory used = 57.1 Mbytes.
+
+
+*****************
+Alter Group `a12'
+*****************
+
+Warning from spectre during altergroup `a12', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient13': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient13', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 278.95 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 104   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             72
+
+Notice from spectre during transient analysis `transient13', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 319.004 us.
+Intrinsic tran analysis time:    CPU = 10.999 ms, elapsed = 10.627 ms.
+Total time required for tran analysis `transient13': CPU = 11.999 ms, elapsed =
+        12.0909 ms.
+Time accumulated: CPU = 493.924 ms, elapsed = 694.941 ms.
+Peak resident memory used = 57.1 Mbytes.
+
+
+*****************
+Alter Group `a13'
+*****************
+
+Warning from spectre during altergroup `a13', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient14': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient14', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 329.971 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 112   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             73
+
+Notice from spectre during transient analysis `transient14', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 386 us.
+Intrinsic tran analysis time:    CPU = 10.999 ms, elapsed = 11.044 ms.
+Total time required for tran analysis `transient14': CPU = 11.999 ms, elapsed =
+        12.5339 ms.
+Time accumulated: CPU = 508.922 ms, elapsed = 710.013 ms.
+Peak resident memory used = 57.1 Mbytes.
+
+
+*****************
+Alter Group `a14'
+*****************
+
+Warning from spectre during altergroup `a14', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient15': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient15', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 324.965 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 120   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             73
+
+Notice from spectre during transient analysis `transient15', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 384.092 us.
+Intrinsic tran analysis time:    CPU = 10.999 ms, elapsed = 11.07 ms.
+Total time required for tran analysis `transient15': CPU = 11.998 ms, elapsed =
+        12.7499 ms.
+Time accumulated: CPU = 523.92 ms, elapsed = 725.335 ms.
+Peak resident memory used = 57.1 Mbytes.
+
+
+*****************
+Alter Group `a15'
+*****************
+
+Warning from spectre during altergroup `a15', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient16': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient16', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 318.05 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 128   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `transient16', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 372.171 us.
+Intrinsic tran analysis time:    CPU = 10.998 ms, elapsed = 10.7379 ms.
+Total time required for tran analysis `transient16': CPU = 11.998 ms, elapsed =
+        12.29 ms.
+Time accumulated: CPU = 538.917 ms, elapsed = 740.205 ms.
+Peak resident memory used = 57.2 Mbytes.
+
+
+*****************
+Alter Group `a16'
+*****************
+
+Warning from spectre during altergroup `a16', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient17': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient17', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 332.117 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 136   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `transient17', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 390.053 us.
+Intrinsic tran analysis time:    CPU = 10.998 ms, elapsed = 10.5281 ms.
+Total time required for tran analysis `transient17': CPU = 11.998 ms, elapsed =
+        12.0449 ms.
+Time accumulated: CPU = 552.915 ms, elapsed = 754.746 ms.
+Peak resident memory used = 57.2 Mbytes.
+
+
+*****************
+Alter Group `a17'
+*****************
+
+Warning from spectre during altergroup `a17', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient18': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient18', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 299.931 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 144   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `transient18', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 352.144 us.
+Intrinsic tran analysis time:    CPU = 9.998 ms, elapsed = 10.1709 ms.
+Total time required for tran analysis `transient18': CPU = 10.998 ms, elapsed =
+        11.3771 ms.
+Time accumulated: CPU = 565.913 ms, elapsed = 768.352 ms.
+Peak resident memory used = 57.2 Mbytes.
+
+
+*****************
+Alter Group `a18'
+*****************
+
+Warning from spectre during altergroup `a18', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient19': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient19', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 301.838 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 152   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `transient19', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 352.859 us.
+Intrinsic tran analysis time:    CPU = 10.998 ms, elapsed = 10.175 ms.
+Total time required for tran analysis `transient19': CPU = 11.998 ms, elapsed =
+        11.6892 ms.
+Time accumulated: CPU = 579.911 ms, elapsed = 782.896 ms.
+Peak resident memory used = 57.2 Mbytes.
+
+
+*****************
+Alter Group `a19'
+*****************
+
+Warning from spectre during altergroup `a19', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient20': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient20', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 353.098 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 160   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             74
+
+Notice from spectre during transient analysis `transient20', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 409.126 us.
+Intrinsic tran analysis time:    CPU = 13.998 ms, elapsed = 15.6331 ms.
+Total time required for tran analysis `transient20': CPU = 15.998 ms, elapsed =
+        17.5109 ms.
+Time accumulated: CPU = 598.908 ms, elapsed = 810.186 ms.
+Peak resident memory used = 57.2 Mbytes.
+
+
+*****************
+Alter Group `a20'
+*****************
+
+Warning from spectre during altergroup `a20', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient21': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient21', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 398.159 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 168   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             70
+
+Notice from spectre during transient analysis `transient21', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 452.995 us.
+Intrinsic tran analysis time:    CPU = 11.999 ms, elapsed = 22.5971 ms.
+Total time required for tran analysis `transient21': CPU = 13.999 ms, elapsed =
+        25.3119 ms.
+Time accumulated: CPU = 615.906 ms, elapsed = 838.549 ms.
+Peak resident memory used = 57.3 Mbytes.
+
+
+*****************
+Alter Group `a21'
+*****************
+
+Warning from spectre during altergroup `a21', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient22': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient22', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 334.978 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 176   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `transient22', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 401.974 us.
+Intrinsic tran analysis time:    CPU = 10.999 ms, elapsed = 10.9441 ms.
+Total time required for tran analysis `transient22': CPU = 11.998 ms, elapsed =
+        12.5959 ms.
+Time accumulated: CPU = 630.904 ms, elapsed = 855.132 ms.
+Peak resident memory used = 57.3 Mbytes.
+
+
+*****************
+Alter Group `a22'
+*****************
+
+Warning from spectre during altergroup `a22', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient23': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient23', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 319.958 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 184   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `transient23', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 374.794 us.
+Intrinsic tran analysis time:    CPU = 10.999 ms, elapsed = 10.865 ms.
+Total time required for tran analysis `transient23': CPU = 11.999 ms, elapsed =
+        12.404 ms.
+Time accumulated: CPU = 644.901 ms, elapsed = 870.656 ms.
+Peak resident memory used = 57.3 Mbytes.
+
+
+*****************
+Alter Group `a23'
+*****************
+
+Warning from spectre during altergroup `a23', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient24': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient24', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 1 ms, elapsed = 335.217 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 192   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `transient24', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 1 ms, elapsed = 396.013 us.
+Intrinsic tran analysis time:    CPU = 10.998 ms, elapsed = 11.3699 ms.
+Total time required for tran analysis `transient24': CPU = 12.998 ms, elapsed =
+        13.087 ms.
+Time accumulated: CPU = 660.898 ms, elapsed = 886.729 ms.
+Peak resident memory used = 57.3 Mbytes.
+
+
+*****************
+Alter Group `a24'
+*****************
+
+Warning from spectre during altergroup `a24', during task `MDLControl'.
+    WARNING (CMI-2426): X_BUFX4_D0001.+1: `Pdiblc1' = -428.234e-03 is
+        negative.
+    WARNING (CMI-2426): X_BUFX4_D0001.+0: `Pdiblc1' = -428.234e-03 is
+        negative.
+
+
+*******************************************************
+Transient Analysis `transient25': time = (0 s -> 80 ns)
+*******************************************************
+
+Notice from spectre during IC analysis, during transient analysis
+        `transient25', during task `MDLControl'.
+    There are 1 IC nodes defined.
+
+DC simulation time: CPU = 0 s, elapsed = 548.124 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 80 ns
+    step = 10 ps
+    maxstep = 1.6 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+               save 200   
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             71
+
+Notice from spectre during transient analysis `transient25', during task
+        `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+Initial condition solution time: CPU = 0 s, elapsed = 606.06 us.
+Intrinsic tran analysis time:    CPU = 11.998 ms, elapsed = 12.8539 ms.
+Total time required for tran analysis `transient25': CPU = 12.998 ms, elapsed =
+        14.9701 ms.
+Time accumulated: CPU = 677.896 ms, elapsed = 905.881 ms.
+Peak resident memory used = 57.4 Mbytes.
+
+
+Aggregate audit (5:57:00 PM, Thur Nov 13, 2014):
+Time used: CPU = 692 ms, elapsed = 923 ms, util. = 74.9%.
+Time spent in licensing: elapsed = 181 ms, percentage of total = 19.6%.
+Peak memory used = 57.4 Mbytes.
+Simulation started at: 5:56:59 PM, Thur Nov 13, 2014, ended at: 5:57:00 PM,
+        Thur Nov 13, 2014, with elapsed time (wall clock): 923 ms.
+spectre completes with 0 errors, 54 warnings, and 52 notices.
+
+	 Results directory: ./typical_D0001_tr.raw does not exist.
+
+	 Results directory: ./typical_D0001_tr.raw does not exist.
+
+Usage: 
+  processmdl  [-batch <file.mdl>] [-design <file.scs>] [-measure <file.measure] [-prec '<format>'] [-tab] [-outdir <directory>] [-mt0] [<file.scs>]
+
+      |        -usage
+        
+    -batch <file.mdl>         The pathname or filename of the SpectreMDL file
+                              that generated the data to be postprocessed.
+                              If this argument is omitted, it
+                              will default to a filename consisting of the
+                              basename of the design file, with an extension
+                              of .mdl appended. This file must exist in the
+                              current directory. Both -design and -batch
+                              arguments must be supplied, if the basenames
+                              are different.
+
+    -design <file.scs>        The pathname or filename of the netlist that
+                              generated the data to be postprocessed.  If this
+                              argument is
+                              omitted, a file with the basename of the batch
+                              argument, with an extension of .scs or .ckt is
+                              searched for in the current directory, and used
+                              as the default.
+
+    -measure <file.measure>   The default output filename is taken from the
+                              basename of the design argument, and appended
+                              with the .measure extension. This option creates
+                              the output file with the specified name. If a
+                              pathname is not specified, the output file is
+                              created in the directory of the design argument.
+
+    -prec '<format>'          Optional argument to specify the precision of
+                              of the measured value output in the measurement
+                              file.  Example:  '%.15g' will output the
+                              measured values to 15 significant digits.
+
+    -tab                      Optional argument to specify that the measure
+                              file should be displayed in tabular format.
+
+    -outdir <directory>       Optional argument to specify an alternate
+                              output directory location for all raw data and
+                              output files.  Should not be used with the -raw
+                              Spectre option.
+
+    -mt0                      Optional argument to produce mt0 format data
+                              files as well as the default .measure file.
+
+    -usage                    Display this help text.
+
+
+

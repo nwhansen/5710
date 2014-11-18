@@ -1,0 +1,6 @@
+
+// Library name: ExperimentalCells
+// Cell name: YSDFlipFlopAsyncReset
+// View name: analog_extracted
+// Inherited view list: spectre cmos_sch cmos.sch schematic veriloga ahdl
+subckt YSDFlipFlopAsyncReset CLK CLR D Q QBar

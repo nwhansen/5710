@@ -1,0 +1,8 @@
+
+// Library name: Lib6710_08
+// Cell name: testbuff
+// View name: schematic
+I0 (net2 net3 vdd! 0) BUFX4
+V0 (vdd! 0) vsource type=dc dc=5
+V1 (net2 0) vsource type=pulse val0=0 val1=5 period=20n width=10n
+C0 (net3 0) capacitor c=1p m=1

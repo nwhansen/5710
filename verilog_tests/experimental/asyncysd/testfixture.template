@@ -1,0 +1,23 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Q, QBar;
+
+reg  CLK, CLR, D;
+
+
+
+YSDFlipFlopAsyncReset top(Q, QBar, CLK, CLR, D); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/nathan/5710/verilog_tests/experimental/asyncysd/testfixture.verilog file
+`include "/home/nathan/5710/verilog_tests/experimental/asyncysd/testfixture.verilog"
+
+`endif
+
+endmodule 

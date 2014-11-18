@@ -1,0 +1,5 @@
+
+// Library name: Lib6710_08
+// Cell name: XOR2X1
+// View name: schematic
+subckt XOR2X1 A B Y inh_inh_bn

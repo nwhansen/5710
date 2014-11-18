@@ -1,0 +1,11 @@
+
+// Library name: ExperimentalCells
+// Cell name: ADDER_TEST2
+// View name: schematic
+I0 (A B Cin Cout Sum 0) ADDER
+V2 (Cin 0) vsource type=pulse val0=5 val1=0 period=160n width=80n
+V1 (B 0) vsource type=pulse val0=5 val1=0 period=80n width=40n
+V0 (A 0) vsource type=pulse val0=5 val1=0 period=40n width=20n
+V3 (vdd! 0) vsource type=dc dc=5
+C1 (Cout 0) capacitor c=100.0f m=1
+C0 (Sum 0) capacitor c=100.0f m=1

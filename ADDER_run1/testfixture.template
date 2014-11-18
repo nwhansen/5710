@@ -1,0 +1,23 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Cout, S;
+
+reg  A, B, Cin;
+
+
+
+ADDER top(Cout, S, A, B, Cin); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/nathan/5710/ADDER_run1/testfixture.verilog file
+`include "/home/nathan/5710/ADDER_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

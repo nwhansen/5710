@@ -1,0 +1,25 @@
+// Verilog HDL and netlist files of
+// "Lib6710_08 ADDER schematic"
+
+// HDL models
+
+// HDL file - NCSU_Analog_Parts, nmos, functional.
+/uusoc/facility/cad_common/NCSU/CDK1.6beta.utah.2011/lib/NCSU_Analog_Parts/nmos/functional/verilog.v
+
+// HDL file - NCSU_Analog_Parts, pmos, functional.
+/uusoc/facility/cad_common/NCSU/CDK1.6beta.utah.2011/lib/NCSU_Analog_Parts/pmos/functional/verilog.v
+
+
+// End HDL models
+
+// Netlisted models
+
+// netlist file - Lib6710_08, ADDER, schematic.
+ihnl/cds0/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

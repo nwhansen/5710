@@ -6,14 +6,29 @@
 +typdelays
 +nostdout
 +nocopyright
-+compile
++elaborate
 "+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
 -noshowtop
 -DELAY_MODE
 PATH
 -TYPDELAYS
 -NOSTDOUT
 -NOCOPYRIGHT
+-neg_tchk
+-nonotifier
+-sdf_NOCheck_celltype
+-access
++r
+-pulse_e
+100
+-pulse_r
+100
+-neverwarn
+-timescale
+1ns/1ns
+-nostdout
+-nocopyright
 -MESSAGES
 -XLMODE
 ./INCA_libs/irun.lnx8664.13.10.nc

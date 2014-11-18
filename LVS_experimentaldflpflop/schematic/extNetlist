@@ -1,0 +1,73 @@
+t 5 D input
+t 3 CLK input
+t 2 Q output
+t 7 QBar output
+t 8 CLR input
+
+n 1 gnd!
+n 0 vdd!
+n 2 /Q
+n 3 /CLK
+n 4 /net014
+n 5 /D
+n 7 /QBar
+n 8 /CLR
+n 9 /net25
+n 10 /net27
+n 11 /net10
+n 12 /net16
+n 13 /net31
+n 14 /net14
+
+; pmos Instance /M15 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 4 8 0 0 " m 1 l 600e-9 w 3e-6 "
+
+; pmos Instance /M5 = auLvs device Q1
+i 1 pmos 7 2 0 0 " m 1 l 600e-9 w 3e-6 "
+
+; pmos Instance /M4 = auLvs device Q2
+i 2 pmos 2 12 0 0 " m 1 l 600e-9 w 3e-6 "
+
+; pmos Instance /M3 = auLvs device Q3
+i 3 pmos 12 14 0 0 " m 1 l 600e-9 w 3e-6 "
+
+; pmos Instance /M2 = auLvs device Q4
+i 4 pmos 14 3 0 0 " m 1 l 600e-9 w 3e-6 "
+
+; pmos Instance /M1 = auLvs device Q5
+i 5 pmos 11 3 13 0 " m 1 l 600e-9 w 6e-6 "
+
+; pmos Instance /M0 = auLvs device Q6
+i 6 pmos 13 5 0 0 " m 1 l 600e-9 w 6e-6 "
+
+; nmos Instance /M18 = auLvs device Q7
+d nmos D G S B (p D S)
+i 7 nmos 4 8 1 1 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos Instance /M21 = auLvs device Q8
+i 8 nmos 14 4 1 1 " m 1 l 600e-9 w 3e-6 "
+
+; nmos Instance /M12 = auLvs device Q9
+i 9 nmos 7 2 1 1 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos Instance /M11 = auLvs device Q10
+i 10 nmos 2 12 1 1 " m 1 l 600e-9 w 1.5e-6 "
+
+; nmos Instance /M10 = auLvs device Q11
+i 11 nmos 12 3 9 1 " m 1 l 600e-9 w 3e-6 "
+
+; nmos Instance /M9 = auLvs device Q12
+i 12 nmos 9 14 1 1 " m 1 l 600e-9 w 3e-6 "
+
+; nmos Instance /M8 = auLvs device Q13
+i 13 nmos 14 11 10 1 " m 1 l 600e-9 w 3e-6 "
+
+; nmos Instance /M7 = auLvs device Q14
+i 14 nmos 10 3 1 1 " m 1 l 600e-9 w 3e-6 "
+
+; nmos Instance /M6 = auLvs device Q15
+i 15 nmos 11 5 1 1 " m 1 l 600e-9 w 1.5e-6 "
+t 0 vdd! global
+t 1 gnd! global
+

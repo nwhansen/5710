@@ -1,0 +1,5 @@
+
+// Library name: Lib6710_08
+// Cell name: ADDER
+// View name: schematic
+subckt ADDER A B Cin Cout S inh_inh_bn

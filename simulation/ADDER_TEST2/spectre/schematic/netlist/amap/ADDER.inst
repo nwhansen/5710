@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"M27n M26n M15n M14n M13n M10n M7n M6n M5n M4n M3n M2n M1n M0n" "NCSU_Analog_Parts_pmos_spectre"
+"M29n M28n M25n M24n M23n M22n M21n M20n M19n M18n M17n M16n M8n M11n" "NCSU_Analog_Parts_nmos_spectre"
+"Av" ":1v"
+"Bv" ":2v"
+"Cinv" ":3v"
+"Coutv" ":4v"
+"Sv" ":5v"
+"[@inh_bn:%:gnd!]v" ":6v"

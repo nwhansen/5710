@@ -1,0 +1,15 @@
+simulator lang=spectre insensitive=yes
+subckt tri_nand2 A B E F NE inh_inh_bn vdd gnd
+M2 (F NE net15 vdd) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+ps=6u pd=6u m=1 region=sat
+M1 (net15 B vdd vdd) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+ps=6u pd=6u m=1 region=sat
+M0 (net15 A vdd vdd) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+ps=6u pd=6u m=1 region=sat
+M3 (F E net18 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+pd=6u m=1 region=sat
+M4 (net18 A net17 gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+ps=6u pd=6u m=1 region=sat
+M5 (net17 B gnd gnd!) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+pd=6u m=1 region=sat
+ends tri_nand2

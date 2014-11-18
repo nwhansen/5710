@@ -1,0 +1,5 @@
+
+// Library name: Lib6710_08
+// Cell name: MUX2X1
+// View name: analog_extracted
+subckt MUX2X1 A B S Y

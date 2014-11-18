@@ -1,0 +1,26 @@
+DESIGN ( DFF );
+//	=================
+//	 PORT DEFINITION
+//	=================
+	INPUT CLK ( CLK );
+	INPUT CLR ( CLR );
+	INPUT D ( D );
+	OUTPUT Q ( Q );
+	OUTPUT QBAR ( QBAR );
+	SUPPLY0 GND ( GND );
+	SUPPLY1 VDD ( VDD );
+//	===========
+//	 INSTANCES
+//	===========
+	NOT ( 10, CLR );
+	NOT ( Q, 11 );
+	NOT ( QBAR, Q );
+	OR ( $1, D, CLK );
+	OR ( $4, 10, $3 );
+	AND ( $2, CLK, 9 );
+	AND ( $3, CLK, 8 );
+	PUSHPULL ( 11, $2, 9 );
+	PUSHPULL ( 8, D, $1 );
+	PUSHPULL ( 9, $4, CLK );
+END_OF_DESIGN;
+

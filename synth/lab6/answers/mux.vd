@@ -1,0 +1,15 @@
+
+module mux8_1 ( a1, a2, a3, a4, a5, a6, a7, a8, s1, s2, s3, o );
+  input a1, a2, a3, a4, a5, a6, a7, a8, s1, s2, s3;
+  output o;
+  wire   n17, n18, n19, n20, n21, n22;
+
+  MUX2X1 U18 ( .B(n17), .A(n18), .S(s3), .Y(o) );
+  MUX2X1 U19 ( .B(n19), .A(n20), .S(s2), .Y(n18) );
+  MUX2X1 U20 ( .B(a7), .A(a8), .S(s1), .Y(n20) );
+  MUX2X1 U21 ( .B(a5), .A(a6), .S(s1), .Y(n19) );
+  MUX2X1 U22 ( .B(n21), .A(n22), .S(s2), .Y(n17) );
+  MUX2X1 U23 ( .B(a3), .A(a4), .S(s1), .Y(n22) );
+  MUX2X1 U24 ( .B(a1), .A(a2), .S(s1), .Y(n21) );
+endmodule
+

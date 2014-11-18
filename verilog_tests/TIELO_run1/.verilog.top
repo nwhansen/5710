@@ -1,0 +1,12 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Y;
+
+
+
+TIELO top(Y); 
+ 

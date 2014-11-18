@@ -1,0 +1,55 @@
+// Generated for: spectre
+// Generated on: Nov  1 21:51:17 2014
+// Design library name: TestCharacterize
+// Design cell name: YSDFlipFlopAsyncReset
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/uusoc/facility/cad_common/local/class/6710/F13/cadence/Spectre/T89Y.scs"
+
+// Library name: TestCharacterize
+// Cell name: YSDFlipFlopAsyncReset
+// View name: schematic
+M15 (net014 CLR vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+M5 (QBar Q vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+M4 (Q net16 vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+M3 (net16 net14 vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+M2 (net14 CLK vdd! vdd!) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+M1 (net10 CLK net31 vdd!) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+M0 (net31 D vdd! vdd!) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+M18 (net014 CLR 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+M21 (net14 net014 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+M12 (QBar Q 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+M11 (Q net16 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+M10 (net16 CLK net25 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+M9 (net25 net14 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+M8 (net14 net10 net27 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+M7 (net27 CLK 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+M6 (net10 D 0 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

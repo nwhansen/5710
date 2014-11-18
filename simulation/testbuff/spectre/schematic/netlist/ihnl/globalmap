@@ -1,0 +1,13 @@
+CADENCE IHNL01070
+$model
+Lib6710_08/INVX4/schematic INVX4
+Lib6710_08/BUFX4/schematic BUFX4
+Lib6710_08/INV1/schematic INV1
+Lib6710_08/testbuff/schematic testbuff
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

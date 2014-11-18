@@ -4,6 +4,6 @@
 module TIELO ( Y );
 
   output Y;
-   assign Y = 1;
+   assign Y = 0;
    
 endmodule

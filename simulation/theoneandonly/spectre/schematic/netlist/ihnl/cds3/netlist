@@ -1,0 +1,73 @@
+    \+15 (QBar Q vdd! vdd!) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+14 (vdd! 11 Q vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
+        ps=6e-06 pd=1.8e-06 m=1 region=sat
+    \+13 (11 9 vdd! vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+12 (10 CLR vdd! vdd!) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+11 (vdd! CLK 9 vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
+        ps=6e-06 pd=1.8e-06 m=1 region=sat
+    \+54 (0 11) capacitor c=6.7797e-16 m=1
+    \+53 (0 10) capacitor c=6.98895e-16 m=1
+    \+52 (0 9) capacitor c=8.39093e-16 m=1
+    \+51 (0 8) capacitor c=7.34467e-16 m=1
+    \+50 (Q 0) capacitor c=2.5947e-16 m=1
+    \+49 (CLR 0) capacitor c=5.71253e-16 m=1
+    \+48 (CLK 0) capacitor c=1.09228e-15 m=1
+    \+47 (D 0) capacitor c=5.6079e-16 m=1
+    \+46 (vdd! 11) capacitor c=6.9471e-16 m=1
+    \+45 (vdd! 10) capacitor c=5.022e-16 m=1
+    \+44 (vdd! 9) capacitor c=1.20737e-15 m=1
+    \+43 (vdd! 8) capacitor c=3.7665e-16 m=1
+    \+42 (vdd! Q) capacitor c=2.1762e-16 m=1
+    \+41 (vdd! CLR) capacitor c=6.2775e-16 m=1
+    \+40 (vdd! CLK) capacitor c=1.30572e-15 m=1
+    \+39 (vdd! D) capacitor c=6.2775e-16 m=1
+    \+38 (9 10) capacitor c=2.4585e-16 m=1
+    \+37 (0 11) capacitor c=9.4959e-16 m=1
+    \+36 (0 10) capacitor c=6.5823e-16 m=1
+    \+35 (0 9) capacitor c=2.10204e-15 m=1
+    \+34 (0 8) capacitor c=1.3311e-15 m=1
+    \+33 (Q 11) capacitor c=5.4e-16 m=1
+    \+32 (Q 0) capacitor c=2.25174e-15 m=1
+    \+31 (QBar 0) capacitor c=2.13342e-15 m=1
+    \+30 (CLR 10) capacitor c=5.1525e-16 m=1
+    \+29 (CLR 9) capacitor c=3.666e-16 m=1
+    \+28 (CLK 11) capacitor c=2.86725e-16 m=1
+    \+27 (CLK 10) capacitor c=2.7e-16 m=1
+    \+26 (CLK 9) capacitor c=6.273e-16 m=1
+    \+25 (CLK 8) capacitor c=5.691e-16 m=1
+    \+24 (CLK CLR) capacitor c=2.7e-16 m=1
+    \+23 (vdd! 11) capacitor c=1.479e-15 m=1
+    \+22 (vdd! 10) capacitor c=6.5076e-16 m=1
+    \+21 (vdd! 9) capacitor c=7.9218e-16 m=1
+    \+20 (vdd! 8) capacitor c=6.8034e-16 m=1
+    \+19 (vdd! Q) capacitor c=2.3109e-15 m=1
+    \+18 (vdd! QBar) capacitor c=2.37288e-15 m=1
+    \+17 (vdd! CLR) capacitor c=2.1072e-16 m=1
+    \+16 (vdd! CLK) capacitor c=1.89312e-15 m=1
+    \+8 (QBar Q 0 0) ami06N w=1.5e-06 l=6e-07 as=1.35e-12 ad=2.25e-12 \
+        ps=1.8e-06 pd=4.5e-06 m=1 region=sat
+    \+7 (0 11 Q 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=1.35e-12 \
+        ps=4.5e-06 pd=1.8e-06 m=1 region=sat
+    \+0 (8 D 0 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+    \+6 (11 CLK 13 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 \
+        ps=9e-07 pd=6e-06 m=1 region=sat
+    \+5 (13 9 0 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=1.35e-12 ps=6e-06 \
+        pd=9e-07 m=1 region=sat
+    \+4 (10 CLR 0 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+3 (0 10 9 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+2 (9 8 12 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
+        pd=1.8e-06 m=1 region=sat
+    \+1 (12 CLK 0 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=1.35e-12 \
+        ps=6e-06 pd=9e-07 m=1 region=sat
+    \+10 (8 CLK 14 vdd!) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=9e-12 \
+        ps=9e-07 pd=9e-06 m=1 region=sat
+    \+9 (14 D vdd! vdd!) ami06P w=6e-06 l=6e-07 as=9e-12 ad=2.7e-12 \
+        ps=9e-06 pd=9e-07 m=1 region=sat
+ends YSDFlipFlopAsyncReset
+// End of subcircuit definition.

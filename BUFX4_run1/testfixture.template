@@ -1,0 +1,23 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Y;
+
+reg  A;
+
+
+
+BUFX4 top(Y, A); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/nathan/5710/BUFX4_run1/testfixture.verilog file
+`include "/home/nathan/5710/BUFX4_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

@@ -1,0 +1,6 @@
+    M0 (Y A 0 _net0) ami06N w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+    M1 (Y A vdd! inh_inh_bn) ami06P w=12.0u l=600n as=1.8e-11 \
+        ad=1.8e-11 ps=27.0u pd=27.0u m=1 region=sat
+ends INVX4
+// End of subcircuit definition.

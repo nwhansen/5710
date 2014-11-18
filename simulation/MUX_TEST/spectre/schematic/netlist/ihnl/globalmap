@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+Lib6710_08/MUX2X1/schematic MUX2X1
+ExperimentalCells/MUX_TEST/schematic MUX_TEST
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

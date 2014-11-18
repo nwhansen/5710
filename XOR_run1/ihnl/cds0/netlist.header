@@ -1,0 +1,19 @@
+// Library - ExperimentalCells, Cell - XOR, View - schematic
+// LAST TIME SAVED: Nov 10 12:58:24 2014
+// NETLIST TIME: Nov 10 12:58:57 2014
+`timescale 1ns / 100ps 
+
+module XOR ( Y, A, B );
+
+output  Y;
+
+input  A, B;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "ExperimentalCells";
+    specparam CDS_CELLNAME = "XOR";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

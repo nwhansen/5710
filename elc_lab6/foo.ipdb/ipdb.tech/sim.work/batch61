@@ -1,0 +1,6 @@
+#!/bin/csh -f
+ ipsd -stat "/home/nathan/5710/elc_lab6/foo.ipdb/D_FLIP_FLOP.design/simulate/waveform/typical/S_R0006" -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrunrace /home/nathan/5710/elc_lab6/foo.ipdb D_FLIP_FLOP typical R0006 /home/nathan/5710/elc_lab6/encounterlc.log/foo.log/D_FLIP_FLOP.log"
+ ipsd -stat "/home/nathan/5710/elc_lab6/foo.ipdb/D_FLIP_FLOP.design/simulate/waveform/typical/S_R0007" -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrunrace /home/nathan/5710/elc_lab6/foo.ipdb D_FLIP_FLOP typical R0007 /home/nathan/5710/elc_lab6/encounterlc.log/foo.log/D_FLIP_FLOP.log"
+ ipsd -stat "/home/nathan/5710/elc_lab6/foo.ipdb/D_FLIP_FLOP.design/simulate/waveform/typical/S_R0008" -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrunrace /home/nathan/5710/elc_lab6/foo.ipdb D_FLIP_FLOP typical R0008 /home/nathan/5710/elc_lab6/encounterlc.log/foo.log/D_FLIP_FLOP.log"
+ ipsd -stat "/home/nathan/5710/elc_lab6/foo.ipdb/D_FLIP_FLOP.design/simulate/waveform/typical/S_R0009" -last  -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrunrace /home/nathan/5710/elc_lab6/foo.ipdb D_FLIP_FLOP typical R0009 /home/nathan/5710/elc_lab6/encounterlc.log/foo.log/D_FLIP_FLOP.log"
+

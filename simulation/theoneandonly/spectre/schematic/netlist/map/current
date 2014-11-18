@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "theoneandonly"
+  repList "analog_extracted cmos_sch cmos.sch schematic spectre veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/nathan/5710/simulation/theoneandonly/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "TestCharacterize/YSDFlipFlopAsyncReset/analog_extracted" "YSDFlipFlopAsyncReset" )
+( "TestCharacterize/theoneandonly/schematic" "theoneandonly" )
+ )
+( term
+ )
+( param
+ )
+( "YSDFlipFlopAsyncReset" "ihnl/cds3/map" )
+( "theoneandonly" "ihnl/cds1/map" )
+ )

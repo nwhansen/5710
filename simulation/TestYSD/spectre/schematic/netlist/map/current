@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "TestYSD"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/nathan/5710/simulation/TestYSD/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "ExperimentalCells/TestYSD/schematic" "TestYSD" )
+( "ExperimentalCells/YSDFlipFlop/schematic" "YSDFlipFlop" )
+ )
+( term
+ )
+( param
+ )
+( "TestYSD" "ihnl/cds1/map" )
+( "YSDFlipFlop" "ihnl/cds0/map" )
+ )

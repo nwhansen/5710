@@ -1,0 +1,5 @@
+
+// Library name: Lib6710_08
+// Cell name: Dff2
+// View name: analog_extracted
+subckt Dff2 CLK CLRb D Q Qb

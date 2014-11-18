@@ -1,0 +1,4 @@
+ #!/bin/sh
+xargs cat > netlist <<End-Of-List
+ ihnl/cds3/netlist.header ihnl/cds3/netlist ihnl/cds1/netlist 
+End-Of-List

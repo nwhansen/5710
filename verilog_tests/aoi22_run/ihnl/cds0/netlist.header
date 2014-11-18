@@ -1,0 +1,19 @@
+// Library - Lib6710_08, Cell - AOI22X1, View - schematic
+// LAST TIME SAVED: Nov 10 18:41:30 2014
+// NETLIST TIME: Nov 10 18:57:05 2014
+`timescale 1ns / 100ps 
+
+module AOI22X1 ( Y, A, B, C, D );
+
+output  Y;
+
+input  A, B, C, D;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "Lib6710_08";
+    specparam CDS_CELLNAME = "AOI22X1";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -1,0 +1,11 @@
+153
+PORT 1 TRI_NAND2 1 8 0 <>
+A I 0 -1
+B I 1 -1
+E I 2 -1
+F T 3 -1
+NE I 4 -1
+INH_INH_BN F 5 -1
+VDD V 6 -1
+GND G 7 -1
+

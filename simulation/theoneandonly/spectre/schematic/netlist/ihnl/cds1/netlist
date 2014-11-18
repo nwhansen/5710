@@ -1,0 +1,5 @@
+
+// Library name: TestCharacterize
+// Cell name: theoneandonly
+// View name: schematic
+I0 (net3 net4 net5 net1 net2) YSDFlipFlopAsyncReset

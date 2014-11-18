@@ -1,0 +1,28 @@
+    M5 (QBar Q vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M4 (Q net16 vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u \
+        pd=9u m=1 region=sat
+    M3 (net16 net14 vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M2 (net14 CLK vdd! _net0) ami06P w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M1 (net10 CLK net31 _net0) ami06P w=6u l=600n as=9e-12 ad=9e-12 \
+        ps=15.0u pd=15.0u m=1 region=sat
+    M0 (net31 D vdd! _net0) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+    M12 (QBar Q 0 inh_inh_bn) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+    M11 (Q net16 0 inh_inh_bn) ami06N w=1.5u l=600n as=2.25e-12 \
+        ad=2.25e-12 ps=6u pd=6u m=1 region=sat
+    M10 (net16 CLK net25 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 \
+        ad=4.5e-12 ps=9u pd=9u m=1 region=sat
+    M9 (net25 net14 0 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M8 (net14 net10 net27 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 \
+        ad=4.5e-12 ps=9u pd=9u m=1 region=sat
+    M7 (net27 CLK 0 inh_inh_bn) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 \
+        ps=9u pd=9u m=1 region=sat
+    M6 (net10 D 0 inh_inh_bn) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 \
+        ps=6u pd=6u m=1 region=sat
+ends YSDFlipFlop
+// End of subcircuit definition.

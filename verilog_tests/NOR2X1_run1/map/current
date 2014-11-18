@@ -4,7 +4,7 @@
   blockName "NOR2X1"
   repList "behavioral functional schematic cmos_sch"
   stopList "behavioral functional"
-  globalList "vdd! gnd!"
+  globalList "gnd! vdd!"
   hierDelim "."
   hierPrefix "test.top"
   globalHierPrefix "cds_globals."

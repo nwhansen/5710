@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+ExperimentalCells/YSDFlipFlopAsyncReset/schematic YSDFlipFlopAsyncReset
+ExperimentalCells/TestAsyncYSD/schematic TestAsyncYSD
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

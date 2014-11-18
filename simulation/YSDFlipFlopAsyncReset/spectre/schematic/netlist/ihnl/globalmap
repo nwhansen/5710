@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+TestCharacterize/YSDFlipFlopAsyncReset/schematic YSDFlipFlopAsyncReset
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

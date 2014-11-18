@@ -1,0 +1,11 @@
+
+// Library name: ExperimentalCells
+// Cell name: ADDER_TEST
+// View name: schematic
+I0 (net1 net2 net3 net5 net4 0) ADDER
+V2 (net3 0) vsource type=pulse val0=5 val1=0 period=160n width=80n
+V1 (net2 0) vsource type=pulse val0=5 val1=0 period=80n width=40n
+V0 (net1 0) vsource type=pulse val0=5 val1=0 period=40n width=20n
+V3 (vdd! 0) vsource type=dc dc=5
+C1 (net5 0) capacitor c=100.0f m=1
+C0 (net4 0) capacitor c=100.0f m=1

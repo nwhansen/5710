@@ -1,0 +1,14 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Y;
+
+reg  A;
+
+
+
+BUFX4 top(Y, A); 
+ 

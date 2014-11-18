@@ -29,7 +29,7 @@ PATH
 
 -timescale
 
-1ns/100ps
+1ns/1ns
 
 -nostdout
 

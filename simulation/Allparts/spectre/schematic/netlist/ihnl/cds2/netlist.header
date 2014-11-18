@@ -1,5 +1,5 @@
 
 // Library name: Lib6710_08
-// Cell name: TIELO
+// Cell name: TIEHI
 // View name: analog_extracted
-subckt TIELO Y
+subckt TIEHI Y

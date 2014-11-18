@@ -1,0 +1,26 @@
+`switch default
+nfet M11 ( net8, cds_globals.gnd_, A);
+`switch default
+nfet M10 ( net7, cds_globals.gnd_, B);
+`switch default
+nfet M3 ( net20, cds_globals.gnd_, B);
+`switch default
+nfet M2 ( net19, cds_globals.gnd_, net7);
+`switch default
+nfet M1 ( Y, net20, A);
+`switch default
+nfet M0 ( Y, net19, net8);
+`switch default
+pfet M9 ( net7, cds_globals.vdd_, B);
+`switch default
+pfet M8 ( net8, cds_globals.vdd_, A);
+`switch default
+pfet M7 ( net21, cds_globals.vdd_, A);
+`switch default
+pfet M6 ( net21, cds_globals.vdd_, B);
+`switch default
+pfet M5 ( Y, net21, net7);
+`switch default
+pfet M4 ( Y, net21, net8);
+
+endmodule

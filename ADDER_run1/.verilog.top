@@ -1,0 +1,14 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  Cout, S;
+
+reg  A, B, Cin;
+
+
+
+ADDER top(Cout, S, A, B, Cin); 
+ 
