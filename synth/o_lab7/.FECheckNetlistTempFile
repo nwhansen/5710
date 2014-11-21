@@ -1,0 +1,17 @@
+
+------ I/O Pad/Port Checking
+
+WARN : Port clk is floating in the top design.
+
+------ Primitive Pins DRC Checking
+
+**WARN: Instance 'U258' has multiple input pins tied together to net 'n202'.
+**WARN: Instance 'U262' has multiple input pins tied together to net 'n219'.
+
+------ Primitive Net DRC Check
+
+WARNING : Net state[0] has no driving pin
+WARNING : Net state[1] has no driving pin
+WARNING : Net state[2] has no driving pin
+WARNING : Net state[3] has no driving pin
+WARNING : Net n151 has no driving pin

@@ -1,0 +1,38 @@
+#################################################
+#                                               #
+#  Encounter Input configuration file           #
+#  University of Utah - 6710 F13                #
+#  Erik Brunvand                                #
+#                                               #
+# Use this file to describe the input files for #
+# placement and routing.                        #
+#                                               #
+# This file is a ".globals" file for EDI 11     #
+# and above.                                    #
+#                                               #
+# Look for terms surrounded by !!...!!          #
+# These are the things you will need to change  #
+#################################################
+#
+# Set the name of your structural Verlog file
+# This comes from Synopsys synthesis
+set init_verilog {controller_struct.v}
+# Set the name of your top module 
+set init_design {controller}
+# Set the name of your .lef file
+# This comes from ELC
+set init_lef_file {Lib6710_08.lef}
+
+##############################################################
+# below here you probably don't have to change anything
+##############################################################
+# Set the name of your "muli-mode-multi-corner data file
+# You don't need to change this unless you're using a 
+# different mmmc.tcl file. 
+set init_mmmc_file {mmmc.tcl}
+# Some helpful input mode settings 
+set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+# Set the names of your gnd and power nets
+set init_gnd_net {gnd!}
+set init_pwr_net {vdd!}
+

@@ -1,0 +1,184 @@
+#################################################
+#                                               #
+#  Encounter Input configuration file           #
+#  University of Utah - 6710                    #
+#                                               #
+# Use this file to describe the input files for #
+# placement and routing.                        #
+#                                               #
+#################################################
+#
+global rda_Input
+#
+#########################################################
+# Here are the parts you need to update for your design
+#########################################################
+#
+# Your input netlist is structural verilog. Set the top module 
+# name and also give the .sdc file you used in synthesis for 
+# the clock timing constraints. 
+set rda_Input(ui_netlist)        {!!filename!!.v}
+set rda_Input(ui_topcell)        {!!TopCellName!!}
+set rda_Input(ui_timingcon_file) {!!filename!!.sdc}
+
+#
+# Leave min and max empty if you have only one timing library
+# (space-separated if you have more than one)
+set rda_Input(ui_timelib)        {!!filename!!.lib}
+set rda_Input(ui_timelib,min)    {}
+set rda_Input(ui_timelib,max)    {}
+
+#
+# Set the name of your lef file or files 
+# (space-separated if you have more than one). 
+set rda_Input(ui_leffile) {!!filename!!.lef}
+
+#
+# Give the names of the cells that you'd like SOC to use
+# in your clock tree (typically all your buffer and
+# inverter cells). Space-separated list. 
+set rda_Input(ui_cts_cell_list) {!!inv-and-buf-cell-names!!}
+
+#
+# The directory in which you're running all this
+#
+set cwd /home/elb/IC_CAD/edi-f11/!!your-dir-name!!
+#
+#########################################################
+# The name of the file that has the MMMC-formated timing 
+# library info in it. This is not technically needed in 
+# EDI v10.11, but apparently will be required starting 
+# with V11.1. This has the same info as in the timelib
+# and timingcon variables (see above), but set up in 
+# an environment where you can define multi-mode/multi-
+# corner timing. 
+#########################################################
+#
+set rda_Input(ui_view_definition_file) "Default.view"
+
+
+
+###########################################################
+# Below here are things you can typically leave alone, or
+# that are reset in top.tcl for each run.... 
+###########################################################
+
+
+###########################################################
+# These set the aspect ratio and core utiliztion. These
+# are typically reset in top.tcl for each run where you 
+# want something different. 
+#
+set rda_Input(ui_aspect_ratio) {1.0}
+set rda_Input(ui_core_util) {0.7}
+#
+#########################################################
+# These values define the spacing between your core and the 
+# edge of the placment and routing area. These default values
+# give the power routed room to put the power and ground rings
+# in. You can change them is you want to, but be aware of the
+# space required for your vdd and gnd rings... 
+#########################################################
+#
+set rda_Input(ui_core_to_left)   {30.0}
+set rda_Input(ui_core_to_right)  {30.0}
+set rda_Input(ui_core_to_top)    {30.0}
+set rda_Input(ui_core_to_bottom) {30.0}
+#
+#########################################################
+#########################################################
+#########################################################
+# Below here you should definitely be able leave alone... 
+# If you're using a library that doesn't name power and 
+# ground vdd! and gnd!, you will need to change those 
+# names though. 
+#########################################################
+#
+#######################################
+# some details of power and ground nets
+#######################################
+set rda_Input(ui_pwrnet) {vdd!}
+set rda_Input(ui_gndnet) {gnd!}
+set rda_Input(ui_pg_connections) [list \
+                        {PIN:*.vdd!:} \
+                        {PIN:*.gnd!:} \
+                        {TIEHI::} \
+                        {TIELO::} \
+                              ]
+set rda_Input(PIN:*.vdd!:) {vdd!}
+set rda_Input(PIN:*.gnd!:) {gnd!}
+set rda_Input(TIEHI::) {vdd!}
+set rda_Input(TIELO::) {gnd!}
+#########################################################
+set rda_Input(import_mode) {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+set rda_Input(ui_netlisttype) {Verilog}
+set rda_Input(ui_rtllist) ""
+set rda_Input(ui_ilmdir) ""
+set rda_Input(ui_ilmlist) ""
+set rda_Input(ui_ilmspef) ""
+set rda_Input(ui_fmdir) {}
+set rda_Input(ui_settop) {1}
+set rda_Input(ui_celllib) ""
+set rda_Input(ui_iolib) ""
+set rda_Input(ui_areaiolib) ""
+set rda_Input(ui_blklib) ""
+set rda_Input(ui_kboxlib) ""
+set rda_Input(ui_gds_file) ""
+set rda_Input(ui_oa_oa2lefversion) {}
+set rda_Input(ui_smodDef) ""
+set rda_Input(ui_smodData) ""
+set rda_Input(ui_locvlib) ""
+set rda_Input(ui_dpath) ""
+set rda_Input(ui_tech_file) ""
+set rda_Input(ui_io_file) ""
+set rda_Input(ui_timingcon_file,full) ""
+set rda_Input(ui_latency_file) ""
+set rda_Input(ui_scheduling_file) ""
+set rda_Input(ui_buf_footprint) {}
+set rda_Input(ui_delay_footprint) {}
+set rda_Input(ui_inv_footprint) {}
+set rda_Input(ui_cts_cell_footprint) {}
+set rda_Input(ui_core_cntl) {aspect}
+set rda_Input(ui_core_height) {135.0}
+set rda_Input(ui_core_width) {188.7}
+set rda_Input(ui_max_io_height) {0}
+set rda_Input(ui_row_height) {27.0}
+set rda_Input(ui_isHorTrackHalfPitch) {0}
+set rda_Input(ui_isVerTrackHalfPitch) {1}
+set rda_Input(ui_ioOri) {R0}
+set rda_Input(ui_isOrigCenter) {0}
+set rda_Input(ui_isVerticalRow) {0}
+set rda_Input(ui_exc_net) ""
+set rda_Input(ui_delay_limit) {1000}
+set rda_Input(ui_net_delay) {1000.0ps}
+set rda_Input(ui_net_load) {0.5pf}
+set rda_Input(ui_in_tran_delay) {0.1ps}
+set rda_Input(ui_captbl_file) ""
+set rda_Input(ui_preRoute_cap) {1}
+set rda_Input(ui_postRoute_cap) {1}
+set rda_Input(ui_postRoute_xcap) {1}
+set rda_Input(ui_preRoute_res) {1}
+set rda_Input(ui_postRoute_res) {1}
+set rda_Input(ui_shr_scale) {1.0}
+set rda_Input(ui_rel_c_thresh) {0.03}
+set rda_Input(ui_tot_c_thresh) {5.0}
+set rda_Input(ui_cpl_c_thresh) {3.0}
+set rda_Input(ui_time_unit) {none}
+set rda_Input(ui_cap_unit) {}
+set rda_Input(ui_oa_reflib) {}
+set rda_Input(ui_oa_abstractname) {}
+set rda_Input(ui_oa_layoutname) {}
+set rda_Input(ui_sigstormlib) ""
+set rda_Input(ui_cdb_file,min) ""
+set rda_Input(ui_cdb_file,max) ""
+set rda_Input(ui_cdb_file) ""
+set rda_Input(ui_xtwf_file) ""
+set rda_Input(ui_qxtech_file) ""
+set rda_Input(ui_qxlayermap_file) ""
+set rda_Input(ui_qxlib_file) ""
+set rda_Input(ui_qxconf_file) ""
+set rda_Input(flip_first) {1}
+set rda_Input(double_back) {1}
+set rda_Input(assign_buffer)   {1}
+set rda_Input(use_io_row_flow) {0}
+set rda_Input(ui_gen_footprint) {0}

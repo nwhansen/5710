@@ -1,0 +1,86 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 13.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.43-p014.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.13-s001
+@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.13-s017_1" on Tue Nov 18 18:15:07 2014 (mem=140.2M) ---
+--- Running on lab2-23 (x86_64 w/Linux 2.6.32-431.el6.x86_64) ---
+This version was compiled on Tue Jul 30 13:03:02 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_lef_file Lib6710_08.lef
+<CMD> set init_mmmc_file mmmc.tcl
+<CMD> set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+<CMD> set init_gnd_net gnd!
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file Lib6710_08.lef...
+Set DBUPerIGU to M2 pitch 2400.
+
+viaInitial starts at Tue Nov 18 18:15:18 2014
+viaInitial ends at Tue Nov 18 18:15:18 2014
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'controller_struct.v'
+**ERROR: (ENCVL-209):	In file 'controller_struct.v', line 25, undefined instance port at ).
+**ERROR: (ENCVL-356):	The macro cell 'DFF2' is LEF-defined, but the pin 'CLRB' used in the netlist is not define is not defined in LEF. Check and correct the pin name, or define the pin in LEF file.
+**ERROR: (ENCVL-209):	In file 'controller_struct.v', line 25, undefined instance port at ).
+**ERROR: (ENCVL-356):	The macro cell 'DFF2' is LEF-defined, but the pin 'QB' used in the netlist is not define is not defined in LEF. Check and correct the pin name, or define the pin in LEF file.
+**ERROR: (ENCVL-209):	In file 'controller_struct.v', line 26, undefined instance port at ).
+**ERROR: (ENCVL-356):	The macro cell 'DFF2' is LEF-defined, but the pin 'CLRB' used in the netlist is not define is not defined in LEF. Check and correct the pin name, or define the pin in LEF file.
+**ERROR: (ENCVL-209):	In file 'controller_struct.v', line 26, undefined instance port at ).
+**ERROR: (ENCVL-356):	The macro cell 'DFF2' is LEF-defined, but the pin 'QB' used in the netlist is not define is not defined in LEF. Check and correct the pin name, or define the pin in LEF file.
+**ERROR: (ENCVL-209):	In file 'controller_struct.v', line 27, undefined instance port at ).
+**ERROR: (ENCVL-356):	The macro cell 'DFF2' is LEF-defined, but the pin 'CLRB' used in the netlist is not define is not defined in LEF. Check and correct the pin name, or define the pin in LEF file.
+**ERROR: (ENCVL-209):	In file 'controller_struct.v', line 27, undefined instance port at ).
+**ERROR: (ENCVL-356):	The macro cell 'DFF2' is LEF-defined, but the pin 'QB' used in the netlist is not define is not defined in LEF. Check and correct the pin name, or define the pin in LEF file.
+**ERROR: (ENCVL-209):	In file 'controller_struct.v', line 28, undefined instance port at ).
+**ERROR: (ENCVL-356):	The macro cell 'DFF2' is LEF-defined, but the pin 'CLRB' used in the netlist is not define is not defined in LEF. Check and correct the pin name, or define the pin in LEF file.
+**ERROR: (ENCVL-209):	In file 'controller_struct.v', line 28, undefined instance port at ).
+**ERROR: (ENCVL-356):	The macro cell 'DFF2' is LEF-defined, but the pin 'QB' used in the netlist is not define is not defined in LEF. Check and correct the pin name, or define the pin in LEF file.
+Verilog file 'controller_struct.v' has errors!  See above.
+
+*** Memory Usage v#1 (Current mem = 481.906M, initial mem = 140.160M) ***
+**ERROR: (ENCVL-902):	Failed to read netlist controller_struct.v.
+
+
+*** Memory Usage v#1 (Current mem = 481.969M, initial mem = 140.160M) ***
+--- Ending "Encounter" (totcpu=0:00:13.5, real=0:01:31, mem=482.0M) ---

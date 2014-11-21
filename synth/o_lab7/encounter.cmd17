@@ -1,0 +1,123 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Tue Nov 18 17:38:17 2014                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+#@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v13.13-s001
+#@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_verilog controller_struct.v
+set init_lef_file Lib6710_08.lef
+set init_mmmc_file mmmc.tcl
+set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+set init_gnd_net gnd!
+set init_pwr_net vdd!
+init_design
+setDrawView fplan
+getIoFlowFlag
+setFPlanRowSpacingAndType 15 2
+setIoFlowFlag 0
+floorPlan -flip s -coreMarginsBy die -site core -r 0.60 0.60 30.0 30.0 30.0 30.0
+getIoFlowFlag
+fit
+saveDesign controller_fplan.enc
+saveFPlan controller.fp
+globalNetConnect vdd! -type pgpin -pin vdd! -all
+globalNetConnect gnd! -type pgpin -pin gnd! -all
+globalNetConnect vdd! -type tiehi
+globalNetConnect gnd! -type tielo
+setAddRingMode -stacked_via_top_layer metal3
+setAddRingMode -stacked_via_bottom_layer metal1
+addRing -spacing 1.8 -width 9.9 -offset 1.8 -threshold 1.8 -jog_distance 1.8 -layer {bottom metal1 top metal1 right metal2 left metal2} -center 1 -around core -nets {gnd! vdd! }
+setAddStripeMode -stacked_via_top_layer metal3
+setAddStripeMode -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 123 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 120 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {gnd! vdd! }
+sroute -allowJogging 1
+saveDesign controller_pplan.enc
+setDesignMode -process 250
+setPlaceMode -timingDriven true -reorderScan true -congEffort medium -doCongOpt false -modulePlan true
+placeDesign
+setDrawView place
+setOptMode -yieldEffort none
+setOptMode -effort high
+setOptMode -maxDensity 0.95
+setOptMode -drcMargin 0.0
+setOptMode -holdTargetSlack 0.0 -setupTargetSlack 0.0
+setOptMode -simplifyNetlist false
+clearClockDomains
+setOptMode -usefulSkew false
+optDesign -preCTS -drv -outDir controller_reports/preCTSOptTimingReports
+timeDesign -reportOnly -slackReports -outDir controller_reports/preCTSOptTimingReports
+saveDesign controller_placed.enc
+createClockTreeSpec -bufferlist -file controller.ctstch
+specifyClockTree -file controller.ctstch
+setCTSMode -routeGuide true
+setCTSMode -routeClkNet true
+clockDesign -specFile controller.ctstch -outDir controller_clock_reports
+setOptMode -yieldEffort none
+setOptMode -effort high
+setOptMode -maxDensity 0.95
+setOptMode -drcMargin 0.0
+setOptMode -holdTargetSlack 0.0 -setupTargetSlack 0.0
+setOptMode -simplifyNetlist false
+clearClockDomains
+setOptMode -usefulSkew false
+optDesign -postCTS -drv -outDir controller_reports/postCTSOpt
+timeDesign -reportOnly -slackReports -outDir controller_reports/postCTSOpt
+saveDesign controller_cts.enc
+changeUseClockNetStatus -noFixedNetWires
+setNanoRouteMode -drouteUseMultiCutViaEffort medium
+setNanoRouteMode -routeTdrEffort 9
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 0
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven false
+getNanoRouteMode
+routeDesign -globalDetail
+setExtractRCMode -engine postRoute
+setExtractRCMode -effortLevel low
+setAnalysisMode -analysisType onChipVariation
+extractRC
+timeDesign -postRoute -prefix TimingReports -outDir controller_reports/postroute
+setOptMode -yieldEffort none
+setOptMode -effort medium
+setOptMode -maxDensity 0.95
+setOptMode -drcMargin 0.0
+setOptMode -holdTargetSlack 0.0 -setupTargetSlack 0.0
+setOptMode -simplifyNetlist false
+clearClockDomains
+setOptMode -usefulSkew false
+optDesign -postRoute -drv -prefix TimingReports -outDir controller_reports/postrouteOpt
+timeDesign -postRoute -drvReports -slackReports -pathReports -outDir controller_reports/postrouteOpt
+setFillerMode -corePrefix controller_FILL -core {FILL FILL2 FILL4 FILL8}
+addFiller -cell {FILL FILL2 FILL4 FILL8} -prefix controllerFILL -markFixed
+saveDesign controller_routed.enc
+verifyConnectivity -type regular -error 50 -warning 50 -report controller_Conn_regular.rpt
+verifyConnectivity -type special -error 50 -warning 50 -report controller_Conn_special.rpt
+verifyGeometry -allowSameCellViols -noSameNet -noOverlap -report controller_Geom.rpt
+defOut -floorplan -netlist -routing controller.def
+saveDesign controller_done.enc -def
+saveNetlist controller_edi.v
+extractRC -outfile controller.cap
+rcOut -spef controller.spef
+write_sdf -ideal_clock_network $BASENAME.sdf
+do_extract_model -blackbox_2d  -view $default_analysis_view ${BASENAME}_edi.lib
+writeTimingCon controller_done.pt
+report_timing -check_clocks > report_timing.pt
+zoomBox 6.339 -20.260 198.785 192.109
+zoomBox 92.033 2.902 187.991 169.849

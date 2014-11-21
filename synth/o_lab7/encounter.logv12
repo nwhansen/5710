@@ -1,0 +1,1253 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 13.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.43-p014.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.13-s001
+@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.13-s017_1" on Tue Nov 18 16:59:27 2014 (mem=140.2M) ---
+--- Running on lab2-23 (x86_64 w/Linux 2.6.32-431.el6.x86_64) ---
+This version was compiled on Tue Jul 30 13:03:02 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_lef_file Lib6710_08.lef
+<CMD> set init_mmmc_file mmmc.tcl
+<CMD> set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+<CMD> set init_gnd_net gnd!
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file Lib6710_08.lef...
+Set DBUPerIGU to M2 pitch 2400.
+
+viaInitial starts at Tue Nov 18 16:59:32 2014
+viaInitial ends at Tue Nov 18 16:59:32 2014
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'controller_struct.v'
+Module DFF2 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module DFF2 is not defined in LEF files.  It will be treated as an empty module.
+
+*** Memory Usage v#1 (Current mem = 481.895M, initial mem = 140.160M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=481.9M) ***
+Top level cell is controller.
+Reading typical_lib timing library '/home/nathan/5710/libfiles/11-17/Lib6710_08.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'CLK' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'CLRB' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'QB' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'INV1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'INV1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'INVX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'INVX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'INVX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'INVX4' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+**WARN: (ENCTS-414):	There is mismatch in pin direction for the pin 'CLK' of cell 'DFF2' specified in LEF or Verilog, and the timing library. The timing library value will be used.
+**WARN: (ENCTS-414):	There is mismatch in pin direction for the pin 'CLRB' of cell 'DFF2' specified in LEF or Verilog, and the timing library. The timing library value will be used.
+**WARN: (ENCTS-414):	There is mismatch in pin direction for the pin 'D' of cell 'DFF2' specified in LEF or Verilog, and the timing library. The timing library value will be used.
+**WARN: (ENCTS-414):	There is mismatch in pin direction for the pin 'Q' of cell 'DFF2' specified in LEF or Verilog, and the timing library. The timing library value will be used.
+**WARN: (ENCTS-414):	There is mismatch in pin direction for the pin 'QB' of cell 'DFF2' specified in LEF or Verilog, and the timing library. The timing library value will be used.
+Read 16 cells in library 'Lib6710_08' 
+Ignored 1 cells in library 'Lib6710_08' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.07min, fe_real=0.13min, fe_mem=487.3M) ***
+
+{DETAILMESSAGE}Starting recursive module instantiation check.
+No recursion found.
+Term dir updated for 4 vinsts of 1 cells.
+Building hierarchical netlist for Cell controller ...
+*** Netlist is unique.
+**WARN: (ENCREPO-102):	Instance state_reg_1_ of the cell DFF2 has no physical library or has wrong dimension values (<=0).
+Type 'man ENCREPO-102' for more detail.
+**WARN: (ENCREPO-102):	Instance state_reg_3_ of the cell DFF2 has no physical library or has wrong dimension values (<=0).
+Type 'man ENCREPO-102' for more detail.
+**WARN: (ENCREPO-102):	Instance state_reg_2_ of the cell DFF2 has no physical library or has wrong dimension values (<=0).
+Type 'man ENCREPO-102' for more detail.
+**WARN: (ENCREPO-102):	Instance state_reg_0_ of the cell DFF2 has no physical library or has wrong dimension values (<=0).
+Type 'man ENCREPO-102' for more detail.
+** info: there are 23 modules.
+** info: there are 147 stdCell insts.
+**WARN: (ENCREPO-103):	There are 4 instances (1 cells) with no dimension defined.
+
+*** Memory Usage v#1 (Current mem = 499.320M, initial mem = 140.160M) ***
+**WARN: (ENCFP-3961):	techSite 'dbl_core' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'IO' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'corner' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+Generated pitch 2.4 in metal3 is different from 3 defined in technology file in unpreferred direction.
+Generated pitch 3 in metal2 is different from 2.4 defined in technology file in unpreferred direction.
+Generated pitch 2.4 in metal1 is different from 3 defined in technology file in unpreferred direction.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (ENCEXT-2773):	Unable to find a via resistance from LEF technology file.
+**WARN: (ENCEXT-2775):	Via resistance between layer M0 and M1 is assigned 4 Ohms.
+**WARN: (ENCEXT-2777):	Via resistance between layer M1 and M2 is not defined in the cap table. LEF value 0.9 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2777):	Via resistance between layer M2 and M3 is not defined in the cap table. LEF value 0.8 Ohms will be used.
+Type 'man ENCEXT-2777' for more detail.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.085 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.085 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.055 will be used.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: typical_view
+    RC-Corner Name        : typical_rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file 'controller_struct.sdc' ...
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File controller_struct.sdc, Line 37).
+
+INFO (CTE): read_dc_script finished with 1 WARNING.
+WARNING (CTE-25): Line: 8 of File controller_struct.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=288.9M, current mem=510.2M)
+Total number of combinational cells: 15
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX4 BUFX8
+Total number of usable buffers: 2
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV1 INVX4 INVX2 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+WARN: No Power Domain Created at this stage, default max voltage is 0
+<CMD> setDrawView fplan
+<CMD> getIoFlowFlag
+<CMD> setFPlanRowSpacingAndType 15 2
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -flip s -coreMarginsBy die -site core -r 0.60 0.60 30.0 30.0 30.0 30.0
+Adjusting Core to Left to: 31.2000.
+Generated pitch 2.4 in metal3 is different from 3 defined in technology file in unpreferred direction.
+Generated pitch 3 in metal2 is different from 2.4 defined in technology file in unpreferred direction.
+Generated pitch 2.4 in metal1 is different from 3 defined in technology file in unpreferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> saveDesign controller_fplan.enc
+**WARN: (ENCSYT-3036):	Design directory controller_fplan.enc.dat exists, rename it to controller_fplan.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "controller_fplan.enc.dat/controller.v.gz" ...
+Saving configuration ...
+Saving preference file controller_fplan.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=512.0M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=512.0M) ***
+Writing DEF file 'controller_fplan.enc.dat/controller.def.gz', current time is Tue Nov 18 16:59:32 2014 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'controller_fplan.enc.dat/controller.def.gz' is written, current time is Tue Nov 18 16:59:32 2014 ...
+No integration constraint in the design.
+<CMD> saveFPlan controller.fp
+<CMD> setDrawView fplan
+<CMD> getIoFlowFlag
+<CMD> setFPlanRowSpacingAndType 15 2
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -flip s -coreMarginsBy die -site core -r 0.60 0.60 30.0 30.0 30.0 30.0
+Adjusting Core to Left to: 31.2000.
+Generated pitch 2.4 in metal3 is different from 3 defined in technology file in unpreferred direction.
+Generated pitch 3 in metal2 is different from 2.4 defined in technology file in unpreferred direction.
+Generated pitch 2.4 in metal1 is different from 3 defined in technology file in unpreferred direction.
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> saveDesign controller_fplan.enc
+**WARN: (ENCSYT-3036):	Design directory controller_fplan.enc.dat exists, rename it to controller_fplan.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "controller_fplan.enc.dat/controller.v.gz" ...
+Saving configuration ...
+Saving preference file controller_fplan.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=512.4M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=512.4M) ***
+Writing DEF file 'controller_fplan.enc.dat/controller.def.gz', current time is Tue Nov 18 16:59:37 2014 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'controller_fplan.enc.dat/controller.def.gz' is written, current time is Tue Nov 18 16:59:37 2014 ...
+No integration constraint in the design.
+<CMD> saveFPlan controller.fp
+couldn't read file "place.tlc": no such file or directory
+<CMD> setDesignMode -process 250
+Applying the recommended capacitance filtering threshold values for 250nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQRC, IQRC and QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> setPlaceMode -timingDriven true -reorderScan true -congEffort medium -doCongOpt false -modulePlan true
+<CMD> placeDesign
+*** Starting placeDesign default flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (ENCDC-1629):	The variable rdagUseDefaultDelayLimit was set to 101. This is less than the default 1000 and may result in inaccurate results for high fanout nets. To change the variable, run command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.25727 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 250nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 524.0M, InitMEM = 523.9M)
+siFlow : Timing analysis mode is single, using late cdB files
+AAE_INFO: All RC in memory mode is on.
+*** Memory pool thread-safe mode activated.
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man ENCTS-403' for more detail.
+AAE_THRD: End delay calculation. (MEM=567.699 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 567.7M) ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 21 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+ThreeLayerMode is on. Timing-driven placement option disabled.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v#1 (mem=567.9M)" ...
+Options: clkGateAware pinGuide congEffort=medium gpeffort=medium 
+**WARN: (ENCTRN-1101):	Could not determine power-rail locations in cells, using GNDOnBtm.
+**WARN: (ENCTRN-1102):	Could not determine power-rail locations of some cells.
+	Forcing all single height cell pwr-rail setting to GND-on-bottom.
+**ERROR: (ENCSP-281):	Physical library for inst 'state_reg_1_' of cell type 'DFF2' is not defined.
+**ERROR: (ENCSP-281):	Physical library for inst 'state_reg_3_' of cell type 'DFF2' is not defined.
+**ERROR: (ENCSP-281):	Physical library for inst 'state_reg_2_' of cell type 'DFF2' is not defined.
+**ERROR: (ENCSP-281):	Physical library for inst 'state_reg_0_' of cell type 'DFF2' is not defined.
+#std cell=126 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=136 #term=366 #term/net=2.69, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=27
+stdCell: 0 single + 122 double + 4 multi
+Total standard cell length = 0.8751 (mm), area = 0.0242 (mm^2)
+Core basic site is core
+**Info: (ENCSP-307): Design contains fractional 21 cells.
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+Average module density = 0.521.
+Density for the design = 0.521.
+       = stdcell_area 373 sites (24153 um^2) / alloc_area 715 sites (46332 um^2).
+Pin Density = 0.982.
+            = total # of pins 366 / total Instance area 373.
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 567.9M
+Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 567.9M
+Iteration  3: Total net bbox = 1.037e+01 (8.18e+00 2.19e+00)
+              Est.  stn bbox = 1.037e+01 (8.18e+00 2.19e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 567.9M
+Iteration  4: Total net bbox = 5.401e+03 (2.89e+03 2.51e+03)
+              Est.  stn bbox = 5.401e+03 (2.89e+03 2.51e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 567.9M
+Iteration  5: Total net bbox = 6.189e+03 (3.50e+03 2.68e+03)
+              Est.  stn bbox = 6.189e+03 (3.50e+03 2.68e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 567.9M
+Iteration  6: Total net bbox = 7.892e+03 (3.91e+03 3.99e+03)
+              Est.  stn bbox = 8.198e+03 (4.09e+03 4.11e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 567.9M
+*** cost = 7.892e+03 (3.91e+03 3.99e+03) (cpu for global=0:00:00.0) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:00.0
+Core basic site is core
+**Info: (ENCSP-307): Design contains fractional 21 cells.
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:00.1, real=0:00:00.0, mem=567.9MB) @(0:00:06.0 - 0:00:06.1).
+move report: preRPlace moves 122 insts, mean move: 57.98 um, max move: 155.34 um
+	max move on inst (U149): (261.32, 175.46) --> (366.60, 125.40)
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U161' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U240' (Cell NOR2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U179' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U181' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U195' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U255' (Cell NOR2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U149' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U159' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U175' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U177' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U203' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U206' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U260' (Cell NOR2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U127' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U201' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U212' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U216' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U225' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U224' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+wireLenOptFixPriorityInst 0 inst fixed
+Placement tweakage begins.
+wire length = 1.358e+04 = 8.732e+03 H + 4.844e+03 V
+wire length = 9.071e+03 = 4.888e+03 H + 4.184e+03 V
+Placement tweakage ends.
+move report: tweak moves 122 insts, mean move: 63.68 um, max move: 217.80 um
+	max move on inst (U246): (67.20, 125.40) --> (189.60, 30.00)
+Clock gating cells determined by native netlist tracing.
+Wire length optimization begins.
+Wire length optimization ends. (0:00:00.0)
+move report: xdp moves 47 insts, mean move: 8.25 um, max move: 27.00 um
+	max move on inst (U170): (180.00, 30.00) --> (153.00, 30.00)
+[CPU] RefinePlace/WireLenOpt (cpu=0:00:00.0, real=0:00:00.0, mem=567.9MB) @(0:00:06.1 - 0:00:06.1).
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U241' (Cell NOR2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (EMS-63):	Message <ENCSP-2020> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=567.9MB) @(0:00:06.1 - 0:00:06.1).
+**ERROR: (ENCSP-2021):	Could not legalize <111> instances in the design. Check warning message ENCSP-270 or ENCSP-2020 in log file for more details.
+move report: rPlace moves 81 insts, mean move: 14.27 um, max move: 282.60 um
+	max move on inst (U216): (38.40, 99.00) --> (252.00, 30.00)
+move report: overall moves 122 insts, mean move: 71.67 um, max move: 313.47 um
+	max move on inst (U216): (78.44, 169.90) --> (252.00, 30.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =       313.47 um
+  inst (U216) with max move: (78.436, 169.901) -> (252, 30)
+  mean    (X+Y) =        71.67 um
+Total instances flipped for WireLenOpt: 35
+Total instances moved : 122
+*** cpu=0:00:00.1   mem=567.9M  mem(used)=0.0M***
+[CPU] RefinePlace/total (cpu=0:00:00.1, real=0:00:00.0, mem=567.9MB) @(0:00:06.0 - 0:00:06.1).
+Total net length = 1.016e+04 (5.906e+03 4.253e+03) (ext = 2.873e+03)
+*** End of Placement (cpu=0:00:00.1, real=0:00:00.0, mem=567.9M) ***
+Core basic site is core
+**Info: (ENCSP-307): Design contains fractional 21 cells.
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+default core: bins with density >  0.75 =  100 % ( 2 / 2 )
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 0, mem = 569.0M **
+<CMD> setDrawView place
+<CMD> setOptMode -yieldEffort none
+<CMD> setOptMode -effort high
+<CMD> setOptMode -maxDensity 0.95
+<CMD> setOptMode -drcMargin 0.0
+<CMD> setOptMode -holdTargetSlack 0.0 -setupTargetSlack 0.0
+<CMD> setOptMode -simplifyNetlist false
+<CMD> clearClockDomains
+**WARN: (ENCSYC-6123):	The clearClockDomains command is obsolete - support for this command will 
+ be discontinued in a future release of the software. You should update your scripts to be 
+ compatible with the path group based flow - refer to the reset_path_group command. 
+ In this release, the clearClockDomains command will be translated to the equivalent commands 
+ for the path group flow. You may also set 'setAnalysisMode -honorClockDomains true' for backward 
+ compatibility with previous releases.
+<CMD> setOptMode -usefulSkew false
+<CMD> optDesign -preCTS -drv -outDir controller_reports/preCTSOptTimingReports
+**INFO: Enabling Trial Route flow for DRV Fixing.
+GigaOpt running with 1 threads.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 567.4M, totSessionCpu=0:00:06 **
+setTrialRouteMode -fixAirConnect true
+Added -handlePreroute to trialRouteMode
+*** optDesign -preCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Setup Target Slack: user slack 0; extra slack 0.1
+Hold Target Slack: user slack 0
+**WARN: (ENCOPT-3195):	Changed analysis mode: setAnalysisMode -clockPropagation forcedIdeal.
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+Multi-VT timing optimization disabled based on library information.
+*** Starting trialRoute (mem=567.8M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -handlePreroute -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (405750 225000)
+coreBox:    (31200 30000) (375750 195000)
+
+Phase 1a route (0:00:00.0 569.1M):
+Est net length = 8.683e+03um = 5.674e+03H + 3.009e+03V
+Usage: (24.8%H 31.0%V) = (6.890e+03um 1.103e+04um) = (558 388)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 42 = 30 (14.25% H) + 12 (5.83% V)
+
+Phase 1b route (0:00:00.0 571.6M):
+Usage: (24.8%H 31.0%V) = (6.860e+03um 1.105e+04um) = (557 388)
+Overflow: 43 = 30 (14.32% H) + 13 (6.03% V)
+
+Phase 1c route (0:00:00.0 571.6M):
+Usage: (24.7%H 31.0%V) = (6.830e+03um 1.100e+04um) = (556 387)
+Overflow: 42 = 30 (14.32% H) + 12 (5.83% V)
+
+Phase 1d route (0:00:00.0 571.6M):
+Usage: (24.8%H 31.0%V) = (6.859e+03um 1.115e+04um) = (558 387)
+Overflow: 29 = 20 (9.57% H) + 8 (4.01% V)
+
+Phase 1a-1d Overflow: 9.57% H + 4.01% V (0:00:00.0 571.6M)
+
+
+Phase 1e route (0:00:00.0 572.3M):
+Usage: (25.2%H 32.2%V) = (6.950e+03um 1.190e+04um) = (566 403)
+Overflow: 2 = 0 (0.00% H) + 2 (0.95% V)
+
+Phase 1f route (0:00:00.0 572.3M):
+Usage: (25.2%H 32.0%V) = (6.977e+03um 1.178e+04um) = (568 400)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  0:	7	 3.33%	39	18.57%
+  1:	17	 8.10%	11	 5.24%
+  2:	18	 8.57%	11	 5.24%
+  3:	5	 2.38%	11	 5.24%
+  4:	5	 2.38%	27	12.86%
+  5:	158	75.24%	111	52.86%
+
+
+Phase 1e-1f Overflow: 0.00% H + 0.00% V (0:00:00.0 572.3M)
+
+Global route (cpu=0.0s real=0.0s 569.8M)
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (25.2%H 32.0%V) = (6.977e+03um 1.178e+04um) = (568 400)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1l Overflow: 0.00% H + 0.00% V (0:00:00.0 572.3M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  0:	7	 3.33%	39	18.57%
+  1:	17	 8.10%	11	 5.24%
+  2:	18	 8.57%	11	 5.24%
+  3:	5	 2.38%	11	 5.24%
+  4:	5	 2.38%	27	12.86%
+  5:	158	75.24%	111	52.86%
+
+
+*** Completed Phase 1 route (0:00:00.0 567.8M) ***
+
+
+Total length: 1.059e+04um, number of vias: 611
+M1(H) length: 5.612e+01um, number of vias: 336
+M2(V) length: 4.882e+03um, number of vias: 275
+M3(H) length: 5.656e+03um
+*** Completed Phase 2 route (0:00:00.0 567.8M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=567.8M) ***
+Peak Memory Usage was 567.8M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=567.8M) ***
+
+Initializing multi-corner resistance tables ...
+Extraction called for design 'controller' of instances=126 and nets=138 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design controller.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This will result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 567.836M)
+Found active setup analysis view typical_view
+Found active hold analysis view typical_view
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=574.5 CPU=0:00:00.0 REAL=0:00:00.0)
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| -12.327 |
+|           TNS (ns):| -72.729 |
+|    Violating Paths:|   13    |
+|          All Paths:|   22    |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      2 (2)       |   -0.506   |      2 (2)       |
+|   max_tran     |      3 (7)       |   -3.832   |      6 (14)      |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 52.130%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 574.7M, totSessionCpu=0:00:06 **
+*** Starting optimizing excluded clock nets MEM= 574.7M) ***
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 574.8M) ***
+Begin: GigaOpt DRV Optimization
+Begin: Processing multi-driver nets
+Info: 1 clock net  excluded from IPO operation.
+*** Starting multi-driver net buffering ***
+*summary: 0 non-ignored multi-driver nets.
+*** Finished buffering multi-driver nets (CPU=0:00:00.0, MEM=572.8M) ***
+End: Processing multi-driver nets
+Info: 1 clock net  excluded from IPO operation.
+Core basic site is core
+**Info: (ENCSP-307): Design contains fractional 21 cells.
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+Core basic site is core
+**Info: (ENCSP-307): Design contains fractional 21 cells.
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+*info: There are 2 candidate Buffer cells
+*info: There are 3 candidate Inverter cells
++--------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       |         |            |           |
++--------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  | Density |    Real    |    Mem    |
++--------------------------------------------------------------------------------------------------------------------------+
+|     7   |    15   |     2   |      2  |     0   |     0   |     0   |     0   | -12.33 |  52.13  |            |           |
+|     0   |     0   |     0   |      0  |     0   |     0   |     0   |     0   | -3.17 |  52.59  |   0:00:00.0|     694.5M|
++--------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=694.5M) ***
+
+*** Starting refinePlace (0:00:06.4 mem=694.7M) ***
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-5140):	Global net connect rules have not been created. Added  insts would have no supply connectivity, and would fail DRC.
+Type 'man ENCSP-5140' for more detail.
+**WARN: (ENCSP-315):	Found 123 instances insts with no PG Term connections.
+Type 'man ENCSP-315' for more detail.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:00.1, real=0:00:00.0, mem=694.9MB) @(0:00:06.4 - 0:00:06.5).
+move report: preRPlace moves 123 insts, mean move: 61.97 um, max move: 114.60 um
+	max move on inst (U211): (119.40, 99.00) --> (31.20, 125.40)
+wireLenOptFixPriorityInst 0 inst fixed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U241' (Cell NOR2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U146' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U203' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U159' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U161' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U181' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U195' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U255' (Cell NOR2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U149' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U156' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U175' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U177' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U179' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U206' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U260' (Cell NOR2X1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U201' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U212' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U137' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U225' (Cell INV1).
+Type 'man ENCSP-2020' for more detail.
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=694.9MB) @(0:00:06.5 - 0:00:06.5).
+**ERROR: (ENCSP-2021):	Could not legalize <56> instances in the design. Check warning message ENCSP-270 or ENCSP-2020 in log file for more details.
+move report: rPlace moves 123 insts, mean move: 59.28 um, max move: 181.80 um
+	max move on inst (U253): (31.20, 125.40) --> (117.60, 30.00)
+move report: overall moves 104 insts, mean move: 30.68 um, max move: 112.20 um
+	max move on inst (U224): (108.00, 30.00) --> (64.80, 99.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =       112.20 um
+  inst (U224) with max move: (108, 30) -> (64.8, 99)
+  mean    (X+Y) =        30.68 um
+Total instances moved : 104
+*** cpu=0:00:00.1   mem=694.9M  mem(used)=0.1M***
+[CPU] RefinePlace/total (cpu=0:00:00.1, real=0:00:00.0, mem=694.9MB) @(0:00:06.4 - 0:00:06.5).
+*** maximum move = 112.2um ***
+*** Finished refinePlace (0:00:06.5 mem=694.9M) ***
+*** Re-routing 2 un-routed nets (694.9M) ***
+*** Finished re-routing un-routed nets (695.9M) ***
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (EMS-63):	Message <ENCSP-305> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+
+*** Finish Physical Update (cpu=0:00:00.1 real=0:00:00.0 mem=695.9M) ***
+End: GigaOpt DRV Optimization
+GigaOpt: Cleaning up trial route
+*** Starting trialRoute (mem=655.3M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (405750 225000)
+coreBox:    (31200 30000) (375750 195000)
+
+Phase 1a route (0:00:00.0 656.6M):
+Est net length = 1.231e+04um = 8.644e+03H + 3.663e+03V
+Usage: (35.7%H 33.2%V) = (9.937e+03um 1.195e+04um) = (804 416)
+Obstruct: 1 = 0 (0.0%H) + 1 (0.5%V)
+Overflow: 120 = 98 (46.46% H) + 22 (10.71% V)
+
+Phase 1b route (0:00:00.0 659.1M):
+Usage: (35.7%H 33.2%V) = (9.937e+03um 1.195e+04um) = (804 416)
+Overflow: 120 = 98 (46.46% H) + 22 (10.71% V)
+
+Phase 1c route (0:00:00.0 659.1M):
+Usage: (35.7%H 33.2%V) = (9.937e+03um 1.195e+04um) = (804 416)
+Overflow: 120 = 98 (46.46% H) + 22 (10.56% V)
+
+Phase 1d route (0:00:00.0 659.1M):
+Usage: (36.0%H 33.2%V) = (1.001e+04um 1.219e+04um) = (810 416)
+Overflow: 89 = 75 (35.65% H) + 15 (6.97% V)
+
+Phase 1a-1d Overflow: 35.65% H + 6.97% V (0:00:00.0 659.1M)
+
+
+Phase 1e route (0:00:00.0 659.8M):
+Usage: (36.6%H 38.5%V) = (1.023e+04um 1.505e+04um) = (824 483)
+Overflow: 7 = 1 (0.48% H) + 6 (3.07% V)
+
+Phase 1f route (0:00:00.0 659.8M):
+Usage: (37.2%H 38.8%V) = (1.041e+04um 1.510e+04um) = (836 486)
+Overflow: 2 = 0 (0.00% H) + 2 (0.96% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	2	 0.96%
+--------------------------------------
+  0:	12	 5.71%	35	16.75%
+  1:	33	15.71%	21	10.05%
+  2:	12	 5.71%	19	 9.09%
+  3:	5	 2.38%	13	 6.22%
+  4:	6	 2.86%	28	13.40%
+  5:	142	67.62%	91	43.54%
+
+
+Phase 1e-1f Overflow: 0.00% H + 0.96% V (0:00:00.0 659.8M)
+
+Global route (cpu=0.0s real=0.0s 657.3M)
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (37.2%H 38.8%V) = (1.041e+04um 1.510e+04um) = (836 486)
+Overflow: 2 = 0 (0.00% H) + 2 (0.96% V)
+
+Phase 1l Overflow: 0.00% H + 0.96% V (0:00:00.0 659.8M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	2	 0.96%
+--------------------------------------
+  0:	12	 5.71%	35	16.75%
+  1:	33	15.71%	21	10.05%
+  2:	12	 5.71%	19	 9.09%
+  3:	5	 2.38%	13	 6.22%
+  4:	6	 2.86%	28	13.40%
+  5:	142	67.62%	91	43.54%
+
+
+*** Completed Phase 1 route (0:00:00.0 655.3M) ***
+
+
+Total length: 1.566e+04um, number of vias: 661
+M1(H) length: 5.552e+01um, number of vias: 336
+M2(V) length: 6.814e+03um, number of vias: 325
+M3(H) length: 8.791e+03um
+*** Completed Phase 2 route (0:00:00.0 655.3M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=655.3M) ***
+Peak Memory Usage was 655.3M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=655.3M) ***
+
+GigaOpt: Cleaning up extraction
+Extraction called for design 'controller' of instances=127 and nets=139 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design controller.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This will result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 655.328M)
+GigaOpt: Cleaning up delay & timing
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 250nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE. No license checked out.
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 651.1M, InitMEM = 651.1M)
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=639.812 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 639.8M) ***
+Begin: GigaOpt DRV Optimization (small scale fixing)
+Info: 1 clock net  excluded from IPO operation.
+Core basic site is core
+**Info: (ENCSP-307): Design contains fractional 21 cells.
+Core basic site is core
+**Info: (ENCSP-307): Design contains fractional 21 cells.
++--------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       |         |            |           |
++--------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  | Density |    Real    |    Mem    |
++--------------------------------------------------------------------------------------------------------------------------+
+|     2   |     8   |     1   |      1  |     0   |     0   |     0   |     0   | -4.43 |  52.59  |            |           |
+|     1   |     1   |     0   |      0  |     0   |     0   |     0   |     0   | -4.19 |  53.06  |   0:00:00.0|     698.9M|
+|     1   |     1   |     0   |      0  |     0   |     0   |     0   |     0   | -4.19 |  53.06  |   0:00:00.0|     698.9M|
++--------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=698.9M) ***
+
+*** Starting refinePlace (0:00:06.6 mem=699.2M) ***
+**WARN: (ENCSP-5140):	Global net connect rules have not been created. Added  insts would have no supply connectivity, and would fail DRC.
+Type 'man ENCSP-5140' for more detail.
+**WARN: (ENCSP-315):	Found 124 instances insts with no PG Term connections.
+Type 'man ENCSP-315' for more detail.
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:00.1, real=0:00:00.0, mem=699.3MB) @(0:00:06.6 - 0:00:06.7).
+move report: preRPlace moves 124 insts, mean move: 58.61 um, max move: 162.60 um
+	max move on inst (FE_OFC0_n198): (223.20, 30.00) --> (156.00, 125.40)
+wireLenOptFixPriorityInst 0 inst fixed
+**WARN: (ENCSP-2020):	Cannot find a legal location for instance 'U203' (Cell NAND2X1).
+Type 'man ENCSP-2020' for more detail.
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=699.3MB) @(0:00:06.7 - 0:00:06.7).
+**ERROR: (ENCSP-2021):	Could not legalize <56> instances in the design. Check warning message ENCSP-270 or ENCSP-2020 in log file for more details.
+move report: rPlace moves 124 insts, mean move: 52.85 um, max move: 311.40 um
+	max move on inst (U235): (31.20, 56.40) --> (300.00, 99.00)
+move report: overall moves 75 insts, mean move: 31.21 um, max move: 318.60 um
+	max move on inst (U235): (50.40, 30.00) --> (300.00, 99.00)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =       318.60 um
+  inst (U235) with max move: (50.4, 30) -> (300, 99)
+  mean    (X+Y) =        31.21 um
+Total instances moved : 75
+*** cpu=0:00:00.1   mem=699.3M  mem(used)=0.1M***
+[CPU] RefinePlace/total (cpu=0:00:00.1, real=0:00:00.0, mem=699.3MB) @(0:00:06.6 - 0:00:06.7).
+*** maximum move = 318.6um ***
+*** Finished refinePlace (0:00:06.7 mem=699.3M) ***
+*** Re-routing 6 un-routed nets (699.3M) ***
+*** Finished re-routing un-routed nets (699.3M) ***
+
+*** Finish Physical Update (cpu=0:00:00.1 real=0:00:00.0 mem=699.3M) ***
+End: GigaOpt DRV Optimization (small scale fixing)
+GigaOpt: Cleaning up trial route
+*** Starting trialRoute (mem=655.3M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+routingBox: (0 0) (405750 225000)
+coreBox:    (31200 30000) (375750 195000)
+
+Phase 1a route (0:00:00.0 656.6M):
+Est net length = 1.413e+04um = 1.033e+04H + 3.801e+03V
+Usage: (41.8%H 33.6%V) = (1.163e+04um 1.227e+04um) = (941 426)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 147 = 127 (60.58% H) + 20 (9.34% V)
+
+Phase 1b route (0:00:00.0 659.1M):
+Usage: (41.9%H 33.6%V) = (1.165e+04um 1.227e+04um) = (942 426)
+Overflow: 149 = 128 (61.01% H) + 21 (9.81% V)
+
+Phase 1c route (0:00:00.0 659.1M):
+Usage: (41.9%H 33.6%V) = (1.165e+04um 1.227e+04um) = (942 426)
+Overflow: 148 = 128 (61.01% H) + 20 (9.66% V)
+
+Phase 1d route (0:00:00.0 659.1M):
+Usage: (42.4%H 33.6%V) = (1.178e+04um 1.258e+04um) = (953 426)
+Overflow: 99 = 88 (41.84% H) + 11 (5.42% V)
+
+Phase 1a-1d Overflow: 41.84% H + 5.42% V (0:00:00.0 659.1M)
+
+
+Phase 1e route (0:00:00.0 659.8M):
+Usage: (42.7%H 39.8%V) = (1.190e+04um 1.583e+04um) = (961 504)
+Overflow: 11 = 3 (1.43% H) + 8 (4.01% V)
+
+Phase 1f route (0:00:00.0 659.8M):
+Usage: (43.0%H 40.2%V) = (1.198e+04um 1.596e+04um) = (968 509)
+Overflow: 3 = 0 (0.00% H) + 3 (1.43% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	3	 1.43%
+--------------------------------------
+  0:	24	11.43%	35	16.67%
+  1:	28	13.33%	27	12.86%
+  2:	11	 5.24%	15	 7.14%
+  3:	11	 5.24%	17	 8.10%
+  4:	4	 1.90%	23	10.95%
+  5:	132	62.86%	90	42.86%
+
+
+Phase 1e-1f Overflow: 0.00% H + 1.43% V (0:00:00.0 659.8M)
+
+Global route (cpu=0.0s real=0.0s 657.3M)
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (43.0%H 40.2%V) = (1.198e+04um 1.596e+04um) = (968 509)
+Overflow: 3 = 0 (0.00% H) + 3 (1.43% V)
+
+Phase 1l Overflow: 0.00% H + 1.43% V (0:00:00.0 659.8M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -1:	0	 0.00%	3	 1.43%
+--------------------------------------
+  0:	24	11.43%	35	16.67%
+  1:	28	13.33%	27	12.86%
+  2:	11	 5.24%	15	 7.14%
+  3:	11	 5.24%	17	 8.10%
+  4:	4	 1.90%	23	10.95%
+  5:	132	62.86%	90	42.86%
+
+
+*** Completed Phase 1 route (0:00:00.0 655.3M) ***
+
+
+Total length: 1.812e+04um, number of vias: 665
+M1(H) length: 5.552e+01um, number of vias: 338
+M2(V) length: 7.578e+03um, number of vias: 327
+M3(H) length: 1.049e+04um
+*** Completed Phase 2 route (0:00:00.0 655.3M) ***
+
+*** Finished all Phases (cpu=0:00:00.0 mem=655.3M) ***
+Peak Memory Usage was 655.3M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=655.3M) ***
+
+GigaOpt: Cleaning up extraction
+Extraction called for design 'controller' of instances=128 and nets=140 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design controller.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This will result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 655.328M)
+GigaOpt: Cleaning up delay & timing
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 250nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE. No license checked out.
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 651.1M, InitMEM = 651.1M)
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=639.812 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.0  real=0:00:00.0  mem= 639.8M) ***
+Found active setup analysis view typical_view
+Found active hold analysis view typical_view
+
+------------------------------------------------------------
+     Summary (cpu=0.01min real=0.02min mem=640.1M)                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| -4.583  |
+|           TNS (ns):| -34.580 |
+|    Violating Paths:|   17    |
+|          All Paths:|   22    |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      1 (1)       |   -0.003   |      1 (1)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 53.059%
+Routing Overflow: 0.00% H and 1.43% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:01, real = 0:00:01, mem = 640.1M, totSessionCpu=0:00:07 **
+Reported timing to dir controller_reports/preCTSOptTimingReports
+**optDesign ... cpu = 0:00:01, real = 0:00:01, mem = 639.8M, totSessionCpu=0:00:07 **
+Found active setup analysis view typical_view
+Found active hold analysis view typical_view
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):| -4.583  | -4.583  | -2.623  | -3.347  |  2.636  |   N/A   |
+|           TNS (ns):| -34.580 | -15.235 | -7.011  | -19.345 |  0.000  |   N/A   |
+|    Violating Paths:|   17    |    4    |    4    |   13    |    0    |   N/A   |
+|          All Paths:|   22    |    4    |    4    |   18    |    1    |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      1 (1)       |   -0.003   |      1 (1)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 53.059%
+Routing Overflow: 0.00% H and 1.43% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:01, real = 0:00:01, mem = 641.7M, totSessionCpu=0:00:07 **
+**WARN: (ENCOPT-3195):	Changed analysis mode: setAnalysisMode -clockPropagation forcedIdeal.
+*** Finished optDesign ***
+<CMD> timeDesign -reportOnly -slackReports -outDir controller_reports/preCTSOptTimingReports
+Found active setup analysis view typical_view
+Found active hold analysis view typical_view
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:NE geometry (<10200,17550> <11400,18750>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:tri_nand2, Pin:E geometry (<10350,13800> <11550,15000>) is sticking out of cell's 
+boundary (<0,0> <10350,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+**WARN: (ENCSP-305):	Cell:BUFX8, Pin:A geometry (<-1200,9900> <0,11100>) is sticking out of cell's 
+boundary (<0,0> <10500,27600>). 
+Placement will not be able to catch DRVs on the portion of pin 
+outside the cell boundary
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):| -4.583  | -4.583  | -2.623  | -3.347  |  2.636  |   N/A   |
+|           TNS (ns):| -34.580 | -15.235 | -7.011  | -19.345 |  0.000  |   N/A   |
+|    Violating Paths:|   17    |    4    |    4    |   13    |    0    |   N/A   |
+|          All Paths:|   22    |    4    |    4    |   18    |    1    |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      1 (1)       |   -0.003   |      1 (1)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 53.059%
+------------------------------------------------------------
+Reported timing to dir controller_reports/preCTSOptTimingReports
+Total CPU time: 0.02 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 641.929688 Mbytes
+<CMD> saveDesign controller_placed.enc
+**WARN: (ENCSYT-3036):	Design directory controller_placed.enc.dat exists, rename it to controller_placed.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "controller_placed.enc.dat/controller.v.gz" ...
+Saving configuration ...
+Saving preference file controller_placed.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=642.3M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=642.3M) ***
+Writing DEF file 'controller_placed.enc.dat/controller.def.gz', current time is Tue Nov 18 16:59:44 2014 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'controller_placed.enc.dat/controller.def.gz' is written, current time is Tue Nov 18 16:59:44 2014 ...
+No integration constraint in the design.
+<CMD> setDrawView place
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+
+*** Memory Usage v#1 (Current mem = 643.641M, initial mem = 140.160M) ***
+--- Ending "Encounter" (totcpu=0:00:09.6, real=0:00:33.0, mem=643.6M) ---

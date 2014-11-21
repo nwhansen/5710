@@ -1,0 +1,5 @@
+#!/bin/csh -f
+ ipsd -stat "/home/nathan/5710/elc/lib11-20/foo.ipdb/DFF2.design/simulate/waveform/typical/S_R0002" -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrunrace /home/nathan/5710/elc/lib11-20/foo.ipdb DFF2 typical R0002 /home/nathan/5710/elc/lib11-20/encounterlc.log/foo.log/DFF2.log"
+ ipsd -stat "/home/nathan/5710/elc/lib11-20/foo.ipdb/DFF2.design/simulate/waveform/typical/S_R0003" -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrunrace /home/nathan/5710/elc/lib11-20/foo.ipdb DFF2 typical R0003 /home/nathan/5710/elc/lib11-20/encounterlc.log/foo.log/DFF2.log"
+ ipsd -stat "/home/nathan/5710/elc/lib11-20/foo.ipdb/DFF2.design/simulate/waveform/typical/S_R0004" -last  -exec "/uusoc/facility/cad_tools/Cadence/ETS-F13/bin/dsrunrace /home/nathan/5710/elc/lib11-20/foo.ipdb DFF2 typical R0004 /home/nathan/5710/elc/lib11-20/encounterlc.log/foo.log/DFF2.log"
+

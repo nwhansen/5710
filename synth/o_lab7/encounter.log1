@@ -1,0 +1,818 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 13.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.43-p014.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.13-s001
+@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.13-s017_1" on Tue Nov 18 14:06:13 2014 (mem=140.3M) ---
+--- Running on lab2-23 (x86_64 w/Linux 2.6.32-431.el6.x86_64) ---
+This version was compiled on Tue Jul 30 13:03:02 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file ../../Lib6710_08.lef
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file ../../Lib6710_08.lef...
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'gnd!' in macro 'AOI22X1' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file '../../Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+<CMD> man ENCLF-3
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net gnd
+<CMD> set init_lef_file ../../Lib6710_08.lef
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd
+<CMD> init_design
+
+Loading LEF file ../../Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'A' in macro 'BUFX4' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file '../../Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net gnd
+<CMD> set init_lef_file ../../Lib6710_08.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd
+<CMD> init_design
+
+Loading LEF file ../../Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'A' in macro 'BUFX8' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file '../../Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net gnd
+<CMD> set init_lef_file ../../Lib6710_08.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd
+<CMD> init_design
+
+Loading LEF file ../../Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'vdd!' in macro 'Dff2' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file '../../Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file ../../Lib6710_08.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file ../../Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'Dff2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Q' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Qb' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLK' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLRb' can be added for existing macro.
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'vdd!' in macro 'FILL1' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file '../../Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file {../../Lib6710_08.lef Lib6710_08.lef}
+<CMD> set init_design_settop 0
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file ../../Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'Dff2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Q' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Qb' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLK' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLRb' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL1' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'gnd!' in macro 'FILL4' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file '../../Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file { Lib6710_08.lef ../../Lib6710_08.lef}
+<CMD> set init_design_settop 0
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'Dff2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Q' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Qb' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLK' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLRb' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL1' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'gnd!' in macro 'FILL8' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file 'Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file {Lib6710_08.lef ../../Lib6710_08.lef}
+<CMD> set init_design_settop 0
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'Dff2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Q' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Qb' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLK' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLRb' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL1' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (EMS-63):	Message <ENCLF-209> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'gnd!' in macro 'INV1' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file 'Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file Lib6710_08.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_mmmc_file syn-script.tcl
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+**ERROR: can't read "SynopsysInstall": no such variable
+**ERROR: (ENCSYT-16095):	can't read "SynopsysInstall": no such variable
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file Lib6710_08.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_io_file controller_struct.v
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'Dff2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Q' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Qb' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLK' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLRb' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL1' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'INV1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**ERROR: (ENCLF-53):	The layer 'metal1' referenced in pin 'A' in macro 'INVX2' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced.
+**ERROR: (ENCLF-3):	Error found when processing LEF file 'Lib6710_08.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+invalid command name "/uusoc/facility/cad_common/local/class/6710/F13/cadence/EDI/TechHeader.lef"
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file Lib6710_08.lef
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file Lib6710_08.lef...
+**WARN: (ENCLF-58):	Cell 'AOI22X1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'C' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'AOI22X1' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX4' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'BUFX8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'Y' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'BUFX8' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'Dff2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Q' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'Qb' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'D' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLK' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'Dff2' has been found in db, no extra pin 'CLRb' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL1' has been found in db, no extra pin 'gnd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL4' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-209):	Cell 'FILL4' has been found in db, no extra pin 'vdd!' can be added for existing macro.
+**WARN: (ENCLF-58):	Cell 'FILL8' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'INV1' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+**WARN: (ENCLF-58):	Cell 'INVX2' has been found in the database. The cell
+has already been defined in another LEF file, or earlier in this
+LEF file. All data except the antenna/density data will be ignored.
+If the data in both cell definitions is needed, manually merge the
+data into one definition.
+Encounter terminated by internal (SEGV) error/signal...
+*** Stack trace:
+*** Stack trace:
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0x97a0ed6]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(syStackTrace+0x5f)[0x97a0ff4]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0x19feb1a]
+/lib64/libc.so.6[0x3de42326a0]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_ZN7dbsCell22buildLefObsListByLayerEv+0xd2)[0x6f651a2]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_Z15lfLefMacroEndCB18lefrCallbackType_ePKcPv+0x40d)[0x698815d]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(lefyyparse+0xf553)[0xb6ce383]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_Z8lefrReadP8_IO_FILEPKcPv+0x34)[0xb6a6b74]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0x69a59c5]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_Z13lfLoadLefFileiPPc+0x222)[0x69a6112]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0x1bc3fb3]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_ZN10tcmBaseCmd7executeEP10Tcl_InterpiPPc+0x128)[0xa8b5038]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_ZN6tcmMgr9cmdParserEPvP10Tcl_InterpiPPc+0xc2)[0xa8a7ba2]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(TclInvokeStringCommand+0x7f)[0xb05ff1f]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb061281]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0a76d2]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0af491]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0a9cab]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(TclObjInterpProcCore+0x10b)[0xb0e7f5b]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb061281]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0a76d2]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(TclObjInterpProcCore+0x10b)[0xb0e7f5b]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb061281]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0a76d2]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(TclObjInterpProcCore+0x10b)[0xb0e7f5b]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb061281]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0a76d2]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(TclObjInterpProcCore+0x10b)[0xb0e7f5b]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb061281]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0a76d2]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0af491]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(TclEvalObjEx+0x85)[0xb0624c5]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb06d4b7]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb061281]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb061a39]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb0dcb83]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0xb06178e]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(Tcl_EvalEx+0x16)[0xb062166]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(Tcl_Eval+0x1d)[0xb06218d]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_Z10qtfTclEvalPc+0x93)[0x75b32e3]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_ZN8qtfsItem10fUpdateVarEv+0x3a4)[0x754f2a4]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(_ZN8qtfsItem11qt_metacallEN11QMetaObject4CallEiPPv+0x134)[0x76106f4]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectPKS_iPPv+0x2c7)[0x7f52e63b8477]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton7clickedEb+0x32)[0x7f52e7090fb2]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate11emitClickedEv+0x3b)[0x7f52e6da133b]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate5clickEv+0x8b)[0x7f52e6da271b]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent+0x8c)[0x7f52e6da298c]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN7QWidget5eventEP6QEvent+0x9b9)[0x7f52e6a0f289]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent+0xac)[0x7f52e69be63c]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication6notifyEP7QObjectP6QEvent+0xa01)[0x7f52e69c1241]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent+0x8c)[0x7f52e639f34c]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_Eb+0x19e)[0x7f52e69c4bde]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN9QETWidget19translateMouseEventEPK7_XEvent+0x5cc)[0x7f52e6a4054c]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication15x11ProcessEventEP7_XEvent+0x72e)[0x7f52e6a3ef5e]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QEventDispatcherX1113processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x157)[0x7f52e6a68a17]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x183)[0x7f52e46b0bb3]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2f)[0x7f52e63a197f]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/lib/64bit/libtq.so(+0x1ef5c)[0x7f52e46b0f5c]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(Tcl_DoOneEvent+0xe2)[0xb0d9292]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x7f)[0x7f52e46b0aaf]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE+0x32)[0x7f52e639e122]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0xdc)[0x7f52e639e3fc]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication4execEv+0xb9)[0x7f52e63a1809]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/lib/64bit/libtq.so(_ZN13TqApplication4execEv+0x127)[0x7f52e46b32d7]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter(main+0xd9)[0x1bd2689]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x3de421ed5d]
+/uusoc/facility/cad_tools/Cadence/EDI-F13/tools/fe/bin/64bit/encounter[0x19fde29]
+========================================
+               pstack
+========================================
+Thread 5 (Thread 0x7f52dff8b700 (LWP 20264)):
+#0  0x0000003de42e1453 in select () from /lib64/libc.so.6
+#1  0x000000000b10e2b0 in NotifierThreadProc ()
+#2  0x0000003de4e079d1 in start_thread () from /lib64/libpthread.so.0
+#3  0x0000003de42e89dd in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x7f52ddf42700 (LWP 20265)):
+#0  0x0000003de42aca3d in nanosleep () from /lib64/libc.so.6
+#1  0x0000003de42ac8b0 in sleep () from /lib64/libc.so.6
+#2  0x00000000097b9a54 in syiPeakMem(void*) ()
+#3  0x0000003de4e079d1 in start_thread () from /lib64/libpthread.so.0
+#4  0x0000003de42e89dd in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x7f52dd541700 (LWP 20266)):
+#0  0x0000003de4e0ef3d in nanosleep () from /lib64/libpthread.so.0
+#1  0x0000000002b7c8da in rdaiLicRecheck(void*) ()
+#2  0x0000003de4e079d1 in start_thread () from /lib64/libpthread.so.0
+#3  0x0000003de42e89dd in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x7f52cffff700 (LWP 20267)):
+#0  0x0000003de4e0f4b5 in sigwait () from /lib64/libpthread.so.0
+#1  0x00000000019ff1ab in ctrlCHandle(void*) ()
+#2  0x0000003de4e079d1 in start_thread () from /lib64/libpthread.so.0
+#3  0x0000003de42e89dd in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x7f52e06ca220 (LWP 20199)):
+#0  0x0000003de42ac65d in waitpid () from /lib64/libc.so.6
+#1  0x0000003de423e609 in do_system () from /lib64/libc.so.6
+#2  0x0000003de423e940 in system () from /lib64/libc.so.6
+#3  0x00000000097a0f2e in syStackTraceDump(_IO_FILE*, bool) ()
+#4  0x00000000097a0ff4 in syStackTrace ()
+#5  0x00000000019feb1a in rdaiErrorHandler(int, siginfo*, void*) ()
+#6  <signal handler called>
+#7  0x0000000006f651a2 in dbsCell::buildLefObsListByLayer() ()
+#8  0x000000000698815d in lfLefMacroEndCB(lefrCallbackType_e, char const*, void*) ()
+#9  0x000000000b6ce383 in lefyyparse ()
+#10 0x000000000b6a6b74 in lefrRead(_IO_FILE*, char const*, void*) ()
+#11 0x00000000069a59c5 in lfParseFiles(int, char**) ()
+#12 0x00000000069a6112 in lfLoadLefFile(int, char**) ()
+#13 0x0000000001bc3fb3 in trniLoadLefFileCmd ()
+#14 0x000000000a8b5038 in tcmBaseCmd::execute(Tcl_Interp*, int, char**) ()
+#15 0x000000000a8a7ba2 in tcmMgr::cmdParser(void*, Tcl_Interp*, int, char**) ()
+#16 0x000000000b05ff1f in TclInvokeStringCommand ()
+#17 0x000000000b061281 in TclEvalObjvInternal ()
+#18 0x000000000b0a76d2 in TclExecuteByteCode ()
+#19 0x000000000b0af491 in TclCompEvalObj ()
+#20 0x000000000b0a9cab in TclExecuteByteCode ()
+#21 0x000000000b0e7f5b in TclObjInterpProcCore ()
+#22 0x000000000b061281 in TclEvalObjvInternal ()
+#23 0x000000000b0a76d2 in TclExecuteByteCode ()
+#24 0x000000000b0e7f5b in TclObjInterpProcCore ()
+#25 0x000000000b061281 in TclEvalObjvInternal ()
+#26 0x000000000b0a76d2 in TclExecuteByteCode ()
+#27 0x000000000b0e7f5b in TclObjInterpProcCore ()
+#28 0x000000000b061281 in TclEvalObjvInternal ()
+#29 0x000000000b0a76d2 in TclExecuteByteCode ()
+#30 0x000000000b0e7f5b in TclObjInterpProcCore ()
+#31 0x000000000b061281 in TclEvalObjvInternal ()
+#32 0x000000000b0a76d2 in TclExecuteByteCode ()
+#33 0x000000000b0af491 in TclCompEvalObj ()
+#34 0x000000000b0624c5 in TclEvalObjEx ()
+#35 0x000000000b06d4b7 in Tcl_CatchObjCmd ()
+#36 0x000000000b061281 in TclEvalObjvInternal ()
+#37 0x000000000b061a39 in TclEvalEx ()
+#38 0x000000000b0dcb83 in TclSubstTokens ()
+#39 0x000000000b06178e in TclEvalEx ()
+#40 0x000000000b062166 in Tcl_EvalEx ()
+#41 0x000000000b06218d in Tcl_Eval ()
+#42 0x00000000075b32e3 in qtfTclEval(char*) ()
+#43 0x000000000754f2a4 in qtfsItem::fUpdateVar() ()
+#44 0x00000000076106f4 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#45 0x00007f52e63b8477 in QMetaObject::activate(QObject*, QMetaObject const*, int, void**) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4
+#46 0x00007f52e7090fb2 in QAbstractButton::clicked(bool) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#47 0x00007f52e6da133b in QAbstractButtonPrivate::emitClicked() () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#48 0x00007f52e6da271b in QAbstractButtonPrivate::click() () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#49 0x00007f52e6da298c in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#50 0x00007f52e6a0f289 in QWidget::event(QEvent*) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#51 0x00007f52e69be63c in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#52 0x00007f52e69c1241 in QApplication::notify(QObject*, QEvent*) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#53 0x00007f52e639f34c in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4
+#54 0x00007f52e69c4bde in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#55 0x00007f52e6a4054c in QETWidget::translateMouseEvent(_XEvent const*) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#56 0x00007f52e6a3ef5e in QApplication::x11ProcessEvent(_XEvent*) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#57 0x00007f52e6a68a17 in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtGui.so.4
+#58 0x00007f52e46b0bb3 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/lib/64bit/libtq.so
+#59 0x00007f52e63a197f in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4
+#60 0x00007f52e46b0f5c in tcl_dispatch_qt () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/lib/64bit/libtq.so
+#61 0x000000000b0d9292 in Tcl_DoOneEvent ()
+#62 0x00007f52e46b0aaf in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/lib/64bit/libtq.so
+#63 0x00007f52e639e122 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4
+#64 0x00007f52e639e3fc in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4
+#65 0x00007f52e63a1809 in QCoreApplication::exec() () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/Qt/64bit/lib/libQtCore.so.4
+#66 0x00007f52e46b32d7 in TqApplication::exec() () from /uusoc/facility/cad_tools/Cadence/EDI-F13/tools/lib/64bit/libtq.so
+#67 0x0000000001bd2689 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+[?1034h[Thread debugging using libthread_db enabled]
+[New Thread 0x7f52e06ca220 (LWP 20199)]
+[New Thread 0x7f52cffff700 (LWP 20267)]
+[New Thread 0x7f52dd541700 (LWP 20266)]
+[New Thread 0x7f52ddf42700 (LWP 20265)]
+[New Thread 0x7f52dff8b700 (LWP 20264)]
+BFD: /lib64/libc.so.6: invalid relocation type 37
+BFD: /lib64/libc.so.6: invalid relocation type 37
+0x0000003de42ac65d in waitpid () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7f52dff8b700 (LWP 20264)):
+#0  0x0000003de42e1453 in select () from /lib64/libc.so.6
+#1  0x000000000b10e2b0 in NotifierThreadProc ()
+#2  0x0000003de4e079d1 in start_thread () from /lib64/libpthread.so.0
+#3  0x0000003de42e89dd in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7f52ddf42700 (LWP 20265)):
+#0  0x0000003de42aca3d in nanosleep () from /lib64/libc.so.6
+#1  0x0000003de42ac8b0 in sleep () from /lib64/libc.so.6
+#2  0x00000000097b9a54 in syiPeakMem ()
+#3  0x0000003de4e079d1 in start_thread () from /lib64/libpthread.so.0
+#4  0x0000003de42e89dd in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7f52dd541700 (LWP 20266)):
+#0  0x0000003de4e0ef3d in nanosleep () from /lib64/libpthread.so.0
+#1  0x0000000002b7c8da in rdaiLicRecheck ()
+#2  0x0000003de4e079d1 in start_thread () from /lib64/libpthread.so.0
+#3  0x0000003de42e89dd in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7f52cffff700 (LWP 20267)):
+#0  0x0000003de4e0f4b5 in sigwait () from /lib64/libpthread.so.0
+
+Thread 1 (Thread 0x7f52e06ca220 (LWP 20199)):
+#0  0x0000003de42ac65d in waitpid () from /lib64/libc.so.6
+#0  0x0000003de42ac65d in waitpid () from /lib64/libc.so.6
+The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+
+*** Memory Usage v#1 (Current mem = 646.781M, initial mem = 140.254M) ***
+--- Ending "Encounter" (totcpu=0:02:57, real=0:17:55, mem=646.8M) ---

@@ -1,5 +1,5 @@
 
 // Library name: Lib6710_08
-// Cell name: INVX8
+// Cell name: NAND2X2
 // View name: analog_extracted
-subckt INVX8 A Y
+subckt NAND2X2 A B Y

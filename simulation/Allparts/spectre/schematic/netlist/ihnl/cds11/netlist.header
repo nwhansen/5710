@@ -1,5 +1,5 @@
 
 // Library name: Lib6710_08
-// Cell name: INVX2
+// Cell name: INVX4
 // View name: analog_extracted
-subckt INVX2 A Y
+subckt INVX4 A Y

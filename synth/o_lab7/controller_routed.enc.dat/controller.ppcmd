@@ -1,0 +1,118 @@
+# PPCMD 1 
+# sroute -allowJogging 1
+# 7 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 123 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 120 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {gnd! vdd! } -stacked_via_bottom_layer metal1 -stacked_via_top_layer metal3
+# 6 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 4800 4200 391050 210900 0 
+# 16500 15900 379350 199200 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# vdd! 4800 2 0 157800 375750 123000 0 0 
+# gnd! 4800 2 0 151200 375750 123000 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# setAddStripeMode -stacked_via_bottom_layer metal1
+# 5 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# setAddStripeMode -stacked_via_top_layer metal3
+# 4 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+
+# PPCMD 5 
+# addRing -spacing 1.8 -width 9.9 -offset 1.8 -threshold 1.8 -jog_distance 1.8 -layer {bottom metal1 top metal1 right metal2 left metal2} -center 1 -around core -nets {gnd! vdd! } -spacing_top {1.8} -spacing_bottom {1.8} -spacing_left {1.8} -spacing_right {1.8} -width_top {9.9} -width_bottom {9.9} -width_left {9.9} -width_right {9.9} -offset_top {1.8} -offset_bottom {1.8} -offset_left {1.8} -offset_right {1.8} -layer_bottom metal1 -layer_top metal1 -layer_right metal2 -layer_left metal2 -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1
+# 3 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# vdd! 9900 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 202875 9150 202875 215850 
+# END_RING_PT_INFO_LIST 
+# vdd! 9900 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 9750 112500 396000 112500 
+# END_RING_PT_INFO_LIST 
+# gnd! 9900 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 202875 20850 202875 204150 
+# END_RING_PT_INFO_LIST 
+# gnd! 9900 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 21450 112500 384300 112500 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 5 
+
+# PPCMD 6 
+# setAddRingMode -stacked_via_bottom_layer metal1
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 6 
+
+# PPCMD 7 
+# setAddRingMode -stacked_via_top_layer metal3
+# 1 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 7 
+

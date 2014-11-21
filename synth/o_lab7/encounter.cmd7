@@ -1,0 +1,138 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Tue Nov 18 16:16:38 2014                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+#@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v13.13-s001
+#@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_verilog controller_struct.v
+set init_lef_file Lib6710_08.lef
+set init_mmmc_file mmmc.tcl
+set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+set init_gnd_net gnd!
+set init_pwr_net vdd!
+set init_design_settop 0
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller_struct.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+getIoFlowFlag
+fit
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+setDrawView place
+setDrawView ameba
+setDrawView place
+addRing -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+addRing -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+zoomSelected
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r 0.936802973978 0.715501 30 30 30 30
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -r 0.703125 0.730951 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+addRing -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+zoomIn
+zoomOut
+set sprCreateIeStripeNets {}
+set sprCreateIeStripeLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeSpacing 2.0
+set sprCreateIeStripeThreshold 1.0
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 60 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 60 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+undo
+getIoFlowFlag
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 75 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 75 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+saveDesign SOCPandR/controller_rerunmaybe
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setDrawView ameba
+setDrawView place
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postCTS
+setDrawView place
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_postCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+selectMarker 184.8000 111.0000 190.2000 138.6000 -1 12 88
+deselectAll
+selectMarker 184.8000 111.0000 190.2000 138.6000 -1 12 88
+deselectAll
+selectMarker 276.0000 111.0000 283.8000 138.6000 -1 12 88
+deselectAll
+selectMarker 276.0000 111.0000 283.8000 138.6000 -1 12 88
+violationBrowser -all -no_display_false
+zoomBox 262.2 97.2 297.6 152.4
+zoomBox 262.2 97.2 297.6 152.4
+deselectAll
+selectMarker 62.4000 30.0000 67.8000 57.6000 -1 12 86
+setDrawView fplan
+deselectAll
+selectMarker 62.4000 30.0000 67.8000 57.6000 -1 12 86
+deselectAll
+selectMarker 62.4000 30.0000 67.8000 57.6000 -1 12 86
+zoomBox 48.6 16.2 81.6 71.4
+zoomBox 48.6 16.2 81.6 71.4
+deselectAll
+selectMarker 63.7500 36.9000 66.4500 50.7000 -1 12 88
+zoomBox 86.4 43.2 119.4 98.4
+zoomBox 86.4 43.2 119.4 98.4
+panCenter 153.193 108.507
+fit
+setDrawView place
+deselectAll
+fit
+selectWire 106.2000 18.6000 111.0000 176.4000 2 vdd!
+windowSelect 115.258 154.838 117.205 154.838
+selectWire 205.2000 18.6000 210.0000 176.4000 2 vdd!
+deselectAll
+selectWire 211.8000 6.9000 216.6000 188.1000 2 gnd!
+zoomBox 261.240 97.472 327.385 156.229
+zoomBox 271.370 107.809 290.377 147.425

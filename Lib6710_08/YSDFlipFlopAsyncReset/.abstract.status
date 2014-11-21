@@ -1,8 +1,0 @@
-cUiMoveCellToBin {YSDFlipFlopAsyncReset} {Ignore}
-cUiSelectCellP {YSDFlipFlopAsyncReset}
-cUiSetViewStatus {YSDFlipFlopAsyncReset} {layout} {1}
-cUiSetViewStatus {YSDFlipFlopAsyncReset} {logical} {0}
-cUiSetViewStatus {YSDFlipFlopAsyncReset} {abstract.pin} {0}
-cUiSetViewStatus {YSDFlipFlopAsyncReset} {abstract.ext} {0}
-cUiSetViewStatus {YSDFlipFlopAsyncReset} {abstract} {0}
-cUiSetViewStatus {YSDFlipFlopAsyncReset} {abstract.ver} {0}

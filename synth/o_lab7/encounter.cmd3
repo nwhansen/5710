@@ -1,0 +1,127 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Tue Nov 18 14:33:21 2014                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+#@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v13.13-s001
+#@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_gnd_net gnd!
+set init_lef_file Lib6710_08.lef
+set init_verilog controller_struct.v
+set init_pwr_net vdd!
+init_design
+zoomBox -3.042 -3.081 191.468 213.427
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r 0.936802973978 0.715501 30.0 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setFPlanRowSpacingAndType 18.0 2
+setIoFlowFlag 0
+floorPlan -site core -r 0.703125 0.730951 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+saveDesign SOCPandR/controller_fplan.enc
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {gnd! vdd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+selectWire 319.5000 15.9000 329.4000 215.1000 2 gnd!
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setDrawView place
+setDrawView place
+setDrawView place
+deselectAll
+undo
+setDrawView place
+setDrawView place
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign SOCPandR/controller_fplan.enc.dat controller
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {gnd! vdd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+set sprCreateIeStripeNets {}
+set sprCreateIeStripeLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeSpacing 2.0
+set sprCreateIeStripeThreshold 1.0
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 150 -xright_offset 150 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 150 -xright_offset 150 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 150 -xright_offset 150 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+setDrawView place
+setDrawView fplan
+setDrawView place
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal3 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -stripeSCpinTarget { blockring padring ring stripe ringpin blockpin } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer metal1 -allowLayerChange 1 -targetViaTopLayer metal3 -crossoverViaTopLayer metal3 -targetViaBottomLayer metal1 -nets { vdd! gnd! }
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setDrawView place
+selectWire 204.4500 225.7500 222.7500 227.2500 3 {alusrcb[0]}
+deselectAll
+selectWire 31.6500 96.7500 191.5500 98.2500 3 n211
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_preCTS -outDir timingReports
+deselectAll
+selectWire 31.2000 100.8000 314.4000 103.2000 1 vdd!
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -reportOnly -pathReports -drvReports -slackReports -numPaths 50 -prefix controller -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_preCTS -outDir timingReports
+get_time_unit
+report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt
+getOpCond -max
+getOpCond -max
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -idealClock -pathReports -slackReports -numPaths 50 -prefix controller_preCTS -outDir timingReports
+set init_mmmc_file syn-script.tcl
+init_design
+redraw
+redraw
+redraw
+set_power_analysis_mode -compatible_internal_power true -create_binary_db false -handle_glitch false -disable_static false -handle_tri_state false -honor_negative_energy true -ignore_control_signals true -ignore_inout_pin_cap false -state_dependent_leakage true -method static -report_black_boxes false -enable_input_net_power false -split_bus_power false -transition_time_method max -x_transition_factor 0.500000 -z_transition_factor 0.250000
+set init_mmmc_file SOCPandR/controller_fplan.enc.dat/controller_power_constraints.tcl
+set init_verilog controller_struct.v
+set_power_analysis_mode -compatible_internal_power true -create_binary_db false -handle_glitch false -disable_static false -handle_tri_state false -honor_negative_energy true -ignore_control_signals true -ignore_inout_pin_cap false -state_dependent_leakage true -method static -report_black_boxes false -enable_input_net_power false -split_bus_power false -transition_time_method max -x_transition_factor 0.500000 -z_transition_factor 0.250000
+init_design
+windowSelect 240.527 191.685 268.024 189.987
+windowSelect 271.758 193.382 200.810 167.244
+windowSelect 193.342 236.493 326.071 197.116
+deselectAll
+selectObject IO_Pin pcen
+deselectAll
+selectWire 46.0500 57.7500 97.9500 59.2500 3 {op[3]}
+deselectAll
+selectInst U258
+deselectAll
+selectInst U262
+deselectAll
+selectInst U258
+deselectAll
+selectInst U258
+deselectAll
+selectWire 16.5000 15.9000 26.4000 215.1000 2 gnd!
+zoomBox -4.890 -3.346 296.711 256.696
+deselectAll
+selectWire 4.8000 4.2000 14.7000 226.8000 2 vdd!

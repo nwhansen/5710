@@ -1,0 +1,79 @@
+t 14 CLK input
+t 17 CLRB input
+t 15 D input
+t 13 Q output
+t 11 QB output
+t 12 gnd! inputOutput
+t 16 vdd! inputOutput
+n 0 /18
+n 1 /17
+n 2 /16
+n 3 /15
+n 4 /14
+n 5 /13
+n 6 /12
+n 7 /11
+n 8 /10
+n 9 /9
+n 10 /8
+n 11 /QB
+n 12 /gnd!
+n 13 /Q
+n 14 /CLK
+n 15 /D
+n 16 /vdd!
+n 17 /CLRB
+; pmos4 Instance /+25 = auLvs device Q0
+d pmos D G S B (p D S)
+i 0 pmos 13 11 16 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+24 = auLvs device Q1
+i 1 pmos 16 6 11 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+23 = auLvs device Q2
+i 2 pmos 11 17 16 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+22 = auLvs device Q3
+i 3 pmos 16 11 0 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+21 = auLvs device Q4
+i 4 pmos 0 14 6 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+20 = auLvs device Q5
+i 5 pmos 6 10 7 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+19 = auLvs device Q6
+i 6 pmos 7 9 16 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+18 = auLvs device Q7
+i 7 pmos 8 7 16 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+17 = auLvs device Q8
+i 8 pmos 16 17 8 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+16 = auLvs device Q9
+i 9 pmos 8 10 9 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+15 = auLvs device Q10
+i 10 pmos 9 14 1 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+14 = auLvs device Q11
+i 11 pmos 1 15 16 16 " m 1 l 600e-9 w 6e-6 "
+; pmos4 Instance /+13 = auLvs device Q12
+i 12 pmos 16 14 10 16 " m 1 l 600e-9 w 6e-6 "
+; nmos4 Instance /+12 = auLvs device Q13
+d nmos D G S B (p D S)
+i 13 nmos 13 11 12 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+11 = auLvs device Q14
+i 14 nmos 11 6 2 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+10 = auLvs device Q15
+i 15 nmos 2 17 12 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+9 = auLvs device Q16
+i 16 nmos 12 11 3 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+8 = auLvs device Q17
+i 17 nmos 3 10 6 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+7 = auLvs device Q18
+i 18 nmos 6 14 7 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+6 = auLvs device Q19
+i 19 nmos 7 9 12 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+5 = auLvs device Q20
+i 20 nmos 12 7 4 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+4 = auLvs device Q21
+i 21 nmos 4 17 8 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+3 = auLvs device Q22
+i 22 nmos 8 14 9 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+2 = auLvs device Q23
+i 23 nmos 9 10 5 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+1 = auLvs device Q24
+i 24 nmos 5 15 12 12 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /+0 = auLvs device Q25
+i 25 nmos 12 14 10 12 " m 1 l 600e-9 w 3e-6 "

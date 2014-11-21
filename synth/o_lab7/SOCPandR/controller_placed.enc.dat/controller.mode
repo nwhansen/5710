@@ -1,0 +1,11 @@
+catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setTrialRouteMode -fixAirConnect true }
+setExtractRCMode  -engine preRoute
+catch { setDelayCalMode -betaEngine sgs2 }
+catch { setDelayCalMode -engine aae }
+catch { setCTSMode -moveGateLimit 25 }
+catch { setPlaceMode -fp false }
+catch { setPlaceMode -timingDriven false }
+setIlmMode -highFanoutPort true -loopBack false 

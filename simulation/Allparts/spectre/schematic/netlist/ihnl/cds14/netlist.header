@@ -1,5 +1,5 @@
 
 // Library name: Lib6710_08
-// Cell name: NAND2X2
+// Cell name: OAI22X1
 // View name: analog_extracted
-subckt NAND2X2 A B Y
+subckt OAI22X1 A B C D Y

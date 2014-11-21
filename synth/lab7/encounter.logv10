@@ -1,0 +1,165 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 13.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.43-p014.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.13-s001
+@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.13-s017_1" on Thu Nov 20 21:26:33 2014 (mem=140.2M) ---
+--- Running on lab1-29 (x86_64 w/Linux 2.6.32-431.el6.x86_64) ---
+This version was compiled on Tue Jul 30 13:03:02 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Loading global variable file controller_routed.enc.dat/controller.globals ...
+**WARN: (GLOBAL-100):	Global 'timing_get_pins_of_nets_compatibility' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_multiedge_genclk_support' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_efficient_cppr_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_loop_handling' has become obsolete. It will be removed in the next release.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'CLK' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'CLRB' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'QB' of cell 'DFF2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'INVX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'INVX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'INVX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'INVX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'INVX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'INVX4' is not defined in the library.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.10min, fe_real=0.27min, fe_mem=637.6M) ***
+
+{DETAILMESSAGE}**WARN: (ENCFP-3961):	techSite 'dbl_core' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'IO' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'corner' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+Loading preference file controller_routed.enc.dat/enc.pref.tcl ...
+Loading mode file controller_routed.enc.dat/controller.mode ...
+**WARN: (ENCEXT-2773):	Unable to find a via resistance from LEF technology file.
+**WARN: (ENCEXT-2775):	Via resistance between layer M0 and M1 is assigned 4 Ohms.
+**WARN: (ENCEXT-2777):	Via resistance between layer M1 and M2 is not defined in the cap table. LEF value 0.9 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M2 and M3 is not defined in the cap table. LEF value 0.8 Ohms will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.085 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.085 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.055 will be used.
+WARN: No Power Domain Created at this stage, default max voltage is 0
+Loading place ...
+Loading route ...
+**WARN: (GLOBAL-100):	Global 'timing_get_pins_of_nets_compatibility' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_multiedge_genclk_support' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_efficient_cppr_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_loop_handling' has become obsolete. It will be removed in the next release.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Loading global variable file controller_done.enc.dat/controller.globals ...
+**WARN: (GLOBAL-100):	Global 'timing_get_pins_of_nets_compatibility' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_multiedge_genclk_support' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_efficient_cppr_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_loop_handling' has become obsolete. It will be removed in the next release.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.13min, fe_real=0.45min, fe_mem=641.2M) ***
+
+{DETAILMESSAGE}**WARN: (ENCFP-3961):	techSite 'dbl_core' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'IO' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'corner' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+Loading preference file controller_done.enc.dat/enc.pref.tcl ...
+Loading mode file controller_done.enc.dat/controller.mode ...
+WARN: No Power Domain Created at this stage, default max voltage is 0
+**WARN: (ENCEXT-2773):	Unable to find a via resistance from LEF technology file.
+**WARN: (ENCEXT-2775):	Via resistance between layer M0 and M1 is assigned 4 Ohms.
+**WARN: (ENCEXT-2777):	Via resistance between layer M1 and M2 is not defined in the cap table. LEF value 0.9 Ohms will be used.
+**WARN: (ENCEXT-2777):	Via resistance between layer M2 and M3 is not defined in the cap table. LEF value 0.8 Ohms will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.085 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.085 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.055 will be used.
+WARN: No Power Domain Created at this stage, default max voltage is 0
+Loading place ...
+Loading route ...
+**WARN: (GLOBAL-100):	Global 'timing_get_pins_of_nets_compatibility' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_multiedge_genclk_support' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_efficient_cppr_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_loop_handling' has become obsolete. It will be removed in the next release.
+<CMD> setDrawView place
+<CMD> saveDesign ../../reports/lab7/routed.enc
+Redoing specifyClockTree ...
+Checking spec file integrity...
+Writing Netlist "../../reports/lab7/routed.enc.dat/controller.v.gz" ...
+Saving clock tree spec file '../../reports/lab7/routed.enc.dat/controller.ctstch' ...
+Saving configuration ...
+Saving preference file ../../reports/lab7/routed.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=687.3M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=687.3M) ***
+Writing DEF file '../../reports/lab7/routed.enc.dat/controller.def.gz', current time is Thu Nov 20 21:28:37 2014 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file '../../reports/lab7/routed.enc.dat/controller.def.gz' is written, current time is Thu Nov 20 21:28:37 2014 ...
+No integration constraint in the design.
+<CMD> dumpToGIF ../../reports/lab7/routed
+
+*** Memory Usage v#1 (Current mem = 689.180M, initial mem = 140.223M) ***
+--- Ending "Encounter" (totcpu=0:00:37.2, real=0:03:36, mem=689.2M) ---

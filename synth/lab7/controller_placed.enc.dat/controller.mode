@@ -1,0 +1,34 @@
+catch { setDesignMode -process 250 }
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation forcedIdeal }
+catch { setTrialRouteMode -fixAirConnect true }
+catch { setTrialRouteMode -handlePreroute true }
+catch { setTrialRouteMode -keepMarkedOptRoutes true }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -effort high }
+catch { setOptMode -holdTargetSlack 0 }
+catch { setOptMode -maxDensity 0.95 }
+catch { setOptMode -setupTargetSlack 0 }
+catch { setOptMode -simplifyNetlist false }
+catch { setOptMode -usefulSkew false }
+catch { setOptMode -yieldEffort none }
+setExtractRCMode  -engine preRoute
+catch { setDelayCalMode -betaEngine sgs2 }
+catch { setDelayCalMode -enable_high_fanout false }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setCTSMode -moveGateLimit 25 }
+catch { setPlaceMode -congEffort medium }
+catch { setPlaceMode -doCongOpt false }
+catch { setPlaceMode -getLegalMultiThread false }
+catch { setPlaceMode -modulePlan true }
+catch { setPlaceMode -reorderScan true }
+catch { setPlaceMode -rplaceIncrNPRollBackLevel 3 }
+catch { setPlaceMode -timingDriven true }
+setIlmMode -highFanoutPort true -loopBack false 
+catch { setAddRingMode -stacked_via_bottom_layer metal1 }
+catch { setAddRingMode -stacked_via_top_layer metal3 }
+catch { setAddStripeMode -stacked_via_bottom_layer metal1 }
+catch { setAddStripeMode -stacked_via_top_layer metal3 }

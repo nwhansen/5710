@@ -25,11 +25,202 @@ PROPERTYDEFINITIONS
   LAYER sheetResistance INTEGER ;
 END PROPERTYDEFINITIONS
 
+UNITS
+  DATABASE MICRONS 1000 ;
+END UNITS
+MANUFACTURINGGRID 0.15 ;
+
+LAYER poly
+  TYPE  MASTERSLICE ;
+END poly
+
+LAYER cc
+  TYPE  CUT ;
+  SPACING       0.9 ;
+END cc
+
+LAYER metal1
+  TYPE ROUTING ;
+  DIRECTION HORIZONTAL ;
+  PITCH 3 3 ;
+  WIDTH 0.9 ;
+  SPACING 0.9 ;
+  OFFSET 1.5 ;
+  THICKNESS 0.64 ;
+  HEIGHT 0.38 ;
+  RESISTANCE RPERSQ 0.085 ;
+  CAPACITANCE CPERSQDIST 3.2e-05 ;
+  EDGECAPACITANCE 7.5e-05 ;
+END metal1
+
+LAYER via
+  TYPE CUT ;
+  SPACING 0.9 ;
+END via
+
+LAYER metal2
+  TYPE ROUTING ;
+  DIRECTION VERTICAL ;
+  PITCH 2.4 2.4 ;
+  WIDTH 0.9 ;
+  SPACING 0.9 ;
+  OFFSET        1.2 ;
+  THICKNESS 0.57 ;
+  HEIGHT 1.62 ;
+  RESISTANCE RPERSQ 0.085 ;
+  CAPACITANCE CPERSQDIST 1.6e-05 ;
+  EDGECAPACITANCE 6.0e-05 ;
+END metal2
+
+LAYER via2
+  TYPE CUT ;
+  SPACING 0.9 ;
+END via2
+
+LAYER metal3
+  TYPE ROUTING ;
+  DIRECTION HORIZONTAL ;
+  PITCH 3 3 ;
+  WIDTH 1.5 ;
+  SPACING 0.9 ;
+  OFFSET        1.5 ;
+  THICKNESS 0.77 ;
+  HEIGHT 2.79 ;
+  RESISTANCE RPERSQ 0.055 ;
+  CAPACITANCE CPERSQDIST 1e-05 ;
+  EDGECAPACITANCE 4.0e-05 ;
+END metal3
+
+LAYER OVERLAP
+  TYPE OVERLAP ;
+END OVERLAP
+
+VIA M2_M1_via DEFAULT
+  RESISTANCE 0.90 ; 
+  LAYER metal1 ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+  LAYER via ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+  LAYER metal2 ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+END M2_M1_via
+
+VIA M3_M2_via DEFAULT
+  RESISTANCE 0.80 ;
+  LAYER metal2 ;
+    RECT -0.6 -0.6 0.6 0.6 ;
+  LAYER via2 ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+  LAYER metal3 ;
+    RECT -0.9 -0.9 0.9 0.9 ;
+END M3_M2_via
+
+VIARULE M3_M2 GENERATE
+  LAYER metal2 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal3 ;
+    ENCLOSURE 0.6 0.6 ;
+  LAYER via2 ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+  RESISTANCE 0.80 ;
+END M3_M2
+
+VIARULE M2_M1 GENERATE
+  LAYER metal1 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal2 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER via ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+  RESISTANCE 0.90 ; 
+END M2_M1
+
+VIARULE viagen21 GENERATE
+  LAYER metal1 ;
+    WIDTH 1.2 TO 120 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER metal2 ;
+    WIDTH 1.2 TO 120 ;
+    ENCLOSURE 0.3 0.3 ;
+  LAYER via ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 1.5 BY 1.5 ;
+  RESISTANCE 0.90 ;
+END viagen21
+
+VIARULE viagen32 GENERATE
+  LAYER metal2 ;
+    WIDTH 1.2 TO 120 ;
+    ENCLOSURE 0.6 0.6 ;
+  LAYER metal3 ;
+    WIDTH 1.8 TO 180 ;
+    ENCLOSURE 0.6 0.6 ;
+  LAYER via2 ;
+    RECT -0.3 -0.3 0.3 0.3 ;
+    SPACING 2.1 BY 2.1 ;
+  RESISTANCE 0.80 ;
+END viagen32
+
+#SPACING
+#  SAMENET metal1 metal1 0.9 ;
+#  SAMENET metal2 metal2 0.9 ;
+#  SAMENET metal3 metal3 0.9 ;
+#END SPACING
+
+SPACING
+  SAMENET metal1  metal1        0.900  STACK ;
+  SAMENET metal2  metal2        0.900  STACK ;
+  SAMENET metal3  metal3        0.900 ;
+  SAMENET cc  via       0.000  STACK ;
+  SAMENET via  via      0.900 ;
+  SAMENET via  via2     0.000  STACK ;
+  SAMENET via2  via2    0.900 ;
+END SPACING
+
+SITE corner
+  CLASS PAD ;
+  SYMMETRY Y R90 ;
+  SIZE 300 BY 300 ;
+END corner
+
+SITE IO
+  CLASS PAD ;
+  SYMMETRY Y ;
+  SIZE 90 BY 300 ;
+END IO
+
+SITE  dbl_core
+    CLASS       CORE ;
+    SYMMETRY   Y ;
+    SIZE        2.400 BY 54.000 ;
+END  dbl_core
+
+SITE core
+  CLASS CORE ;
+  SYMMETRY Y ;
+  SIZE 2.4 BY 27 ;
+END core
+
+PROPERTYDEFINITIONS
+  MACRO icVersionStamp STRING ;
+  MACRO drcSignature INTEGER ;
+  MACRO viewNameList STRING ;
+  LIBRARY minWidth REAL 1.5 ;
+  LIBRARY PadType STRING "Perimeter" ;
+  LIBRARY technology STRING "UofU_AMI_C5N" ;
+  LIBRARY model STRING "ami06" ;
+  LIBRARY gridResolution REAL 0.15 ;
+  LIBRARY minLength REAL 0.6 ;
+  LAYER sheetResistance INTEGER ;
+END PROPERTYDEFINITIONS
+
 MACRO AOI22X1
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN AOI22X1 -0.3 0 ;
-  SIZE 12.6 BY 27.6 ;
+  SIZE 12.6 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN gnd!
@@ -125,7 +316,7 @@ MACRO BUFX4
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN BUFX4 -0.3 0 ;
-  SIZE 7.8 BY 27.6 ;
+  SIZE 7.8 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN A
@@ -187,7 +378,7 @@ MACRO BUFX8
   CLASS CORE ;
   ORIGIN 5.4 0 ;
   FOREIGN BUFX8 -5.4 0 ;
-  SIZE 10.5 BY 27.6 ;
+  SIZE 10.5 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN A
@@ -242,11 +433,11 @@ MACRO BUFX8
   PROPERTY drcSignature 14016396 ;
 END BUFX8
 
-MACRO Dff2
+MACRO DFF2
   CLASS CORE ;
   ORIGIN 0.3 0 ;
-  FOREIGN Dff2 -0.3 0 ;
-  SIZE 36.75 BY 27.6 ;
+  FOREIGN DFF2 -0.3 0 ;
+  SIZE 36.75 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN vdd!
@@ -288,7 +479,7 @@ MACRO Dff2
         RECT 34.2 9.9 35.4 11.1 ;
     END
   END Q
-  PIN Qb
+  PIN QB
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
@@ -316,7 +507,7 @@ MACRO Dff2
         RECT 27.75 5.7 28.65 24.6 ;
         RECT 27 6.9 28.65 8.1 ;
     END
-  END Qb
+  END QB
   PIN D
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -337,7 +528,7 @@ MACRO Dff2
         RECT 22.35 15 23.55 16.2 ;
     END
   END CLK
-  PIN CLRb
+  PIN CLRB
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -347,7 +538,7 @@ MACRO Dff2
         RECT 3 11.1 27.45 12 ;
         RECT 26.25 11.1 27.45 12.3 ;
     END
-  END CLRb
+  END CLRB
   OBS
     LAYER metal1 ;
       RECT 3 12.9 4.95 14.1 ;
@@ -485,13 +676,13 @@ MACRO Dff2
       RECT 28.05 6 28.65 6.6 ;
   END
   PROPERTY drcSignature 14016396 ;
-END Dff2
+END DFF2
 
 MACRO FILL1
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN FILL1 -0.3 0 ;
-  SIZE 3 BY 27.6 ;
+  SIZE 3 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN vdd!
@@ -522,7 +713,7 @@ MACRO FILL4
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN FILL4 -0.3 0 ;
-  SIZE 10.2 BY 27.6 ;
+  SIZE 10.2 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN gnd!
@@ -553,7 +744,7 @@ MACRO FILL8
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN FILL8 -0.3 0 ;
-  SIZE 19.8 BY 27.6 ;
+  SIZE 19.8 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN gnd!
@@ -584,7 +775,7 @@ MACRO INV1
   CLASS CORE ;
   ORIGIN 2.55 0 ;
   FOREIGN INV1 -2.55 0 ;
-  SIZE 5.4 BY 27.6 ;
+  SIZE 5.4 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN gnd!
@@ -637,7 +828,7 @@ MACRO INVX2
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN INVX2 -0.3 0 ;
-  SIZE 5.4 BY 27.6 ;
+  SIZE 5.4 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN A
@@ -690,7 +881,7 @@ MACRO INVX4
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN INVX4 -0.3 0 ;
-  SIZE 5.4 BY 27.6 ;
+  SIZE 5.4 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN A
@@ -743,7 +934,7 @@ MACRO INVX8
   CLASS CORE ;
   ORIGIN 5.1 0 ;
   FOREIGN INVX8 -5.1 0 ;
-  SIZE 10.2 BY 27.6 ;
+  SIZE 10.2 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN gnd!
@@ -796,133 +987,12 @@ MACRO INVX8
   PROPERTY drcSignature 14016396 ;
 END INVX8
 
-MACRO MUX2X1
-  CLASS CORE ;
-  ORIGIN 0.3 0 ;
-  FOREIGN MUX2X1 -0.3 0 ;
-  SIZE 12.6 BY 27.6 ;
-  SYMMETRY X Y ;
-  SITE core ;
-  PIN A
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER via ;
-        RECT 10.5 22.2 11.1 22.8 ;
-        RECT 10.5 9.3 11.1 9.9 ;
-      LAYER metal1 ;
-        RECT 5.4 9 11.4 10.2 ;
-        RECT 5.4 2.55 6.6 10.2 ;
-        RECT 0.3 6.9 6.6 8.1 ;
-        RECT 10.2 21.9 11.4 24.6 ;
-      LAYER metal2 ;
-        RECT 10.2 9 11.4 23.1 ;
-    END
-  END A
-  PIN Y
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER via ;
-        RECT 8.1 22.5 8.7 23.1 ;
-        RECT 8.1 19.2 8.7 19.8 ;
-        RECT 8.1 7.2 8.7 7.8 ;
-      LAYER metal1 ;
-        RECT 7.8 2.4 9 8.1 ;
-        RECT 7.8 18.9 9 20.1 ;
-        RECT 7.8 22.2 9 24.9 ;
-      LAYER metal2 ;
-        RECT 7.8 6.9 9 23.4 ;
-    END
-  END Y
-  PIN B
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER via ;
-        RECT 5.7 19.2 6.3 19.8 ;
-        RECT 10.5 5.1 11.1 5.7 ;
-      LAYER metal1 ;
-        RECT 10.2 2.7 11.4 6 ;
-        RECT 5.4 18.9 6.6 24.6 ;
-        RECT 0.45 18.9 6.6 20.1 ;
-      LAYER metal2 ;
-        RECT 5.4 4.8 11.4 6 ;
-        RECT 5.4 4.8 6.6 20.1 ;
-    END
-  END B
-  PIN gnd!
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER metal1 ;
-        RECT 0.6 -1.2 1.8 3.6 ;
-        RECT -1.2 -1.2 13.2 1.2 ;
-    END
-  END gnd!
-  PIN vdd!
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER metal1 ;
-        RECT 0.6 22.2 1.8 27.6 ;
-        RECT -0.6 26.4 12.6 27.6 ;
-    END
-  END vdd!
-  PIN S
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER metal1 ;
-        RECT 0.9 15.9 7.8 17.1 ;
-    END
-  END S
-  OBS
-    LAYER metal1 ;
-      RECT 3 21.9 4.2 24.6 ;
-      RECT 3 2.7 4.2 3.9 ;
-      RECT 0.45 18.9 6.6 20.1 ;
-      RECT 5.4 18.9 6.6 24.6 ;
-      RECT 0.9 15.9 7.8 17.1 ;
-      RECT 7.8 22.2 9 24.9 ;
-      RECT 7.8 18.9 9 20.1 ;
-      RECT 7.8 2.4 9 8.1 ;
-      RECT 3 13.8 10.2 15 ;
-      RECT 10.2 21.9 11.4 24.6 ;
-      RECT 0.3 6.9 6.6 8.1 ;
-      RECT 5.4 2.55 6.6 10.2 ;
-      RECT 5.4 9 11.4 10.2 ;
-      RECT 10.2 2.7 11.4 6 ;
-      RECT 0.6 22.2 1.8 27.6 ;
-      RECT -0.6 26.4 12.6 27.6 ;
-      RECT -1.2 -1.2 13.2 1.2 ;
-      RECT 0.6 -1.2 1.8 3.6 ;
-    LAYER metal2 ;
-      RECT 3 2.7 4.2 23.1 ;
-      RECT 7.8 6.9 9 23.4 ;
-      RECT 10.2 9 11.4 23.1 ;
-      RECT 5.4 4.8 11.4 6 ;
-      RECT 5.4 4.8 6.6 20.1 ;
-    LAYER via ;
-      RECT 3.3 22.2 3.9 22.8 ;
-      RECT 3.3 14.1 3.9 14.7 ;
-      RECT 3.3 3 3.9 3.6 ;
-      RECT 5.7 19.2 6.3 19.8 ;
-      RECT 8.1 22.5 8.7 23.1 ;
-      RECT 8.1 19.2 8.7 19.8 ;
-      RECT 8.1 7.2 8.7 7.8 ;
-      RECT 10.5 22.2 11.1 22.8 ;
-      RECT 10.5 9.3 11.1 9.9 ;
-      RECT 10.5 5.1 11.1 5.7 ;
-  END
-  PROPERTY drcSignature 14016396 ;
-END MUX2X1
 
 MACRO MUX2X1_alt
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN MUX2X1_alt -0.3 0 ;
-  SIZE 12.6 BY 27.6 ;
+  SIZE 12.6 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN A
@@ -994,7 +1064,7 @@ MACRO NAND2X1
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN NAND2X1 -0.3 0 ;
-  SIZE 7.8 BY 27.6 ;
+  SIZE 7.8 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN vdd!
@@ -1062,7 +1132,7 @@ MACRO NAND2X2
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN NAND2X2 -0.3 0 ;
-  SIZE 7.95 BY 27.6 ;
+  SIZE 7.95 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN vdd!
@@ -1130,7 +1200,7 @@ MACRO NOR2X1
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN NOR2X1 -0.3 0 ;
-  SIZE 7.8 BY 27.6 ;
+  SIZE 7.8 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN A
@@ -1198,7 +1268,7 @@ MACRO OAI22X1
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN OAI22X1 -0.3 0 ;
-  SIZE 12.6 BY 27.6 ;
+  SIZE 12.6 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN vdd!
@@ -1295,7 +1365,7 @@ MACRO TIEHI
   CLASS CORE ;
   ORIGIN 2.7 0 ;
   FOREIGN TIEHI -2.7 0 ;
-  SIZE 5.4 BY 27.6 ;
+  SIZE 5.4 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN vdd!
@@ -1341,7 +1411,7 @@ MACRO TIELO
   CLASS CORE ;
   ORIGIN 0.3 0 ;
   FOREIGN TIELO -0.3 0 ;
-  SIZE 5.4 BY 27.6 ;
+  SIZE 5.4 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN Y
@@ -1387,7 +1457,7 @@ MACRO XOR2X1
   CLASS CORE ;
   ORIGIN 9.9 0 ;
   FOREIGN XOR2X1 -9.9 0 ;
-  SIZE 19.8 BY 27.6 ;
+  SIZE 19.8 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN vdd!
@@ -1494,7 +1564,7 @@ MACRO tri_nand2
   CLASS CORE ;
   ORIGIN 5.1 0 ;
   FOREIGN tri_nand2 -5.1 0 ;
-  SIZE 10.35 BY 27.6 ;
+  SIZE 10.35 BY 27.0 ;
   SYMMETRY X Y ;
   SITE core ;
   PIN NE

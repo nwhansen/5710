@@ -1,0 +1,69 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Tue Nov 18 15:05:16 2014                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+#@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v13.13-s001
+#@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign SOCPandR/controller_fplan.enc.dat controller
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+set sprCreateIeStripeNets {}
+set sprCreateIeStripeLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeSpacing 2.0
+set sprCreateIeStripeThreshold 1.0
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 150 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 90 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+undo
+windowSelect 181.136 174.436 193.572 169.570
+selectWire 188.4000 4.2000 193.2000 226.8000 2 gnd!
+deleteSelectedFromFPlan
+selectWire 181.2000 15.9000 186.0000 215.1000 2 vdd!
+deleteSelectedFromFPlan
+selectWire 286.8000 4.2000 291.6000 226.8000 2 gnd!
+deleteSelectedFromFPlan
+selectWire 279.6000 15.9000 284.4000 215.1000 2 vdd!
+deleteSelectedFromFPlan
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 90 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -snap_wire_center_to_grid Grid -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 90 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+saveDesign SOCPandR/controller_power.enc
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setDrawView place
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_preCTS -outDir timingReports
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign SOCPandR/controller_power.enc.dat controller
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1

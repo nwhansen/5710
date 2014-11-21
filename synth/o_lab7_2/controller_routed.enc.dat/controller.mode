@@ -1,0 +1,55 @@
+catch { setDesignMode -process 250 }
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -skew true }
+catch { setTrialRouteMode -fixAirConnect true }
+catch { setTrialRouteMode -handlePreroute true }
+catch { setTrialRouteMode -keepMarkedOptRoutes true }
+catch { setOptMode -deleteInst true }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -effort medium }
+catch { setOptMode -holdTargetSlack 0 }
+catch { setOptMode -maxDensity 0.95 }
+catch { setOptMode -restruct false }
+catch { setOptMode -setupTargetSlack 0 }
+catch { setOptMode -simplifyNetlist false }
+catch { setOptMode -swapPin false }
+catch { setOptMode -usefulSkew false }
+catch { setOptMode -yieldEffort none }
+setExtractRCMode  -effortLevel low -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3 -minNetTermNrToBeInMem 50
+catch { setDelayCalMode -betaEngine sgs2 }
+catch { setDelayCalMode -enable_high_fanout false }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -SIAware true }
+catch { setDelayCalMode -siMode opt }
+catch { setCTSMode -moveGateLimit 25 }
+catch { setCTSMode -routeClkNet true }
+catch { setCTSMode -routeGuide true }
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -drouteUseMultiCutViaEffort "medium"}
+catch {setNanoRouteMode -quiet -routeTdrEffort 8}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
+catch {setNanoRouteMode -quiet -timingEngine ""}
+
+catch { setPlaceMode -congEffort medium }
+catch { setPlaceMode -doCongOpt false }
+catch { setPlaceMode -getLegalMultiThread false }
+catch { setPlaceMode -modulePlan true }
+catch { setPlaceMode -reorderScan true }
+catch { setPlaceMode -rplaceIncrNPRollBackLevel 3 }
+catch { setPlaceMode -timingDriven true }
+catch { setFillerMode -core {FILL1 FILL4 FILL8} }
+catch { setFillerMode -corePrefix controller_FILL }
+setIlmMode -highFanoutPort true -loopBack false 
+catch { setHierMode -disableArt false }
+catch { setHierMode -reportPostRouteArtTiming false }
+catch { setHierMode -trialRouteHonorReadOnly false }
+catch { setAddRingMode -stacked_via_bottom_layer metal1 }
+catch { setAddRingMode -stacked_via_top_layer metal3 }
+catch { setAddStripeMode -stacked_via_bottom_layer metal1 }
+catch { setAddStripeMode -stacked_via_top_layer metal3 }

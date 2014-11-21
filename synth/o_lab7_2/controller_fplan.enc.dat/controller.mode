@@ -1,0 +1,5 @@
+catch { setAnalysisMode -analysisType single }
+setExtractRCMode  -engine preRoute
+catch { setDelayCalMode -betaEngine sgs2 }
+catch { setDelayCalMode -engine aae }
+setIlmMode -highFanoutPort true -loopBack false 

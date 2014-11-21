@@ -1,0 +1,23 @@
+# Format: clock  timeReq  slackR/slackF  setupR/setupF  instName/pinName   # cycle(s)
+clk(R)->clk(R)	9.861    1.568/*         0.663/*         state_reg_2_/D    1
+clk(R)->clk(R)	9.920    */2.200         */0.608         state_reg_1_/D    1
+clk(R)->clk(R)	9.948    2.636/*         0.580/*         state_reg_3_/D    1
+clk(R)->clk(R)	10.075   3.054/*         0.450/*         state_reg_0_/D    1
+clk(R)->clk(R)	9.750    3.125/*         0.250/*         alusrcb[0]    1
+clk(R)->clk(R)	9.750    3.168/*         0.250/*         memread    1
+clk(R)->clk(R)	9.750    3.182/*         0.250/*         pcen    1
+clk(R)->clk(R)	9.750    4.227/*         0.250/*         alusrca    1
+clk(R)->clk(R)	9.750    4.542/*         0.250/*         aluop[0]    1
+clk(R)->clk(R)	9.750    4.595/*         0.250/*         alusrcb[1]    1
+clk(R)->clk(R)	9.750    4.848/*         0.250/*         iord    1
+clk(R)->clk(R)	9.750    4.922/*         0.250/*         regwrite    1
+clk(R)->clk(R)	9.750    5.060/*         0.250/*         pcsource[0]    1
+clk(R)->clk(R)	9.750    5.069/*         0.250/*         irwrite[2]    1
+clk(R)->clk(R)	9.750    5.116/*         0.250/*         irwrite[0]    1
+clk(R)->clk(R)	9.750    5.616/*         0.250/*         memwrite    1
+clk(R)->clk(R)	9.750    5.619/*         0.250/*         irwrite[3]    1
+clk(R)->clk(R)	9.750    5.650/*         0.250/*         pcsource[1]    1
+clk(R)->clk(R)	9.750    5.654/*         0.250/*         memtoreg    1
+clk(R)->clk(R)	9.750    5.739/*         0.250/*         aluop[1]    1
+clk(R)->clk(R)	9.750    6.126/*         0.250/*         irwrite[1]    1
+clk(R)->clk(R)	9.750    6.399/*         0.250/*         regdst    1

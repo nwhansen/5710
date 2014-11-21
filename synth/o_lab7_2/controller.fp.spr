@@ -1,0 +1,15 @@
+Version 4.1
+Micron 1000
+LAYERS 8
+poly
+metal1
+metal2
+metal3
+cc
+via
+via2
+OVERLAP
+VIAS 0
+SPECIALNETS
+0 0 1 gnd!
+0 0 1 vdd!

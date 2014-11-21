@@ -1,5 +1,5 @@
 
 // Library name: Lib6710_08
-// Cell name: XOR2X1
+// Cell name: BUFX8
 // View name: analog_extracted
-subckt XOR2X1 A B Y
+subckt BUFX8 A Y

@@ -1,8 +1,0 @@
-cUiMoveCellToBin {D_flip_flop} {Ignore}
-cUiSelectCellP {D_flip_flop}
-cUiSetViewStatus {D_flip_flop} {layout} {1}
-cUiSetViewStatus {D_flip_flop} {logical} {0}
-cUiSetViewStatus {D_flip_flop} {abstract.pin} {0}
-cUiSetViewStatus {D_flip_flop} {abstract.ext} {0}
-cUiSetViewStatus {D_flip_flop} {abstract} {0}
-cUiSetViewStatus {D_flip_flop} {abstract.ver} {0}

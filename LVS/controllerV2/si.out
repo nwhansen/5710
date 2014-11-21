@@ -1,0 +1,114 @@
+@(#)$CDS: LVS version 6.1.6-64b 07/05/2013 16:09 (sjfnl165) $
+
+Command line: /uusoc/facility/cad_tools/Cadence/IC616.010_lnx86/tools.lnx86/dfII/bin/64bit/LVS -dir /home/nathan/5710/LVS/controllerV2 -l -s -t /home/nathan/5710/LVS/controllerV2/layout /home/nathan/5710/LVS/controllerV2/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /home/nathan/5710/LVS/controllerV2/layout/netlist
+       count
+        270             nets
+        27              terminals
+        261             pmos
+        261             nmos
+
+    Net-list summary for /home/nathan/5710/LVS/controllerV2/schematic/netlist
+       count
+        270             nets
+        29              terminals
+        258             pmos
+        258             nmos
+
+
+    Terminal correspondence points
+    N260      N132      aluop<0>
+    N257      N108      aluop<1>
+    N249      N115      alusrca
+    N264      N131      alusrcb<0>
+    N259      N109      alusrcb<1>
+    N256      N3        clk
+    N254      N119      iord
+    N253      N135      irwrite<0>
+    N250      N134      irwrite<1>
+    N247      N133      irwrite<2>
+    N244      N117      irwrite<3>
+    N251      N113      memread
+    N269      N118      memtoreg
+    N245      N114      memwrite
+    N246      N125      op<0>
+    N243      N124      op<1>
+    N267      N123      op<2>
+    N263      N122      op<3>
+    N258      N121      op<4>
+    N255      N120      op<5>
+    N262      N126      pcen
+    N252      N130      pcsource<0>
+    N248      N129      pcsource<1>
+    N265      N128      regdst
+    N261      N127      regwrite
+    N268      N2        reset
+    N266      N106      zero
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  522     516    
+        total                   522     516    
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  270     270    
+        total                   270     270    
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   27      29     
+
+
+Probe files from /home/nathan/5710/LVS/controllerV2/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/nathan/5710/LVS/controllerV2/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

@@ -74,37 +74,21 @@ ends NAND2X1
 // End of subcircuit definition.
 
 // Library name: Lib6710_08
-// Cell name: INV1
-// View name: analog_extracted
-subckt INV1 A Y
-    \+1 (Y A vdd! vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
-        ps=6e-06 pd=6e-06 m=1 region=sat
-    \+5 (A 0) capacitor c=6.5286e-16 m=1
-    \+4 (vdd! A) capacitor c=4.4361e-16 m=1
-    \+3 (Y 0) capacitor c=1.80804e-15 m=1
-    \+2 (vdd! Y) capacitor c=1.54182e-15 m=1
-    \+0 (Y A 0 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
-        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
-ends INV1
-// End of subcircuit definition.
-
-// Library name: Lib6710_08
 // Cell name: BUFX4
 // View name: analog_extracted
 subckt BUFX4 A Y
     \+3 (Y 5 vdd! vdd!) ami06P w=1.2e-05 l=6e-07 as=9.45e-12 ad=1.8e-11 \
         ps=6.3e-06 pd=1.5e-05 m=1 region=sat
-    \+14 (0 5) capacitor c=1.02114e-15 m=1
-    \+13 (A 0) capacitor c=3.0132e-16 m=1
-    \+12 (vdd! 5) capacitor c=9.0396e-16 m=1
-    \+11 (vdd! A) capacitor c=3.0132e-16 m=1
-    \+10 (0 5) capacitor c=1.1832e-16 m=1
-    \+9 (Y 0) capacitor c=6.84e-16 m=1
-    \+8 (A 5) capacitor c=2.67525e-16 m=1
-    \+7 (A 0) capacitor c=9.3606e-16 m=1
-    \+6 (vdd! 5) capacitor c=1.1832e-16 m=1
-    \+5 (vdd! Y) capacitor c=5.0652e-16 m=1
-    \+4 (vdd! A) capacitor c=1.74042e-15 m=1
+    \+13 (0 5) capacitor c=7.3656e-16 m=1
+    \+12 (A 0) capacitor c=7.3656e-16 m=1
+    \+11 (vdd! 5) capacitor c=2.1762e-16 m=1
+    \+10 (vdd! A) capacitor c=8.37e-16 m=1
+    \+9 (0 5) capacitor c=3.5496e-16 m=1
+    \+8 (Y 0) capacitor c=6.84e-16 m=1
+    \+7 (A 5) capacitor c=5.4e-16 m=1
+    \+6 (A 0) capacitor c=2.6988e-16 m=1
+    \+5 (vdd! 5) capacitor c=1.95228e-15 m=1
+    \+4 (vdd! Y) capacitor c=5.0652e-16 m=1
     \+1 (Y 5 0 0) ami06N w=6e-06 l=6e-07 as=4.725e-12 ad=9e-12 ps=4.05e-06 \
         pd=9e-06 m=1 region=sat
     \+0 (0 A 5 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=4.725e-12 \
@@ -273,9 +257,9 @@ subckt BUFX8 A Y
     \+4 (Y 5 vdd! vdd!) ami06P w=1.2e-05 l=6e-07 as=9.9e-12 ad=1.08e-11 \
         ps=4.8e-06 pd=1.8e-06 m=1 region=sat
     \+15 (0 5) capacitor c=5.022e-16 m=1
-    \+14 (A 0) capacitor c=6.2775e-16 m=1
+    \+14 (A 0) capacitor c=6.1938e-16 m=1
     \+13 (vdd! 5) capacitor c=3.8502e-16 m=1
-    \+12 (vdd! A) capacitor c=6.6123e-16 m=1
+    \+12 (vdd! A) capacitor c=7.0308e-16 m=1
     \+11 (0 5) capacitor c=1.36758e-15 m=1
     \+10 (Y 5) capacitor c=5.4e-16 m=1
     \+9 (Y 0) capacitor c=5.6568e-16 m=1
@@ -294,62 +278,18 @@ ends BUFX8
 // End of subcircuit definition.
 
 // Library name: Lib6710_08
-// Cell name: Dff2
+// Cell name: INVX1
 // View name: analog_extracted
-subckt Dff2 CLK CLRb D Q Qb
-    \+25 (Q Qb vdd! vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
-        ps=1.8e-06 pd=9e-06 m=1 region=sat
-    \+24 (vdd! 12 Qb vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
-        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
-    \+23 (Qb CLRb vdd! vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
-        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
-    \+22 (vdd! Qb 18 vdd!) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=5.4e-12 \
-        ps=9e-07 pd=1.8e-06 m=1 region=sat
-    \+21 (18 CLK 12 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=2.7e-12 \
-        ps=1.8e-06 pd=9e-07 m=1 region=sat
-    \+20 (12 8 11 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
-        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
-    \+19 (11 9 vdd! vdd!) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
-        ps=9e-06 pd=1.8e-06 m=1 region=sat
-    \+18 (10 11 vdd! vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
-        ps=1.8e-06 pd=9e-06 m=1 region=sat
-    \+17 (vdd! CLRb 10 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
-        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
-    \+16 (10 8 9 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
-        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
-    \+15 (9 CLK 17 vdd!) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=5.4e-12 \
-        ps=9e-07 pd=1.8e-06 m=1 region=sat
-    \+14 (17 D vdd! vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=2.7e-12 \
-        ps=1.8e-06 pd=9e-07 m=1 region=sat
-    \+13 (vdd! CLK 8 vdd!) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
-        ps=9e-06 pd=1.8e-06 m=1 region=sat
-    \+12 (Q Qb 0 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 ps=6e-06 \
-        pd=6e-06 m=1 region=sat
-    \+11 (Qb 12 16 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 \
-        ps=9e-07 pd=6e-06 m=1 region=sat
-    \+10 (16 CLRb 0 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
-        ps=1.8e-06 pd=9e-07 m=1 region=sat
-    \+9 (0 Qb 15 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
-        pd=1.8e-06 m=1 region=sat
-    \+8 (15 8 12 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
-        ps=1.8e-06 pd=9e-07 m=1 region=sat
-    \+7 (12 CLK 11 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
-        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
-    \+6 (11 9 0 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
-        pd=1.8e-06 m=1 region=sat
-    \+5 (0 11 14 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 ps=9e-07 \
-        pd=6e-06 m=1 region=sat
-    \+4 (14 CLRb 10 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
-        ps=1.8e-06 pd=9e-07 m=1 region=sat
-    \+3 (10 CLK 9 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
-        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
-    \+2 (9 8 13 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
-        pd=1.8e-06 m=1 region=sat
-    \+1 (13 D 0 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
-        ps=1.8e-06 pd=9e-07 m=1 region=sat
-    \+0 (0 CLK 8 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
-        pd=1.8e-06 m=1 region=sat
-ends Dff2
+subckt INVX1 A Y
+    \+1 (Y A vdd! vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
+        ps=6e-06 pd=6e-06 m=1 region=sat
+    \+5 (A 0) capacitor c=6.5286e-16 m=1
+    \+4 (vdd! A) capacitor c=4.4361e-16 m=1
+    \+3 (Y 0) capacitor c=1.80804e-15 m=1
+    \+2 (vdd! Y) capacitor c=1.54182e-15 m=1
+    \+0 (Y A 0 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
+        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
+ends INVX1
 // End of subcircuit definition.
 
 // Library name: Lib6710_08
@@ -467,21 +407,158 @@ ends OAI22X1
 // End of subcircuit definition.
 
 // Library name: Lib6710_08
+// Cell name: DFF2
+// View name: analog_extracted
+subckt DFF2 CLK CLRB D Q QB
+    \+25 (Q QB vdd! vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+        ps=1.8e-06 pd=9e-06 m=1 region=sat
+    \+24 (vdd! 12 QB vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+23 (QB CLRB vdd! vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+22 (vdd! QB 18 vdd!) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=5.4e-12 \
+        ps=9e-07 pd=1.8e-06 m=1 region=sat
+    \+21 (18 CLK 12 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=2.7e-12 \
+        ps=1.8e-06 pd=9e-07 m=1 region=sat
+    \+20 (12 8 11 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+19 (11 9 vdd! vdd!) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
+        ps=9e-06 pd=1.8e-06 m=1 region=sat
+    \+18 (10 11 vdd! vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+        ps=1.8e-06 pd=9e-06 m=1 region=sat
+    \+17 (vdd! CLRB 10 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+16 (10 8 9 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+15 (9 CLK 17 vdd!) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=5.4e-12 \
+        ps=9e-07 pd=1.8e-06 m=1 region=sat
+    \+14 (17 D vdd! vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=2.7e-12 \
+        ps=1.8e-06 pd=9e-07 m=1 region=sat
+    \+13 (vdd! CLK 8 vdd!) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
+        ps=9e-06 pd=1.8e-06 m=1 region=sat
+    \+103 (0 12) capacitor c=4.3524e-16 m=1
+    \+102 (0 11) capacitor c=4.6872e-16 m=1
+    \+101 (0 9) capacitor c=4.5198e-16 m=1
+    \+100 (0 8) capacitor c=1.12158e-15 m=1
+    \+99 (0 QB) capacitor c=1.02114e-15 m=1
+    \+98 (CLK 0) capacitor c=1.13832e-15 m=1
+    \+97 (D 0) capacitor c=4.3524e-16 m=1
+    \+96 (vdd! 12) capacitor c=5.3568e-16 m=1
+    \+95 (vdd! 11) capacitor c=5.6916e-16 m=1
+    \+94 (vdd! 9) capacitor c=4.6872e-16 m=1
+    \+93 (vdd! 8) capacitor c=1.0044e-15 m=1
+    \+92 (vdd! QB) capacitor c=1.0044e-15 m=1
+    \+91 (vdd! CLK) capacitor c=1.40616e-15 m=1
+    \+90 (vdd! D) capacitor c=5.859e-16 m=1
+    \+89 (CLRB 0) capacitor c=9.0396e-16 m=1
+    \+88 (CLRB vdd!) capacitor c=1.10484e-15 m=1
+    \+87 (10 11) capacitor c=3.084e-16 m=1
+    \+86 (9 11) capacitor c=6.6015e-16 m=1
+    \+85 (8 11) capacitor c=2.217e-16 m=1
+    \+84 (8 9) capacitor c=2.217e-16 m=1
+    \+83 (QB 12) capacitor c=9.3015e-16 m=1
+    \+82 (0 9) capacitor c=1.48026e-15 m=1
+    \+81 (0 8) capacitor c=3.83862e-15 m=1
+    \+80 (0 QB) capacitor c=1.32912e-15 m=1
+    \+79 (Q 0) capacitor c=1.30278e-15 m=1
+    \+78 (CLK 11) capacitor c=2.217e-16 m=1
+    \+77 (CLK 9) capacitor c=5.784e-16 m=1
+    \+76 (CLK 8) capacitor c=1.1085e-15 m=1
+    \+75 (CLK QB) capacitor c=5.4e-16 m=1
+    \+74 (CLK 0) capacitor c=6.0216e-16 m=1
+    \+73 (D 8) capacitor c=2.217e-16 m=1
+    \+72 (D CLK) capacitor c=2.217e-16 m=1
+    \+71 (vdd! 12) capacitor c=1.19418e-15 m=1
+    \+70 (vdd! 11) capacitor c=9.6726e-16 m=1
+    \+69 (vdd! 10) capacitor c=1.12488e-15 m=1
+    \+68 (vdd! 8) capacitor c=1.97058e-15 m=1
+    \+67 (vdd! Q) capacitor c=1.80282e-15 m=1
+    \+66 (vdd! CLK) capacitor c=3.22998e-15 m=1
+    \+65 (vdd! D) capacitor c=2.403e-16 m=1
+    \+64 (CLRB 12) capacitor c=2.217e-16 m=1
+    \+63 (CLRB 11) capacitor c=2.217e-16 m=1
+    \+62 (CLRB 10) capacitor c=3.084e-16 m=1
+    \+61 (CLRB 9) capacitor c=4.434e-16 m=1
+    \+60 (CLRB 8) capacitor c=6.651e-16 m=1
+    \+59 (CLRB QB) capacitor c=4.8675e-16 m=1
+    \+58 (CLRB 0) capacitor c=2.403e-16 m=1
+    \+57 (CLRB CLK) capacitor c=4.434e-16 m=1
+    \+56 (CLRB D) capacitor c=4.05e-16 m=1
+    \+55 (CLRB vdd!) capacitor c=3.39654e-15 m=1
+    \+54 (9 10) capacitor c=2.2914e-16 m=1
+    \+53 (8 12) capacitor c=1.5288e-16 m=1
+    \+52 (8 11) capacitor c=2.2914e-16 m=1
+    \+51 (8 10) capacitor c=9.6294e-16 m=1
+    \+50 (8 9) capacitor c=2.2914e-16 m=1
+    \+49 (QB 12) capacitor c=2.2914e-16 m=1
+    \+48 (0 12) capacitor c=6.1572e-16 m=1
+    \+47 (0 11) capacitor c=6.8706e-16 m=1
+    \+46 (0 10) capacitor c=3.9981e-16 m=1
+    \+45 (0 9) capacitor c=3.2103e-16 m=1
+    \+44 (0 QB) capacitor c=2.93333e-16 m=1
+    \+43 (CLK 12) capacitor c=7.2408e-16 m=1
+    \+42 (CLK 11) capacitor c=2.2914e-16 m=1
+    \+41 (CLK 10) capacitor c=2.2914e-16 m=1
+    \+40 (CLK 9) capacitor c=6.5364e-16 m=1
+    \+39 (CLK QB) capacitor c=8.6334e-16 m=1
+    \+38 (CLK 0) capacitor c=1.839e-16 m=1
+    \+37 (vdd! 12) capacitor c=5.5383e-16 m=1
+    \+36 (vdd! 11) capacitor c=5.7072e-16 m=1
+    \+35 (vdd! 10) capacitor c=2.4024e-16 m=1
+    \+34 (vdd! 9) capacitor c=7.134e-16 m=1
+    \+33 (vdd! QB) capacitor c=8.6541e-16 m=1
+    \+32 (vdd! CLK) capacitor c=1.0512e-16 m=1
+    \+31 (CLRB 12) capacitor c=2.2914e-16 m=1
+    \+30 (CLRB 11) capacitor c=2.2914e-16 m=1
+    \+29 (CLRB 10) capacitor c=2.2914e-16 m=1
+    \+28 (CLRB 9) capacitor c=2.2914e-16 m=1
+    \+27 (CLRB QB) capacitor c=3.97785e-16 m=1
+    \+26 (CLRB CLK) capacitor c=2.2914e-16 m=1
+    \+12 (Q QB 0 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 ps=6e-06 \
+        pd=6e-06 m=1 region=sat
+    \+11 (QB 12 16 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 \
+        ps=9e-07 pd=6e-06 m=1 region=sat
+    \+10 (16 CLRB 0 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+        ps=1.8e-06 pd=9e-07 m=1 region=sat
+    \+9 (0 QB 15 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
+        pd=1.8e-06 m=1 region=sat
+    \+8 (15 8 12 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+        ps=1.8e-06 pd=9e-07 m=1 region=sat
+    \+7 (12 CLK 11 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+6 (11 9 0 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+5 (0 11 14 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 ps=9e-07 \
+        pd=6e-06 m=1 region=sat
+    \+4 (14 CLRB 10 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+        ps=1.8e-06 pd=9e-07 m=1 region=sat
+    \+3 (10 CLK 9 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+2 (9 8 13 0) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
+        pd=1.8e-06 m=1 region=sat
+    \+1 (13 D 0 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+        ps=1.8e-06 pd=9e-07 m=1 region=sat
+    \+0 (0 CLK 8 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+        pd=1.8e-06 m=1 region=sat
+ends DFF2
+// End of subcircuit definition.
+
+// Library name: Lib6710_08
 // Cell name: Allparts
 // View name: schematic
 I12 (net01) TIELO
 I6 (net3 net4 net2) NOR2X1
 I11 (net05) TIEHI
 I5 (net7 net8 net6) NAND2X1
-I9 (net010 net09) INV1
 I19 (net012 net011) BUFX4
 I14 (net017 net018 net019 net020 net016) AOI22X1
 I15 (net022 net023 net024 net021) MUX2X1
 I16 (net026 net027 net025) XOR2X1
 I20 (net047 net042) BUFX8
-I26 (net052 net061 net057 net056 net062) Dff2
+I28 (net051 net048) INVX1
 I21 (net028 net045) INVX2
 I22 (net030 net029) INVX4
 I23 (net032 net031) INVX8
 I24 (net034 net035 net033) NAND2X2
 I25 (net037 net038 net039 net040 net036) OAI22X1
+I29 (net043 net044 net046 net041 net050) DFF2

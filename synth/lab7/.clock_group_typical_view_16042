@@ -1,0 +1,2 @@
+#Timing Groups: 2
+set_timing_group { clk  } 

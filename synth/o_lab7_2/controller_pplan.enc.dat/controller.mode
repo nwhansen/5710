@@ -1,0 +1,9 @@
+catch { setAnalysisMode -analysisType single }
+setExtractRCMode  -engine preRoute
+catch { setDelayCalMode -betaEngine sgs2 }
+catch { setDelayCalMode -engine aae }
+setIlmMode -highFanoutPort true -loopBack false 
+catch { setAddRingMode -stacked_via_bottom_layer metal1 }
+catch { setAddRingMode -stacked_via_top_layer metal3 }
+catch { setAddStripeMode -stacked_via_bottom_layer metal1 }
+catch { setAddStripeMode -stacked_via_top_layer metal3 }

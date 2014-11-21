@@ -1,0 +1,19 @@
+.TH
+.SH NAME
+ENCLF-3
+.SH SYNOPSIS
+Error found when processing LEF file '%s'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart '%s' again.
+
+.SH DESCRIPTION
+If you have LEF syntax errors, you can look at the LEF manual to find the 
+correct syntax. It can be accessed from the Encounter Help->Help Library... 
+menu.  Look under the Languages section for the latest LEF/DEF Language 
+Reference Manual.
+
+If there are semantic errors, check if you have the correct LEF technology file 
+(the first file listed in the init_lef_file variable), or that you are not 
+mistakenly including a LEF file with macros from some other technology node. 
+You can also look at the manual for more information about specific statements.
+
+
+

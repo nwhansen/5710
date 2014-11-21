@@ -1,0 +1,353 @@
+// ELC process setup file 
+// (c) 00 - 02 Cadence Design Systems, Inc.
+// Create By: db_setup (v1.2) 
+// Time     : 2014-10-30 14:55:45 (2014-10-30 20:55:45 GMT)
+
+ //  -- Table Define Section 
+process best { 
+	CORNER = "FF" ; 
+	TEMP = 0 ; 
+	VOLTAGE = 5.5 ; 
+	VTN = 0.63 ; 
+	VTP = 0.89 ; 
+ } ; 
+process typical { 
+	CORNER = "TT" ; 
+	TEMP = 25 ; 
+	VOLTAGE = 5.0 ; 
+	VTN = 0.67 ; 
+	VTP = 0.92 ; 
+ } ; 
+process worst { 
+	CORNER = "SS" ; 
+	TEMP = 125 ; 
+	VOLTAGE = 4.5 ; 
+	VTN = 0.71 ; 
+	VTP = 0.92 ; 
+ } ; 
+index Clk_Slew { 
+	BSLEW = 0.100n 0.5n 1.0n ; 
+ } ; 
+index DEFAULT_INDEX { 
+	LOAD = 0.025p 0.05p 0.1p 0.3p 0.6p ; 
+	SLEW = 0.100n 0.30n 0.7n 1.0n 2.0n ; 
+ } ; 
+index IO5x5 { 
+	LOAD = 5p 10p 20p 50p 75p ; 
+	SLEW = 0.1n 0.3n 0.6n 1.3n 3.0n ; 
+ } ; 
+index X1 { 
+	LOAD = 0.025p 0.05p 0.1p 0.3p 0.6p ; 
+	SLEW = 0.100n 0.30n 0.7n 1.0n 2.0n ; 
+ } ; 
+index X16 { 
+	LOAD = 0.2p 0.4p 0.8p 2.4p 4.8p ; 
+	SLEW = 0.100n 0.30n 0.7n 1.0n 2.0n ; 
+ } ; 
+index X2 { 
+	LOAD = 0.050p 0.10p 0.2p 0.6p 1.2p ; 
+	SLEW = 0.100n 0.30n 0.7n 1.0n 2.0n ; 
+ } ; 
+index X4 { 
+	LOAD = 0.1p 0.2p 0.4p 1.2p 2.4p ; 
+	SLEW = 0.100n 0.30n 0.7n 1.0n 2.0n ; 
+ } ; 
+index X8 { 
+	LOAD = 0.2p 0.4p 0.8p 2.4p 4.8p ; 
+	SLEW = 0.100n 0.30n 0.7n 1.0n 2.0n ; 
+ } ; 
+signal DEFAULT_SIGNAL { 
+	TSMAX = 3.0n ; 
+	UNIT = REL ; 
+	VH = 1.0 1.0 ; 
+	VL = 0.0 0.0 ; 
+	VSH = 0.9 0.9 ; 
+	VSL = 0.1 0.1 ; 
+	VTH = 0.5 0.5 ; 
+ } ; 
+signal VDD5.0V { 
+	TSMAX = 2.0n ; 
+	UNIT = ABS ; 
+	VH = 5.0 5.0 ; 
+	VL = 0.0 0.0 ; 
+	VSH = 2.0 2.0 ; 
+	VSL = 0.5 0.5 ; 
+	VTH = 2.5 2.5 ; 
+ } ; 
+signal std_cell { 
+	TSMAX = 2.0n ; 
+	UNIT = REL ; 
+	VH = 1.0 1.0 ; 
+	VL = 0.0 0.0 ; 
+	VSH = 0.8 0.8 ; 
+	VSL = 0.2 0.2 ; 
+	VTH = 0.5 0.5 ; 
+ } ; 
+signal std_cell_6710 { 
+	TSMAX = 2.0n ; 
+	UNIT = REL ; 
+	VH = 1.0 1.0 ; 
+	VL = 0.0 0.0 ; 
+	VSH = 0.8 0.8 ; 
+	VSL = 0.2 0.2 ; 
+	VTH = 0.3 0.7 0.7 0.3 ; 
+ } ; 
+simulation DEFAULT_SIMULATION { 
+	BISEC = 4.0n 4.0n 10p ; 
+	DC = 0.1 0.9 0.1 ; 
+	INCIR = "" ; 
+	OUTCIR = "" ; 
+	RESISTANCE = 10K ; 
+	TRANSIENT = 0.1n 20n 10p ; 
+ } ; 
+simulation std_cell { 
+	BISEC = 6.0n 6.0n 100p ; 
+	DC = 0.1 4.5 0.1 ; 
+	RESISTANCE = 10MEG ; 
+	TRANSIENT = 0.1n 80n 10p ; 
+ } ; 
+group Clk_Slew { 
+	PIN = *.CLK ; 
+ } ; 
+group Core_Pins { 
+	PIN = *.DO *.DI ; 
+ } ; 
+group POWR { 
+	PIN = *.Vdd *.Vdd2 ; 
+ } ; 
+group Pad_Pins { 
+	PIN = *.YPAD ; 
+ } ; 
+group X1 { 
+	CELL = *X1 ; 
+ } ; 
+group X16 { 
+	CELL = *X16 ; 
+ } ; 
+group X2 { 
+	CELL = *X2 ; 
+ } ; 
+group X4 { 
+	CELL = *X4 ; 
+ } ; 
+group X8 { 
+	CELL = *X8 ; 
+ } ; 
+margin DEFAULT_MARGIN { 
+	CAP = 1.0 0.0 ; 
+	CURRENT = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	DELAY = 1.0 0.0 ; 
+	ECAP = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	HOLD = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	INTERCONNECT = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	IOPATH = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	POWER = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	RECOVERY = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	RELEASE = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	REMOVAL = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	SETUP = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	SLEW = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	WCAP = 1.0 0.0 ; 
+	WIDTH = 1.0:1.0:1.0 0.0:0.0:0.0 ; 
+	WRESIST = 1.0 0.0 ; 
+ } ; 
+margin m0 { 
+	CAP = 1.0 0.0 ; 
+	DELAY = 1.0 0.0 ; 
+	HOLD = 1.0 0.0 ; 
+	POWER = 1.0 0.0 ; 
+	RECOVERY = 1.0 0.0 ; 
+	RELEASE = 1.0 0.0 ; 
+	REMOVAL = 1.0 0.0 ; 
+	SETUP = 1.0 0.0 ; 
+	WIDTH = 1.0 0.0 ; 
+ } ; 
+nominal DEFAULT_NOMINAL { 
+	CAP = 0.0:0.5:1.0 0.0:0.5:1.0 ; 
+	CHECK = 1.0:1.0:1.0 1.0:1.0:1.0 ; 
+	CURRENT = 0.0:0.5:1.0 0.0:0.5:1.0 ; 
+	DELAY = 0.0:0.5:1.0 0.0:0.5:1.0 0.0:0.5:1.0 ; 
+	POWER = 0.0:0.5:1.0 0.0:0.5:1.0 ; 
+	SLEW = 0.0:0.5:1.0 0.0:0.5:1.0 ; 
+ } ; 
+nominal n0 { 
+	CAP = 0.5 0.5 ; 
+	DELAY = 0.5 0.5 ; 
+	POWER = 0.5 0.5 ; 
+ } ; 
+load DEFAULT_LOAD {
+	PIN(*) = 0.1p 0.1p ; 
+ } ; 
+slew DEFAULT_SLEW {
+	PIN(*) = 0.1n 0.1n ; 
+ } ; 
+vth DEFAULT_VTH {
+	PIN(*) = 0.5 0.5 ; 
+ } ; 
+ //  -- Parameter Setup section 
+ // -- process best
+Set PROCESS best { 
+	DATE = 2013-08-11 20:53:24 (2013-08-12 02:53:24 GMT) ; 
+	MARGIN = m0 ; 
+	NOMINAL = n0 ; 
+	SIGNAL = std_cell_6710 ; 
+	SIMULATION = std_cell ; 
+ } ; 
+
+Set Group best { 
+	INDEX = Clk_Slew ; 
+	NAME = Clk_Slew ; 
+ } ; 
+
+Set Group best { 
+	INDEX = X4 ; 
+	NAME = Core_Pins ; 
+ } ; 
+
+Set Group best { 
+	NAME = POWR ; 
+	SIGNAL = VDD5.0V ; 
+ } ; 
+
+Set Group best { 
+	INDEX = IO5x5 ; 
+	NAME = Pad_Pins ; 
+ } ; 
+
+Set Group best { 
+	INDEX = X1 ; 
+	NAME = X1 ; 
+ } ; 
+
+Set Group best { 
+	INDEX = X16 ; 
+	NAME = X16 ; 
+ } ; 
+
+Set Group best { 
+	INDEX = X2 ; 
+	NAME = X2 ; 
+ } ; 
+
+Set Group best { 
+	INDEX = X4 ; 
+	NAME = X4 ; 
+ } ; 
+
+Set Group best { 
+	INDEX = X8 ; 
+	NAME = X8 ; 
+ } ; 
+
+
+ // -- process typical
+Set PROCESS typical { 
+	DATE = 2013-08-11 20:53:24 (2013-08-12 02:53:24 GMT) ; 
+	MARGIN = m0 ; 
+	NOMINAL = n0 ; 
+	SIGNAL = std_cell_6710 ; 
+	SIMULATION = std_cell ; 
+ } ; 
+
+Set Group typical { 
+	INDEX = Clk_Slew ; 
+	NAME = Clk_Slew ; 
+ } ; 
+
+Set Group typical { 
+	INDEX = X4 ; 
+	NAME = Core_Pins ; 
+ } ; 
+
+Set Group typical { 
+	NAME = POWR ; 
+	SIGNAL = VDD5.0V ; 
+ } ; 
+
+Set Group typical { 
+	INDEX = IO5x5 ; 
+	NAME = Pad_Pins ; 
+ } ; 
+
+Set Group typical { 
+	INDEX = X1 ; 
+	NAME = X1 ; 
+ } ; 
+
+Set Group typical { 
+	INDEX = X16 ; 
+	NAME = X16 ; 
+ } ; 
+
+Set Group typical { 
+	INDEX = X2 ; 
+	NAME = X2 ; 
+ } ; 
+
+Set Group typical { 
+	INDEX = X4 ; 
+	NAME = X4 ; 
+ } ; 
+
+Set Group typical { 
+	INDEX = X8 ; 
+	NAME = X8 ; 
+ } ; 
+
+
+ // -- process worst
+Set PROCESS worst { 
+	DATE = 2013-08-11 20:53:24 (2013-08-12 02:53:24 GMT) ; 
+	MARGIN = m0 ; 
+	NOMINAL = n0 ; 
+	SIGNAL = std_cell_6710 ; 
+	SIMULATION = std_cell ; 
+ } ; 
+
+Set Group worst { 
+	INDEX = Clk_Slew ; 
+	NAME = Clk_Slew ; 
+ } ; 
+
+Set Group worst { 
+	INDEX = X4 ; 
+	NAME = Core_Pins ; 
+ } ; 
+
+Set Group worst { 
+	NAME = POWR ; 
+	SIGNAL = VDD5.0V ; 
+ } ; 
+
+Set Group worst { 
+	INDEX = IO5x5 ; 
+	NAME = Pad_Pins ; 
+ } ; 
+
+Set Group worst { 
+	INDEX = X1 ; 
+	NAME = X1 ; 
+ } ; 
+
+Set Group worst { 
+	INDEX = X16 ; 
+	NAME = X16 ; 
+ } ; 
+
+Set Group worst { 
+	INDEX = X2 ; 
+	NAME = X2 ; 
+ } ; 
+
+Set Group worst { 
+	INDEX = X4 ; 
+	NAME = X4 ; 
+ } ; 
+
+Set Group worst { 
+	INDEX = X8 ; 
+	NAME = X8 ; 
+ } ; 
+
+
+// End of setup file 

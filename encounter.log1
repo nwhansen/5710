@@ -1,0 +1,126 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 13.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.43-p014.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.13-s001
+@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.13-s017_1" on Tue Nov 18 15:42:16 2014 (mem=140.2M) ---
+--- Running on lab2-23 (x86_64 w/Linux 2.6.32-431.el6.x86_64) ---
+This version was compiled on Tue Jul 30 13:03:02 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> set init_verilog controller_struct.v
+<CMD> set init_lef_file Lib6710_08.lef
+<CMD> set init_mmmc_file mmmc.tcl
+<CMD> set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+<CMD> set init_gnd_net gnd!
+<CMD> set init_pwr_net vdd!
+<CMD> set init_design_settop 0
+<CMD> set init_abstract_view abstract
+<CMD> set init_verilog synth/lab7/controller_struct.v
+<CMD> set init_layout_view layout
+<CMD> init_design
+**ERROR: (ENCSYT-6284):	Failed to open file mmmc.tcl for read.
+Reading tech data from OA library 'Lib6710_08' ...
+FE units: 0.001 microns/dbu, OA units: 0.001 microns/dbu, Conversion factor: 1
+Set DBUPerIGU to M2 pitch 2400.
+Base constraint group name for reading all the rules is: 'LEFDefaultRouteSpec' and it has been read from the library 'UofU_TechLib_ami06'. 
+
+viaInitial starts at Tue Nov 18 15:42:57 2014
+**WARN: (ENCPP-547):	Cut 'via2' does not fit in viaRule 'M3_M2'.
+**WARN: (ENCPP-547):	Cut 'via' does not fit in viaRule 'M2_M1'.
+**WARN: (ENCPP-547):	Cut 'via' does not fit in viaRule 'viagen21'.
+**WARN: (ENCPP-547):	Cut 'via2' does not fit in viaRule 'viagen32'.
+viaInitial ends at Tue Nov 18 15:42:57 2014
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'synth/lab7/controller_struct.v'
+Module DFF2 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module DFF2 is not defined in LEF files.  It will be treated as an empty module.
+
+*** Memory Usage v#1 (Current mem = 635.789M, initial mem = 140.160M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=635.8M) ***
+Top level cell is controller.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.18min, fe_real=0.72min, fe_mem=635.8M) ***
+
+{DETAILMESSAGE}**WARN: (ENCDB-2504):	Cell DFF2 is instantiated in the Verilog netlist, but is not defined.
+Mark pin QB of cell DFF2 output for net n151 in module controller 
+Mark pin Q of cell DFF2 output for net state[0] in module controller 
+Found empty module (DFF2).
+Starting recursive module instantiation check.
+No recursion found.
+Term dir updated for 0 vinsts of 1 cells.
+Building hierarchical netlist for Cell controller ...
+*** Netlist is unique.
+** info: there are 24 modules.
+** info: there are 143 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 646.660M, initial mem = 140.160M) ***
+**WARN: (ENCFP-3961):	techSite 'dbl_core' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'IO' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'corner' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'IOSite' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'CoreSite' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+Generated pitch 2.4 in metal3 is different from 3 defined in technology file in unpreferred direction.
+Generated pitch 3 in metal2 is different from 2.4 defined in technology file in unpreferred direction.
+Generated pitch 2.4 in metal1 is different from 3 defined in technology file in unpreferred direction.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+**ERROR: **ERROR: (ENCSYT-7327):	Active setup and hold analysis views were not provided in either file mmmc.tcl or by the -setup and -hold arguments to initDesign. The system requires at least one active setup and hold analysis view to be declared before the design can be initialized. You must add a set_analysis_view command to your script, or add the -setup and -hold options to your init_design invocation. You can use the all_analysis_view command to identify the currently available views.
+
+<CMD> set init_lef_file {}
+<CMD> set init_design_settop 0
+<CMD> set init_abstract_view abstract
+<CMD> set init_verilog synth/lab7/controller_struct.v
+<CMD> set init_mmmc_file synth/lab7/controller.view
+<CMD> set init_layout_view layout
+<CMD> create_constraint_mode -name timing -sdc_files {controller_struct.sdc}
+<CMD> init_design
+**WARN: (ENCSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+<CMD> getIoFlowFlag
+**WARN: (ENCOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+**WARN: (ENCOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -prePlace -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_prePlace -outDir timingReports
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yet
+**ERROR: (ENCSYT-16):	
+*** Memory Usage v#1 (Current mem = 654.680M, initial mem = 140.160M) ***
+--- Ending "Encounter" (totcpu=0:00:24.1, real=0:01:40, mem=654.7M) ---

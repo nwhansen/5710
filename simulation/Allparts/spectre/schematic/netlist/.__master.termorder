@@ -6,6 +6,7 @@
 "Lib6710_08.D_flip_flop.analog_extracted.termorder" (("CLK" "CLR" "DATA" "NQ" "Q") ("CLK" "CLR" "DATA" "NQ" "Q"))
 "Lib6710_08.INVX8.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
 "Lib6710_08.MUX2X1.analog_extracted.termorder" (("A" "B" "S" "Y") ("A" "B" "S" "Y"))
+"Lib6710_08.INVX1.analog_extracted.termorder" nil
 "Lib6710_08.TIEHI.analog_extracted.termorder" nil
 "Lib6710_08.TIELO.analog_extracted.termorder" (("Y") ("Y"))
 "Lib6710_08.NOR2X1.analog_extracted.termorder" (("A" "B" "Y") ("A" "B" "Y"))
@@ -15,6 +16,7 @@
 "Lib6710_08.BUFX4.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
 "Lib6710_08.INVX4.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
 "Lib6710_08.ADDER.analog_extracted.termorder" (("A" "B" "Cin" "Cout" "S") ("A" "B" "Cin" "Cout" "S"))
+"Lib6710_08.DFF2.analog_extracted.termorder" (("CLK" "CLRB" "D" "Q" "QB") ("CLK" "CLRB" "D" "Q" "QB"))
 "Lib6710_08.BUFX8.analog_extracted.termorder" (("A" "Y") ("A" "Y"))
 "Lib6710_08.MUX2X1_alt.analog_extracted.termorder" (("A" "B" "S" "Y") ("A" "B" "S" "Y"))
 "Lib6710_08.XOR2X1.analog_extracted.termorder" (("A" "B" "Y") ("A" "B" "Y"))

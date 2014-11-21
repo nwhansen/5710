@@ -1,0 +1,475 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Tue Nov 18 15:48:16 2014                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+#@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v13.13-s001
+#@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+setImportMode -treatUndefinedCellAsBbox 0 -keepEmptyModule 1
+set init_verilog controller_struct.v
+set init_lef_file Lib6710_08.lef
+set init_mmmc_file mmmc.tcl
+set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+set init_gnd_net gnd!
+set init_pwr_net vdd!
+set init_verilog controller_struct.v
+set init_lef_file Lib6710_08.lef
+set init_mmmc_file mmmc.tcl
+set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+set init_gnd_net gnd!
+set init_pwr_net vdd!
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+set init_top_cell controller
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+set init_design_settop 0
+set init_top_cell controller
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+set init_design_settop 0
+set init_top_cell controller
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller_struct.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+panCenter 46.861 76.792
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r .5 0.715501 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -r 0.488334237656 0.73103 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+panCenter 204.504 154.911
+panCenter 194.910 85.591
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r 0.6 0.747166 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -r 0.510204081633 0.763769 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r 0.6 0.780404 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -r 0.532859680284 0.797684 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -r 0.348499515973 0.815155 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -r 0.200371057514 0.833203 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -r .6 0.851636 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -d 293.4 195.0 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -d 293.4 195.0 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -d 293.4 195.0 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site core -d 293.4 195.0 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+getIoFlowFlag
+selectWire 16.5000 169.2000 276.6000 179.1000 1 vdd!
+set sprCreateIeStripeNets {}
+set sprCreateIeStripeLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeSpacing 2.0
+set sprCreateIeStripeThreshold 1.0
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 75 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 75 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+getOpCond -max
+getOpCond -max
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_preCTS -outDir timingReports
+createClockTreeSpec -bufferList {BUFX4 INVX4} -file Clock.ctstch
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+setDrawView place
+setDrawView fplan
+setDrawView place
+panCenter 146.405 112.810
+panCenter 150.130 111.807
+fit
+displayClockPhaseDelay -preRoute
+displayClockPhaseDelay -preRoute
+displayClockPhaseDelay -preRoute
+displayClockPhaseDelay -preRoute
+displayClockPhaseDelay -preRoute
+displayClockPhaseDelay -preRoute
+displayClockPhaseDelay -preRoute
+displayClockPhaseDelay -preRoute
+displayClockTree -skew -allLevel -preRoute
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+zoomBox 182.237 92.318 310.006 11.244
+panCenter 165.383 74.671
+fit
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postCTS
+setDrawView place
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_postCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+zoomBox 155.090 135.866 -23.576 204.636
+zoomSelected
+fit
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_postRoute -outDir timingReports
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core -r 0.581395348837 0.816325 31.2 30.0 30.0 30.0
+uiSetTool select
+getIoFlowFlag
+fit
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+windowSelect 3.972 205.936 298.343 -0.013
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+deselectAll
+windowSelect -10.286 229.560 464.084 -35.383
+deleteSelectedFromFPlan
+deselectAll
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+addRing -center 1 -stacked_via_top_layer metal3 -around core -jog_distance 1.5 -threshold 1.5 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 9.9 -spacing 1.8 -offset 1.5
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 75 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+addStripe -block_ring_top_layer_limit metal3 -max_same_layer_jog_length 3.0 -padcore_ring_bottom_layer_limit metal1 -set_to_set_distance 99 -stacked_via_top_layer metal3 -padcore_ring_top_layer_limit metal3 -spacing 1.8 -xleft_offset 75 -merge_stripes_value 1.5 -layer metal2 -block_ring_bottom_layer_limit metal1 -width 4.8 -nets {vdd! gnd!} -stacked_via_bottom_layer metal1
+selectWire 403.2000 15.9000 408.0000 206.1000 2 vdd!
+deleteSelectedFromFPlan
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postCTS
+setDrawView place
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix controller_postCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -postRoute
+panCenter 326.246 43.226
+panCenter 210.693 145.915
+panCenter 210.242 106.420
+zoomSelected
+fit
+getPlaceMode -doneQuickCTS -quiet
+::MSV_CTS::ckSynthesis -check -trace controller.cts_trace -forceReconvergent -breakLoop -prePlace
+addTieHiLo -cell TIEHI -prefix LTIE
+undo
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign SOCPandR/controller_power.enc.dat controller
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+set init_verilog controller_struct.v
+set init_lef_file Lib6710_08.lef
+set init_mmmc_file mmmc.tcl
+set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1 }
+set init_gnd_net gnd!
+set init_pwr_net vdd!
+create_library_set -name typical_lib \
+   -timing {Lib6710_08.lib}
+create_constraint_mode -name typical_constraint \
+   -sdc_files {controller_struct.sdc}
+create_rc_corner -name typical_rc\
+   -preRoute_res {1.0} \
+   -preRoute_cap {1.0} \
+   -preRoute_clkres {0.0} \
+   -preRoute_clkcap {0.0} \
+   -postRoute_res {1.0} \
+   -postRoute_cap {1.0} \
+   -postRoute_xcap {1.0} \
+   -postRoute_clkres {0.0} \
+   -postRoute_clkcap {0.0}
+create_delay_corner -name typical_corner \
+   -library_set {typical_lib} \
+   -rc_corner {typical_rc}
+create_analysis_view -name typical_view \
+   -constraint_mode {typical_constraint} \
+   -delay_corner {typical_corner}
+set_analysis_view -setup {typical_view} -hold {typical_view}
+init_design
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+selectWire 128.4000 4.2000 133.2000 226.8000 2 gnd!
+deselectAll
+selectWire 121.2000 15.9000 126.0000 215.1000 2 vdd!
+deselectAll
+selectWire 4.8000 4.2000 14.7000 226.8000 2 gnd!
+deselectAll
+setDrawView place
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS
+setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+optDesign -preCTS

@@ -1,8 +1,0 @@
-cUiMoveCellToBin {ADDER} {Ignore}
-cUiSelectCellP {ADDER}
-cUiSetViewStatus {ADDER} {layout} {1}
-cUiSetViewStatus {ADDER} {logical} {0}
-cUiSetViewStatus {ADDER} {abstract.pin} {0}
-cUiSetViewStatus {ADDER} {abstract.ext} {0}
-cUiSetViewStatus {ADDER} {abstract} {0}
-cUiSetViewStatus {ADDER} {abstract.ver} {0}

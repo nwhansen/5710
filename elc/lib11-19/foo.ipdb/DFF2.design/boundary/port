@@ -1,0 +1,10 @@
+186
+PORT 1 DFF2 1 7 0 <>
+CLK I 0 -1
+CLRB I 1 -1
+D I 2 -1
+Q O 3 -1
+QB O 4 -1
+VDD V 5 -1
+GND G 6 -1
+

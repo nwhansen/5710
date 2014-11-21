@@ -1,0 +1,133 @@
+simulator lang=spectre insensitive=yes
+subckt DFF2 CLK CLRB D Q QB vdd gnd
+\+25 (Q QB vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+ps=1.8e-06 pd=9e-06 m=1 region=sat
+\+24 (vdd 12 QB vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+23 (QB CLRB vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+22 (vdd QB 18 vdd) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=5.4e-12 \
+ps=9e-07 pd=1.8e-06 m=1 region=sat
+\+21 (18 CLK 12 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+20 (12 8 11 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+19 (11 9 vdd vdd) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
+ps=9e-06 pd=1.8e-06 m=1 region=sat
+\+18 (10 11 vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+ps=1.8e-06 pd=9e-06 m=1 region=sat
+\+17 (vdd CLRB 10 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+16 (10 8 9 vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+15 (9 CLK 17 vdd) ami06P w=6e-06 l=6e-07 as=2.7e-12 ad=5.4e-12 \
+ps=9e-07 pd=1.8e-06 m=1 region=sat
+\+14 (17 D vdd vdd) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+13 (vdd CLK 8 vdd) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
+ps=9e-06 pd=1.8e-06 m=1 region=sat
+\+103 (gnd 12) capacitor c=4.3524e-16 m=1
+\+102 (gnd 11) capacitor c=4.6872e-16 m=1
+\+101 (gnd 9) capacitor c=4.5198e-16 m=1
+\+100 (gnd 8) capacitor c=1.12158e-15 m=1
+\+99 (gnd QB) capacitor c=1.02114e-15 m=1
+\+98 (CLK gnd) capacitor c=1.13832e-15 m=1
+\+97 (D gnd) capacitor c=4.3524e-16 m=1
+\+96 (vdd 12) capacitor c=5.3568e-16 m=1
+\+95 (vdd 11) capacitor c=5.6916e-16 m=1
+\+94 (vdd 9) capacitor c=4.6872e-16 m=1
+\+93 (vdd 8) capacitor c=1.0044e-15 m=1
+\+92 (vdd QB) capacitor c=1.0044e-15 m=1
+\+91 (vdd CLK) capacitor c=1.40616e-15 m=1
+\+90 (vdd D) capacitor c=5.859e-16 m=1
+\+89 (CLRB gnd) capacitor c=9.0396e-16 m=1
+\+88 (CLRB vdd) capacitor c=1.10484e-15 m=1
+\+87 (10 11) capacitor c=3.084e-16 m=1
+\+86 (9 11) capacitor c=6.6015e-16 m=1
+\+85 (8 11) capacitor c=2.217e-16 m=1
+\+84 (8 9) capacitor c=2.217e-16 m=1
+\+83 (QB 12) capacitor c=9.3015e-16 m=1
+\+82 (gnd 9) capacitor c=1.48026e-15 m=1
+\+81 (gnd 8) capacitor c=3.83862e-15 m=1
+\+80 (gnd QB) capacitor c=1.32912e-15 m=1
+\+79 (Q gnd) capacitor c=1.30278e-15 m=1
+\+78 (CLK 11) capacitor c=2.217e-16 m=1
+\+77 (CLK 9) capacitor c=5.784e-16 m=1
+\+76 (CLK 8) capacitor c=1.1085e-15 m=1
+\+75 (CLK QB) capacitor c=5.4e-16 m=1
+\+74 (CLK gnd) capacitor c=6.0216e-16 m=1
+\+73 (D 8) capacitor c=2.217e-16 m=1
+\+72 (D CLK) capacitor c=2.217e-16 m=1
+\+71 (vdd 12) capacitor c=1.19418e-15 m=1
+\+70 (vdd 11) capacitor c=9.6726e-16 m=1
+\+69 (vdd 10) capacitor c=1.12488e-15 m=1
+\+68 (vdd 8) capacitor c=1.97058e-15 m=1
+\+67 (vdd Q) capacitor c=1.80282e-15 m=1
+\+66 (vdd CLK) capacitor c=3.22998e-15 m=1
+\+65 (vdd D) capacitor c=2.403e-16 m=1
+\+64 (CLRB 12) capacitor c=2.217e-16 m=1
+\+63 (CLRB 11) capacitor c=2.217e-16 m=1
+\+62 (CLRB 10) capacitor c=3.084e-16 m=1
+\+61 (CLRB 9) capacitor c=4.434e-16 m=1
+\+60 (CLRB 8) capacitor c=6.651e-16 m=1
+\+59 (CLRB QB) capacitor c=4.8675e-16 m=1
+\+58 (CLRB gnd) capacitor c=2.403e-16 m=1
+\+57 (CLRB CLK) capacitor c=4.434e-16 m=1
+\+56 (CLRB D) capacitor c=4.05e-16 m=1
+\+55 (CLRB vdd) capacitor c=3.39654e-15 m=1
+\+54 (9 10) capacitor c=2.2914e-16 m=1
+\+53 (8 12) capacitor c=1.5288e-16 m=1
+\+52 (8 11) capacitor c=2.2914e-16 m=1
+\+51 (8 10) capacitor c=9.6294e-16 m=1
+\+50 (8 9) capacitor c=2.2914e-16 m=1
+\+49 (QB 12) capacitor c=2.2914e-16 m=1
+\+48 (gnd 12) capacitor c=6.1572e-16 m=1
+\+47 (gnd 11) capacitor c=6.8706e-16 m=1
+\+46 (gnd 10) capacitor c=3.9981e-16 m=1
+\+45 (gnd 9) capacitor c=3.2103e-16 m=1
+\+44 (gnd QB) capacitor c=2.93333e-16 m=1
+\+43 (CLK 12) capacitor c=7.2408e-16 m=1
+\+42 (CLK 11) capacitor c=2.2914e-16 m=1
+\+41 (CLK 10) capacitor c=2.2914e-16 m=1
+\+40 (CLK 9) capacitor c=6.5364e-16 m=1
+\+39 (CLK QB) capacitor c=8.6334e-16 m=1
+\+38 (CLK gnd) capacitor c=1.839e-16 m=1
+\+37 (vdd 12) capacitor c=5.5383e-16 m=1
+\+36 (vdd 11) capacitor c=5.7072e-16 m=1
+\+35 (vdd 10) capacitor c=2.4024e-16 m=1
+\+34 (vdd 9) capacitor c=7.134e-16 m=1
+\+33 (vdd QB) capacitor c=8.6541e-16 m=1
+\+32 (vdd CLK) capacitor c=1.0512e-16 m=1
+\+31 (CLRB 12) capacitor c=2.2914e-16 m=1
+\+30 (CLRB 11) capacitor c=2.2914e-16 m=1
+\+29 (CLRB 10) capacitor c=2.2914e-16 m=1
+\+28 (CLRB 9) capacitor c=2.2914e-16 m=1
+\+27 (CLRB QB) capacitor c=3.97785e-16 m=1
+\+26 (CLRB CLK) capacitor c=2.2914e-16 m=1
+\+12 (Q QB gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 ps=6e-06 \
+pd=6e-06 m=1 region=sat
+\+11 (QB 12 16 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 \
+ps=9e-07 pd=6e-06 m=1 region=sat
+\+10 (16 CLRB gnd gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+9 (gnd QB 15 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
+pd=1.8e-06 m=1 region=sat
+\+8 (15 8 12 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+7 (12 CLK 11 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+6 (11 9 gnd gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+pd=1.8e-06 m=1 region=sat
+\+5 (gnd 11 14 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=4.5e-12 ps=9e-07 \
+pd=6e-06 m=1 region=sat
+\+4 (14 CLRB 10 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+3 (10 CLK 9 gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 \
+ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+\+2 (9 8 13 gnd) ami06N w=3e-06 l=6e-07 as=1.35e-12 ad=2.7e-12 ps=9e-07 \
+pd=1.8e-06 m=1 region=sat
+\+1 (13 D gnd gnd) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=1.35e-12 \
+ps=1.8e-06 pd=9e-07 m=1 region=sat
+\+0 (gnd CLK 8 gnd) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+pd=1.8e-06 m=1 region=sat
+ends DFF2

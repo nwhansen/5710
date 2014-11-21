@@ -3,8 +3,8 @@ $model
 Lib6710_08/XOR2X1/analog_extracted XOR2X1
 Lib6710_08/NOR2X1/analog_extracted NOR2X1
 Lib6710_08/AOI22X1/analog_extracted AOI22X1
-Lib6710_08/Dff2/analog_extracted Dff2
 Lib6710_08/OAI22X1/analog_extracted OAI22X1
+Lib6710_08/INVX1/analog_extracted INVX1
 Lib6710_08/INVX4/analog_extracted INVX4
 Lib6710_08/NAND2X2/analog_extracted NAND2X2
 Lib6710_08/INVX2/analog_extracted INVX2
@@ -12,7 +12,7 @@ Lib6710_08/BUFX4/analog_extracted BUFX4
 Lib6710_08/Allparts/schematic Allparts
 Lib6710_08/BUFX8/analog_extracted BUFX8
 Lib6710_08/TIELO/analog_extracted TIELO
-Lib6710_08/INV1/analog_extracted INV1
+Lib6710_08/DFF2/analog_extracted DFF2
 Lib6710_08/NAND2X1/analog_extracted NAND2X1
 Lib6710_08/MUX2X1/analog_extracted MUX2X1
 Lib6710_08/INVX8/analog_extracted INVX8

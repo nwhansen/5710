@@ -1,5 +1,5 @@
 
 // Library name: Lib6710_08
-// Cell name: OAI22X1
+// Cell name: DFF2
 // View name: analog_extracted
-subckt OAI22X1 A B C D Y
+subckt DFF2 CLK CLRB D Q QB

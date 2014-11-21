@@ -1,31 +1,61 @@
-    \+5 (A S Y vdd!) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
-        ps=1.8e-06 pd=6e-06 m=1 region=sat
-    \+4 (Y 7 B vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+    \+11 (vdd! B 8 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=9e-12 \
+        ps=1.8e-06 pd=9e-06 m=1 region=sat
+    \+10 (8 7 Y vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+9 (Y 6 8 vdd!) ami06P w=6e-06 l=6e-07 as=5.4e-12 ad=5.4e-12 \
+        ps=1.8e-06 pd=1.8e-06 m=1 region=sat
+    \+8 (8 A vdd! vdd!) ami06P w=6e-06 l=6e-07 as=9e-12 ad=5.4e-12 \
+        ps=9e-06 pd=1.8e-06 m=1 region=sat
+    \+46 (0 7) capacitor c=7.1982e-16 m=1
+    \+45 (0 6) capacitor c=5.1894e-16 m=1
+    \+44 (B 0) capacitor c=1.36431e-15 m=1
+    \+43 (A 0) capacitor c=1.38942e-15 m=1
+    \+42 (vdd! 7) capacitor c=3.7665e-16 m=1
+    \+41 (vdd! 6) capacitor c=3.1806e-16 m=1
+    \+40 (vdd! B) capacitor c=7.7841e-16 m=1
+    \+39 (vdd! A) capacitor c=6.696e-16 m=1
+    \+38 (6 7) capacitor c=2.7e-16 m=1
+    \+37 (0 7) capacitor c=1.74888e-15 m=1
+    \+36 (Y 7) capacitor c=3.1335e-16 m=1
+    \+35 (B 7) capacitor c=2.7e-16 m=1
+    \+34 (B 6) capacitor c=5.4e-16 m=1
+    \+33 (B 0) capacitor c=2.18892e-15 m=1
+    \+32 (A 7) capacitor c=2.7e-16 m=1
+    \+31 (A 6) capacitor c=8.1e-16 m=1
+    \+30 (A 0) capacitor c=1.68606e-15 m=1
+    \+29 (A B) capacitor c=5.4e-16 m=1
+    \+28 (vdd! 6) capacitor c=1.89678e-15 m=1
+    \+27 (vdd! Y) capacitor c=2.5368e-16 m=1
+    \+26 (7 8) capacitor c=1.8504e-16 m=1
+    \+25 (6 8) capacitor c=1.8504e-16 m=1
+    \+24 (6 7) capacitor c=3.1776e-16 m=1
+    \+23 (0 7) capacitor c=8.2632e-16 m=1
+    \+22 (0 6) capacitor c=1.33704e-15 m=1
+    \+21 (Y 8) capacitor c=3.372e-16 m=1
+    \+20 (Y 7) capacitor c=3.1776e-16 m=1
+    \+19 (Y 0) capacitor c=6.3852e-16 m=1
+    \+18 (B 7) capacitor c=3.1776e-16 m=1
+    \+17 (B Y) capacitor c=3.1776e-16 m=1
+    \+16 (A 7) capacitor c=3.1776e-16 m=1
+    \+15 (A Y) capacitor c=3.1776e-16 m=1
+    \+14 (vdd! 7) capacitor c=7.7364e-16 m=1
+    \+13 (vdd! 6) capacitor c=7.7364e-16 m=1
+    \+12 (vdd! Y) capacitor c=4.8828e-16 m=1
+    \+5 (0 B 10 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 ps=1.8e-06 \
+        pd=6e-06 m=1 region=sat
+    \+4 (10 A Y 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
         pd=1.8e-06 m=1 region=sat
-    \+3 (7 S vdd! vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=4.5e-12 \
-        ps=6e-06 pd=6e-06 m=1 region=sat
-    \+22 (0 7) capacitor c=1.0044e-15 m=1
-    \+21 (S 0) capacitor c=1.29735e-15 m=1
-    \+20 (vdd! 7) capacitor c=6.696e-16 m=1
-    \+19 (vdd! S) capacitor c=1.79955e-15 m=1
-    \+18 (0 7) capacitor c=1.36434e-15 m=1
-    \+17 (Y 7) capacitor c=3.864e-16 m=1
-    \+16 (Y 0) capacitor c=1.60098e-15 m=1
-    \+15 (S 7) capacitor c=7.728e-16 m=1
-    \+14 (S Y) capacitor c=3.864e-16 m=1
-    \+13 (B 7) capacitor c=7.728e-16 m=1
-    \+12 (B 0) capacitor c=1.36434e-15 m=1
-    \+11 (B S) capacitor c=7.728e-16 m=1
-    \+10 (A 0) capacitor c=1.83762e-15 m=1
-    \+9 (vdd! 7) capacitor c=1.4235e-15 m=1
-    \+8 (vdd! Y) capacitor c=1.66014e-15 m=1
-    \+7 (vdd! B) capacitor c=1.4235e-15 m=1
-    \+6 (vdd! A) capacitor c=1.89678e-15 m=1
-    \+2 (A 7 Y 0) ami06N w=1.5e-06 l=6e-07 as=1.35e-12 ad=2.25e-12 \
+    \+3 (Y 6 9 0) ami06N w=3e-06 l=6e-07 as=2.7e-12 ad=2.7e-12 ps=1.8e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+2 (9 7 0 0) ami06N w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 ps=6e-06 \
+        pd=1.8e-06 m=1 region=sat
+    \+1 (7 B 0 0) ami06N w=1.5e-06 l=6e-07 as=1.35e-12 ad=2.25e-12 \
         ps=1.8e-06 pd=4.5e-06 m=1 region=sat
-    \+1 (Y S B 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=1.35e-12 \
+    \+0 (0 A 6 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=1.35e-12 \
         ps=4.5e-06 pd=1.8e-06 m=1 region=sat
-    \+0 (7 S 0 0) ami06N w=1.5e-06 l=6e-07 as=2.25e-12 ad=2.25e-12 \
-        ps=4.5e-06 pd=4.5e-06 m=1 region=sat
-ends MUX2X1
+    \+7 (7 B vdd! vdd!) ami06P w=3e-06 l=6e-07 as=2.7e-12 ad=4.5e-12 \
+        ps=1.8e-06 pd=6e-06 m=1 region=sat
+    \+6 (vdd! A 6 vdd!) ami06P w=3e-06 l=6e-07 as=4.5e-12 ad=2.7e-12 \
+        ps=6e-06 pd=1.8e-06 m=1 region=sat
+ends XOR2X1
 // End of subcircuit definition.

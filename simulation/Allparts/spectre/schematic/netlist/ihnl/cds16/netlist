@@ -6,15 +6,15 @@ I12 (net01) TIELO
 I6 (net3 net4 net2) NOR2X1
 I11 (net05) TIEHI
 I5 (net7 net8 net6) NAND2X1
-I9 (net010 net09) INV1
 I19 (net012 net011) BUFX4
 I14 (net017 net018 net019 net020 net016) AOI22X1
 I15 (net022 net023 net024 net021) MUX2X1
 I16 (net026 net027 net025) XOR2X1
 I20 (net047 net042) BUFX8
-I26 (net052 net061 net057 net056 net062) Dff2
+I28 (net051 net048) INVX1
 I21 (net028 net045) INVX2
 I22 (net030 net029) INVX4
 I23 (net032 net031) INVX8
 I24 (net034 net035 net033) NAND2X2
 I25 (net037 net038 net039 net040 net036) OAI22X1
+I29 (net043 net044 net046 net041 net050) DFF2

@@ -13,3 +13,5 @@ DEFINE gridTemplate gridTemplate
 DEFINE ExperimentalCells /home/nathan/5710/ExperimentalCells
 DEFINE TestCharacterize /home/nathan/5710/TestCharacterize
 DEFINE TestCells /home/nathan/5710/TestCells
+DEFINE Controller /home/nathan/5710/Controller
+DEFINE ControllerV2 /home/nathan/5710/ControllerV2

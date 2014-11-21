@@ -1,8 +1,0 @@
-cUiMoveCellToBin {TIEHI2} {Ignore}
-cUiSelectCellP {TIEHI2}
-cUiSetViewStatus {TIEHI2} {layout} {1}
-cUiSetViewStatus {TIEHI2} {logical} {0}
-cUiSetViewStatus {TIEHI2} {abstract.pin} {33}
-cUiSetViewStatus {TIEHI2} {abstract.ext} {33}
-cUiSetViewStatus {TIEHI2} {abstract} {33}
-cUiSetViewStatus {TIEHI2} {abstract.ver} {33}

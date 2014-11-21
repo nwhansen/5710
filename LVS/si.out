@@ -8,26 +8,24 @@ Compiling Diva LVS rules...
 
     Net-list summary for /home/nathan/5710/LVS/layout/netlist
        count
-        7               nets
-        6               terminals
+        5               nets
+        4               terminals
         3               pmos
         3               nmos
 
     Net-list summary for /home/nathan/5710/LVS/schematic/netlist
        count
-        7               nets
-        6               terminals
-        3               pmos
-        3               nmos
+        5               nets
+        4               terminals
+        2               pmos
+        2               nmos
 
 
     Terminal correspondence points
-    N5        N7        A
-    N4        N8        B
-    N3        N5        S
-    N2        N2        Y
-    N1        N0        gnd!
-    N6        N1        vdd!
+    N3        N2        A
+    N2        N4        Y
+    N1        N1        gnd!
+    N4        N0        vdd!
 
 Devices in the netlist but not in the rules:
         pcapacitor
@@ -42,21 +40,21 @@ The net-lists match.
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  6       6      
-        total                   6       6      
+        active                  6       4      
+        total                   6       4      
 
                                   nets
         un-matched              0       0      
         merged                  0       0      
         pruned                  0       0      
-        active                  7       7      
-        total                   7       7      
+        active                  5       5      
+        total                   5       5      
 
                                 terminals
         un-matched              0       0      
         matched but
         different type          0       0      
-        total                   6       6      
+        total                   4       4      
 
 
 Probe files from /home/nathan/5710/LVS/schematic

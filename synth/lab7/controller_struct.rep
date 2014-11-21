@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : controller
+Version: G-2012.06-SP3
+Date   : Wed Nov 19 21:20:15 2014
+****************************************
+
+Operating Conditions: typical   Library: Lib6710_08
+Wire Load Model Mode: top
+
+  Startpoint: state_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: state_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg_1_/CLK (DFF2)                  0.00       0.00 r
+  state_reg_1_/QB (DFF2)                   0.83       0.83 f
+  U197/Y (INVX1)                           0.46       1.29 r
+  U195/Y (NAND2X1)                         0.26       1.54 f
+  U226/Y (INVX1)                           0.28       1.82 r
+  U127/Y (NAND2X2)                         0.23       2.05 f
+  U242/Y (NOR2X1)                          0.54       2.60 r
+  U221/Y (NAND2X1)                         0.32       2.91 f
+  U191/Y (NAND2X1)                         0.29       3.20 r
+  U190/Y (INVX1)                           0.26       3.46 f
+  U189/Y (NAND2X1)                         0.27       3.73 r
+  U121/Y (NAND2X2)                         0.20       3.94 f
+  U124/Y (NAND2X2)                         0.35       4.29 r
+  U125/Y (INVX8)                           0.19       4.49 f
+  state_reg_2_/D (DFF2)                    0.00       4.49 f
+  data arrival time                                   4.49
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  state_reg_2_/CLK (DFF2)                  0.00       5.00 r
+  library setup time                      -0.45       4.55
+  data required time                                  4.55
+  -----------------------------------------------------------
+  data required time                                  4.55
+  data arrival time                                  -4.49
+  -----------------------------------------------------------
+  slack (MET)                                         0.06
+
+
+1
+ 
+****************************************
+Report : area
+Design : controller
+Version: G-2012.06-SP3
+Date   : Wed Nov 19 21:20:15 2014
+****************************************
+
+Library(s) Used:
+
+    Lib6710_08 (File: /home/nathan/5710/synth/lab7/synth/Lib6710_08.db)
+
+Number of ports:                           27
+Number of nets:                           160
+Number of cells:                          147
+Number of combinational cells:            143
+Number of sequential cells:                 4
+Number of macros:                           0
+Number of buf/inv:                         66
+Number of references:                      10
+
+Combinational area:          0.000000
+Buf/Inv area:                0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:             0.000000
+Total area:                 undefined
+1
